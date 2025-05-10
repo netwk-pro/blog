@@ -38,7 +38,6 @@ export default defineConfig([
       "**/.vscode/**", // VSCode-specific files
       "**/coverage/**", // Coverage reports
       "**/build/**", // Distribution files
-      "**/public/**", // Public files
       "package.json", // NPM package manifest
       "package-lock.json", // NPM lockfile
       "node_modules/", // Node.js dependencies
@@ -53,7 +52,7 @@ export default defineConfig([
     plugins: { js },
     languageOptions: {
       globals: GLOBALS,
-      ecmaVersion: 2022,
+      ecmaVersion: "latest", // Use the latest ECMAScript version
       sourceType: "module",
     },
     extends: ["js/recommended"],
