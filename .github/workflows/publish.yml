@@ -50,9 +50,11 @@ jobs:
             ${{ runner.os }}-
 
       - name: Authenticate with npm
-        run: echo "//registry.npmjs.org/:_authToken=${NPM_NETPRO}" > .npmrc
+        run: |
+          echo "@networkpro:registry=https://registry.npmjs.org/" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=${NPM_NETPRO}" >> .npmrc
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_NETPRO: ${{ secrets.NPM_NETPRO }}
 
       - name: Install Node.js dependencies
         run: npm ci
