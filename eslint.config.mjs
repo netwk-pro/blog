@@ -5,10 +5,8 @@ SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Pro.
 ========================================================================== */
 
-import css from "@eslint/css";
 import js from "@eslint/js"; // Provides ESLint core rules and recommended config
 import json from "@eslint/json";
-import markdown from "@eslint/markdown";
 import eslintConfigPrettier from "eslint-config-prettier"; // Prettier config to disable conflicting ESLint rules
 import { defineConfig } from "eslint/config";
 import globals from "globals";
@@ -48,7 +46,7 @@ export default defineConfig([
 
   // JavaScript/Node.js configuration
   {
-    files: ["**/*.{js,mjs,cjs}"],
+    files: ["**/*.{mjs,js}"],
     plugins: { js },
     languageOptions: {
       globals: GLOBALS,
@@ -78,27 +76,5 @@ export default defineConfig([
     plugins: { json },
     language: "json/jsonc",
     extends: ["json/recommended"],
-  },
-
-  // Markdown configuration
-  {
-    files: ["**/*.md"],
-    plugins: { markdown },
-    language: "markdown/gfm",
-    extends: ["markdown/recommended"],
-    rules: {
-      "markdown/heading-increment": "off", // Disable the heading-increment rule
-    },
-  },
-
-  // CSS configuration
-  {
-    files: ["**/*.css"],
-    plugins: { css },
-    language: "css/css",
-    extends: ["css/recommended"],
-    rules: {
-      "css/use-baseline": "off", // Disable use-baseline rule
-    },
   },
 ]);

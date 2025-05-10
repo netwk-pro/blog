@@ -3,7 +3,7 @@ site_url: https://blog.netwk.pro
 repo_url: https://github.com/netwk-pro/blog
 repo_name: GitHub
 docs_dir: docs_raw
-site_dir: public/docs
+site_dir: build/
 
 theme:
   name: material
@@ -46,7 +46,7 @@ theme:
     - search.suggest
 
 extra:
-  base_url: /docs/
+  base_url: /
   consent:
     title: Cookie Consent
     description: >-
@@ -87,14 +87,15 @@ copyright: >
   <a href="#__consent">Change cookie settings</a>
 
 plugins:
+  - search
   - meta
   - privacy
-  - search
   - blog:
       #blog_toc: true
       blog_dir: .
       archive_date_format: MMMM yyyy
       post_excerpt: required
+      authors_profile: true
   - tags:
       tags_file: tags.md
   - rss:
@@ -104,16 +105,7 @@ plugins:
         as_update: date.updated
 
 nav:
-  - About Us: README.md
-  - Blog:
-      - blog/index.md
-  - Legal Documentation:
-      - legal.md
-      - privacy.md
-      - terms-use.md
-      - terms-conditions.md
-  - Contributing:
-      - CONDUCT.md
-  - Tags:
-      - tags.md
-  - Back to Website: https://netwk.pro/
+  - Home: index.md
+  - Contributing: CONDUCT.md
+  - Tags: tags.md
+  - Website: https://netwk.pro/

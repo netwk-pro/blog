@@ -18,21 +18,19 @@ tags:
 <!-- markdownlint-disable-file -->
 <!-- eslint-disable -->
 
-<div style="font-size: small; font-style: italic;">
+<blockquote style="font-size: small; font-style: italic; font-weight: bold;">
+Originally published on 1/4/2015 by <a rel="noopener noreferrer" href="https://github.com/stribika">stribika</a> at:<br />
+<a rel="noopener noreferrer" href="https://blog.stribik.technology/2015/01/04/secure-secure-shell.html">https://blog.stribik.technology/2015/01/04/secure-secure-shell.html</a>
+</blockquote>
 
-> **Originally published on 1/4/2015 by [stribika](https://github.com/stribika) at:  
-> [https://blog.stribik.technology/2015/01/04/secure-secure-shell.html](https://blog.stribik.technology/2015/01/04/secure-secure-shell.html)**
->
-> Mirrored to preserve information. Minor changes have been made, and this is noted where applicable. Also see:  
-> <https://security.stackexchange.com/questions/143442/what-are-ssh-keygen-best-practices>
+<blockquote style="font-size: small; font-style: italic; font-weight: bold;">
+Mirrored to preserve information. Minor changes have been made, and this is noted where applicable. Also see:<br />
+<a rel="noopener noreferrer" href="https://security.stackexchange.com/questions/143442/what-are-ssh-keygen-best-practices">https://security.stackexchange.com/questions/143442/what-are-ssh-keygen-best-practices</a>
+</blockquote>
 
-</div>
-
-<div style="font-size: small;">
-
-> > 📝 **_NOTE:_** Despite this article's age, we've yet to come across a better source of information with regard to SSH configuration.
-
-</div>
+<blockquote style="font-size: small;">
+📝 <strong><i>NOTE:</i></strong> Despite this article's age, we've yet to come across a better source of information with regard to SSH configuration.
+</blockquote>
 
 - [Skip to the good part.](#sshd)
 
@@ -130,7 +128,7 @@ We have to look at 3 things here:
 We are left with **1** and **8**, as well as **4-6** which were added in [OpenSSH 7.3][73release].
 **1** is better and it's perfectly OK to only support that but for interoperability (with Eclipse, WinSCP), **8** can be included.
 
-> **_NOTE:_**: 8 should no longer be necessary in newer versions of WinSCP. If in doubt, test with only 1 first. Add 8 if it won't connect otherwise.
+> **_NOTE:_** 8 should no longer be necessary in newer versions of WinSCP. If in doubt, test with only 1 first. Add 8 if it won't connect otherwise.
 
 Recommended `/etc/ssh/sshd_config` snippet:
 
@@ -552,8 +550,8 @@ I promise not to use `git push -f`.
 
 <div style="font-size: 12px; text-align: center;">
 
-<p>Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;" slogan are <a href="../../../../legal#trademark" target="_self">trademarks</a> of Network Pro Strategies.</p>
+<p>Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;" slogan are <a href="https://netwk.pro/legal#trademark" target="_self">trademarks</a> of Network Pro Strategies.</p>
 
-<p>Licensed under <a href="../../../../legal#cc-by" target="_self"><strong>CC BY 4.0</strong></a> and the <a href="../../../../legal#gnu-gpl" target="_self"><strong>GNU GPL</strong></a>, as published by the <a rel="noopener noreferrer" href="https://fsf.org" target="_blank">Free Software Foundation</a>, either version 3 of the License, or (at your option) any later version.</p>
+<p>Licensed under <a href="https://netwk.pro/legal#cc-by" target="_self"><strong>CC BY 4.0</strong></a> and the <a href="https://netwk.pro/legal#gnu-gpl" target="_self"><strong>GNU GPL</strong></a>, as published by the <a rel="noopener noreferrer" href="https://fsf.org" target="_blank">Free Software Foundation</a>, either version 3 of the License, or (at your option) any later version.</p>
 
 </div>

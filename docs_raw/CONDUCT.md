@@ -43,17 +43,15 @@ Email: <contact@neteng.pro>
 Web: <https://bio.neteng.pro>
 -->
 
-<a name="top"></a>
+<sup>[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info/):
+`CC-BY-4.0 OR GPL-3.0-or-later`</sup>
 
-[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info/):
-`CC-BY-4.0 OR GPL-3.0-or-later`
+<a name="top"></a>
 
 # Contributor Covenant Code of Conduct
 
 **Network Pro Strategies**  
 **Effective Date:** 3/21/2025
-
-&nbsp;
 
 ## Contents
 
@@ -66,7 +64,7 @@ Web: <https://bio.neteng.pro>
 
 ---
 
-<section id="pledge">
+<a name="pledge"></a>
 
 ## Our Pledge
 
@@ -80,9 +78,9 @@ identity and orientation.
 We pledge to act and interact in ways that contribute to an open, welcoming,
 diverse, inclusive, and healthy community.
 
-</section>
+<sub>[Back to top](#top)</sub>
 
-<section id="standards">
+<a name="standards"></a>
 
 ## Our Standards
 
@@ -110,9 +108,7 @@ Examples of unacceptable behavior include:
 
 <sub>[Back to top](#top)</sub>
 
-</section>
-
-<section id="response">
+<a name="response"></a>
 
 ## Responsibilities
 
@@ -130,9 +126,7 @@ Network Pro Strategies reserves the right, at its sole discretion, to remove, ed
 
 <sub>[Back to top](#top)</sub>
 
-</section>
-
-<section id="scope">
+<a name="scope"></a>
 
 ## Scope
 
@@ -144,9 +138,7 @@ representative at an online or offline event.
 
 <sub>[Back to top](#top)</sub>
 
-</section>
-
-<section id="enforce">
+<a name="enforce"></a>
 
 ## Enforcement
 
@@ -158,9 +150,7 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 
 <sub>[Back to top](#top)</sub>
 
-</section>
-
-<section id="attribute">
+<a name="attribute"></a>
 
 ## Attribution
 
@@ -185,16 +175,14 @@ For answers to common questions about this code of conduct, see the FAQ at
 
 <sub>[Back to top](#top)</sub>
 
-</section>
-
 ---
 
-<div style="font-size: 12px; font-weight: bold; text-align: center;">
+<span style="font-size: 12px; font-weight: bold; text-align: center;">
 
-[Home](https://netwk.pro) &nbsp; | &nbsp; [Terms of Use](https://netwk.pro/terms-of-use)  
-[Privacy Policy](https://netwk.pro/privacy-policy) &nbsp; | &nbsp; [Legal](https://netwk.pro/legal)
+[Home](https://netwk.pro) &nbsp; | &nbsp; [Terms of Use](https://netwk.pro/terms-of-use.html)  
+[Privacy Policy](https://netwk.pro/privacy.html) &nbsp; | &nbsp; [Legal](https://netwk.pro/legal.html)
 
-</div>
+</span>
 
 &nbsp;
 

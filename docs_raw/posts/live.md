@@ -11,14 +11,9 @@ tags:
   - blog
 ---
 
-<sup>[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info/):
-`CC-BY-4.0 OR GPL-3.0-or-later`</sup>
+# We're Live
 
-# We're Live!
-
-<!-- markdownlint-disable-file -->
-
-## 🛡️ Welcome to the Network Pro&trade; Blog: Cybersecurity. Privacy. Open Knowledge.
+## 🛡️ Welcome to the Network Pro&trade; Blog: Cybersecurity. Privacy. Open Knowledge
 
 In a digital world where threats are persistent and privacy is too often an afterthought, **Network Pro Strategies** was founded on a belief that **effective security doesn't require compromise**. We specialize in helping organizations and individuals **navigate today’s cybersecurity challenges with confidence, clarity, and control**.
 
@@ -30,13 +25,13 @@ Today marks the launch of our official blog—your go-to destination for **field
 
 Modern security isn’t just about technology—it’s about **trust, autonomy, and informed choices**. As threats evolve and surveillance becomes normalized, we believe clients deserve more than marketing fluff and opaque solutions.
 
+<!-- more -->
+
 This blog represents our commitment to providing value through:
 
 - 💼 **SMBs and enterprises** needing tailored, scalable security that protects business continuity
 - 🏛️ **Government and compliance-sensitive sectors** where resilience and data integrity are mission-critical
 - 👨‍💻 **Technologists and privacy-conscious communities** seeking reliable strategies and tools that don’t trade transparency for control
-
-<!-- more -->
 
 ---
 
@@ -73,8 +68,8 @@ Let’s build something secure, sustainable, and respectful of your values.
 
 <div style="font-size: 12px; text-align: center;">
 
-<p>Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;" slogan are <a href="../../../../legal#trademark" target="_self">trademarks</a> of Network Pro Strategies.</p>
+<p>Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;" slogan are <a href="https://netwk.pro/legal#trademark" target="_self">trademarks</a> of Network Pro Strategies.</p>
 
-<p>Licensed under <a href="../../../../legal#cc-by" target="_self"><strong>CC BY 4.0</strong></a> and the <a href="../../../../legal#gnu-gpl" target="_self"><strong>GNU GPL</strong></a>, as published by the <a rel="noopener noreferrer" href="https://fsf.org" target="_blank">Free Software Foundation</a>, either version 3 of the License, or (at your option) any later version.</p>
+<p>Licensed under <a href="https://netwk.pro/legal#cc-by" target="_self"><strong>CC BY 4.0</strong></a> and the <a href="https://netwk.pro/legal#gnu-gpl" target="_self"><strong>GNU GPL</strong></a>, as published by the <a rel="noopener noreferrer" href="https://fsf.org" target="_blank">Free Software Foundation</a>, either version 3 of the License, or (at your option) any later version.</p>
 
 </div>
