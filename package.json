@@ -1,6 +1,6 @@
 {
   "name": "@networkpro/blog",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "The official blog of Network Pro Strategies (Network Pro).",
   "keywords": [
     "security",
@@ -40,7 +40,7 @@
     "format:fix": "prettier --write .",
     "lint": "eslint --ext .mjs,.js,.json,.jsonc --config eslint.config.mjs .",
     "lint:fix": "eslint --ext .mjs,.js,.json,.jsonc --config eslint.config.mjs . --fix",
-    "lint:md": "npx markdownlint-cli2 \"**/*.{md,markdown}\" \"#node_modules/**\" \"#public/**\"",
+    "lint:md": "npx markdownlint-cli2 \"**/*.{md,markdown}\" \"#node_modules/**\" \"#build/**\"",
     "lint:css": "stylelint '**/*.{css}' --ignore-path .stylelintignore",
     "lint:all": "npm run lint && npm run lint:md && npm run lint:css && npm run format",
     "checkout": "npm run test && npm run lint:all"

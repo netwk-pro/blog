@@ -69,6 +69,11 @@
     "#11-changes",
     "./legal.html",
     "./terms-of-use",
-    "./privacy-policy"
+    "./privacy-policy",
+    "#pledge",
+    "#standards",
+    "#response",
+    "#enforce",
+    "#attribute"
   ]
 }

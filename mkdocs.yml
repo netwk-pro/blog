@@ -91,11 +91,10 @@ plugins:
   - meta
   - privacy
   - blog:
-      #blog_toc: true
+      blog_toc: true
       blog_dir: .
       archive_date_format: MMMM yyyy
       post_excerpt: required
-      authors_profile: true
   - tags:
       tags_file: tags.md
   - rss:
@@ -105,7 +104,9 @@ plugins:
         as_update: date.updated
 
 nav:
-  - Home: index.md
-  - Contributing: CONDUCT.md
-  - Tags: tags.md
-  - Website: https://netwk.pro/
+  - Blog Home:
+      - index.md
+  - Contributing:
+      - contributing.md
+  - Tag Index: tags.md
+  - Website: https://netwk.pro
