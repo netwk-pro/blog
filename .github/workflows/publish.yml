@@ -1,13 +1,15 @@
-# .github/workflows/build-and-deploy.yml
+# .github/workflows/publish.yml
 #
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Pro
 
-name: Build Site and Publish to GH Pages
+name: Publish to Registries
 
 on:
-  release:
-    types: [created]
+  workflow_run:
+    workflows: ["Build and Deploy Site to GitHub Pages"]
+    types:
+      - completed
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -22,32 +24,17 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  check-codeql:
-    name: Check CodeQL Analysis
+  publish-gpr:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-24.04
-    # Continue workflow even if this job fails due to inability to find and/or check CodeQL workflow
-    continue-on-error: true
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4.2.2
 
-      - name: Check CodeQL Workflow Status
-        uses: octokit/request-action@v2.4.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          route: GET /repos/${{ github.repository }}/actions/workflows/CodeQL.yml/runs
-          query: |
-            {
-              "status": "success",
-              "event": "push",
-              "branch": "${{ github.ref_name }}"
-            }
-
-  build:
-    needs: check-codeql
-    runs-on: ubuntu-24.04
     steps:
+      - name: Login to GitHub Package Registry
+        run: npm login --registry=https://npm.pkg.github.com/ --scope=@netwk-pro --always-auth --username "sundevil311" --authToken ${{ secrets.GITHUB_TOKEN }}
+
       - name: Checkout repository
         uses: actions/checkout@v4.2.2
 
@@ -55,11 +42,9 @@ jobs:
         uses: actions/setup-node@v4.4.0
         with:
           node-version: lts/*
+          registry-url: https://npm.pkg.github.com/
           check-latest: true
           cache: npm
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
 
       - name: Cache Node.js modules
         uses: actions/cache@v4.2.3
@@ -89,23 +74,20 @@ jobs:
         run: mkdocs build
       # MkDocs Integration Ends
 
+      - name: Set up Git user
+        run: |
+          git config --global user.email "github@sl.neteng.cc"
+          git config --global user.name "SunDevil311"
+
       - name: Copy package.json to build directory
         run: cp package.json build/
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3.0.1
-        with:
-          name: site-build-${{ github.run_id }}
-          path: ./build
+      - name: Update package name for GPR
+        run: |
+          sed -i 's/"name": ".*"/"name": "@netwk-pro\/web"/' build/package.json
 
-  deploy:
-    needs: [check-codeql, build]
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-24.04
-
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4.0.5
+      - name: Publish package
+        working-directory: ./build
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
