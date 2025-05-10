@@ -67,7 +67,7 @@ jobs:
 
       - name: Install MkDocs and plugins
         run: |
-          pip install mkdocs mkdocs-material mkdocs-rss-plugin
+          pip install mkdocs mkdocs-material mkdocs-material-extensions mkdocs-get-deps mkdocs-rss-plugin
 
       # Strict mode temporarily disabled as workaround for mkdocs-material
       - name: Build MkDocs documentation
