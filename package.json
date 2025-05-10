@@ -29,6 +29,10 @@
     "url": "https://bio.neteng.pro"
   },
   "type": "module",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "main": "index.html",
   "scripts": {
     "clean": "rm -rf build/* node_modules package-lock.json && npm install",

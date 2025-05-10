@@ -23,17 +23,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  publish-gpr:
+  publish-npm:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-24.04
 
     steps:
-      - name: Login to GitHub Package Registry
-        run: npm login --registry=https://npm.pkg.github.com/ --scope=@netwk-pro --always-auth --username "sundevil311" --authToken ${{ secrets.SD311 }}
-
       - name: Checkout repository
         uses: actions/checkout@v4.2.2
 
@@ -41,7 +35,7 @@ jobs:
         uses: actions/setup-node@v4.4.0
         with:
           node-version: lts/*
-          registry-url: https://npm.pkg.github.com/
+          registry-url: https://registry.npmjs.org/
           check-latest: true
           cache: npm
 
@@ -54,6 +48,11 @@ jobs:
             ${{ runner.os }}-node-lts-build-
             ${{ runner.os }}-node-lts-
             ${{ runner.os }}-
+
+      - name: Authenticate with npm
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_NETPRO}" > .npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -81,12 +80,8 @@ jobs:
       - name: Copy package.json to build directory
         run: cp package.json build/
 
-      - name: Update package name for GPR
-        run: |
-          sed -i 's/"name": ".*"/"name": "@netwk-pro\/web"/' build/package.json
-
       - name: Publish package
         working-directory: ./build
-        run: npm publish
+        run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.SD311 }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
