@@ -1,7 +1,7 @@
 ---
 date:
   created: 2023-12-31
-  updated: 2025-04-30
+  updated: 2025-05-08
 title: Blog Home
 summary: The official blog of Network Pro Strategies (Network Pro&trade;).
 authors:
@@ -12,9 +12,4 @@ tags:
   - blog
 ---
 
-<sup>[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info/):
-`CC-BY-4.0 OR GPL-3.0-or-later`</sup>
-
 # Blog Home
-
-<!-- markdownlint-disable-file -->

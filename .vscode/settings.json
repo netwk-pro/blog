@@ -15,9 +15,9 @@
   },
   // ESLint configuration
   "eslint.workingDirectories": ["D:\\Netwk-Pro\\git\\blog"],
-  "eslint.validate": ["svelte", "javascript", "javascriptreact"],
+  "eslint.validate": ["html", "javascript", "javascriptreact", "json", "jsonc", "markdown", "css"],
   "eslint.lintTask.enable": true,
-  "eslint.lintTask.options": "--ext .mjs,.js --config eslint.config.mjs .",
+  "eslint.lintTask.options": "--ext .mjs,.js,.cjs,.json,.jsonc,.md,.css --config eslint.config.mjs .",
   "eslint.useESLintClass": true,
   "eslint.useFlatConfig": true,
   "eslint.codeActionsOnSave.mode": "problems",
@@ -28,6 +28,7 @@
     "markdown",
     "json",
     "jsonc",
+    "css"
   ],
   // Stylelint configuration
   "stylelint.configBasedir": "D:\\Netwk-Pro\\git\\blog",

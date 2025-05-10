@@ -3,7 +3,7 @@ site_url: https://blog.netwk.pro
 repo_url: https://github.com/netwk-pro/blog
 repo_name: GitHub
 docs_dir: docs_raw
-site_dir: dist/docs
+site_dir: public/docs
 
 theme:
   name: material
