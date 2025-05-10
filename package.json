@@ -1,6 +1,6 @@
 {
   "name": "@networkpro/blog",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "The official blog of Network Pro Strategies (Network Pro).",
   "keywords": [
     "security",
@@ -30,14 +30,8 @@
   },
   "type": "module",
   "main": "index.html",
-  "directories": {
-    "docs": "docs"
-  },
   "scripts": {
-    "clean": "rm -rf public/* node_modules package-lock.json && npm install",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "clean": "rm -rf build/* node_modules package-lock.json && npm install",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "lint": "eslint --ext .mjs,.js,.json,.jsonc --config eslint.config.mjs .",
@@ -45,10 +39,6 @@
     "lint:md": "npx markdownlint-cli2 \"**/*.{md,markdown}\" \"#node_modules/**\" \"#public/**\"",
     "lint:css": "stylelint '**/*.{css}' --ignore-path .stylelintignore",
     "lint:all": "npm run lint && npm run lint:md && npm run lint:css && npm run format",
-    "test:unit": "vitest",
-    "test": "npm run test:unit -- --run",
-    "test:watch": "vitest --watch",
-    "test:coverage": "VITEST=true vitest --coverage",
     "checkout": "npm run test && npm run lint:all"
   },
   "devDependencies": {

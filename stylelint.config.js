@@ -101,7 +101,6 @@ export default {
         unspecified: "bottomAlphabetical", // Place unspecified properties alphabetically at the bottom
       },
     ],
-    "order/properties-alphabetical-order": true, // Enforce alphabetical order for properties
   },
   reportDescriptionlessDisables: false, // Do not report disables without descriptions
   reportInvalidScopeDisables: true, // Report invalid scope disables

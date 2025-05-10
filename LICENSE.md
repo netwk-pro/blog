@@ -51,7 +51,7 @@ Web: <https://bio.neteng.pro>
 # Legal, Copyright, and Licensing
 
 **Network Pro Strategies**  
-**Effective Date:** April 21, 2025
+**Effective Date:** May 8, 2025
 
 &nbsp;
 
@@ -74,11 +74,10 @@ Web: <https://bio.neteng.pro>
 11. [Modifications and Liability Disclaimer](#disclaimer)
 12. [Contact](#contact)
 13. [Revisions](#revisions)
-14. [Attribution](#attribution)
 
 ---
 
-**Formats Available:** [HTML](./legal.html) | Markdown
+**Formats Available:** [HTML](https://docs.netwk.pro/legal) | Markdown
 
 <a name="ownership"></a>
 
@@ -146,7 +145,7 @@ This work is dual-licensed under:
 
 ## 6. Creative Commons License (CC BY 4.0)
 
-<sup>Formats: [HTML](https://legal.netwk.pro/html/CC-BY-4.0.html) | [Markdown](https://github.com/netwk-pro/netwk-pro-legal/blob/master/assets/license/CC-BY-4.0.md) | [Text](https://github.com/netwk-pro/netwk-pro-legal/blob/master/assets/license/CC-BY-4.0.txt) | [RDFa](https://github.com/netwk-pro/netwk-pro-legal/blob/master/assets/license/CC-BY-4.0-rdfa.xml) | [XMP](https://github.com/netwk-pro/netwk-pro-legal/blob/master/assets/license/CC-BY-4.0.xml)</sup>
+<sup>Formats: [HTML](https://netwk-pro.github.io/blog/assets/license/CC-BY-4.0.html) | [Markdown](https://netwk-pro.github.io/blog/assets/license/CC-BY-4.0.md) | [Text](https://netwk-pro.github.io/blog/assets/license/CC-BY-4.0.txt) | [RDFa](https://raw.githubusercontent.com/netwk-pro/blog/main/assets/license/CC-BY-4.0-rdfa.xml) | [XMP](https://raw.githubusercontent.com/netwk-pro/blog/main/assets/license/CC-BY-4.0.xml)</sup>
 
 Network Pro&trade; (the "Licensed Material") is licensed under **Creative
 Commons Attribution 4.0 International** (CC BY 4.0)
@@ -172,11 +171,11 @@ Permissions beyond the scope of this License—or instead of those permitted by 
 
 ## 7. GNU General Public License (GPL)
 
-<sup>Formats: [HTML](https://legal.netwk.pro/html/COPYING.html) | [Markdown](https://github.com/netwk-pro/netwk-pro-legal/blob/master/assets/license/COPYING.md) | [Text](https://github.com/netwk-pro/netwk-pro-legal/blob/master/assets/license/COPYING.txt) | [RDFa](https://github.com/netwk-pro/netwk-pro-legal/blob/master/assets/license/COPYING-rdfa.xml) | [ODT](https://github.com/netwk-pro/netwk-pro-legal/raw/refs/heads/master/assets/license/COPYING.odt)</sup>
+<sup>Formats: [HTML](https://netwk-pro.github.io/blog/assets/license/COPYING.html) | [Markdown](https://netwk-pro.github.io/blog/assets/license/COPYING.md) | [Text](https://netwk-pro.github.io/blog/assets/license/COPYING.txt) | [RDFa](https://raw.githubusercontent.com/netwk-pro/blog/main/assets/license/COPYING-rdfa.xml) | [ODT](https://raw.githubusercontent.com/netwk-pro/blog/main/assets/license/COPYING.odt)</sup>
 
 Network Pro&trade; is free software: you can redistribute it and/or modify it under the terms of the **GNU General Public License** (GNU GPL) as published by the [Free Software Foundation](https://www.fsf.org/), either version 3 of the License, or (at your option) any later version.
 
-You should have received a copy of the GNU General Public License along with this material. If not, see <[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
+You should have received a copy of the GNU General Public License along with this material. If not, see <[https://www.gnu.org/licenses](https://www.gnu.org/licenses)>.
 
 <code style="background: none; border: none; border-radius: 0; height: 50vh; outline: none; resize: none; width: 100%;">
 
@@ -243,42 +242,12 @@ This legal page may be updated to comply with legal or operational changes. The 
 
 <sub>[Back to top](#top)</sub>
 
-<a name="attribution"></a>
-
-## 13. Attribution
-
-Website base structure provided by HTML5 Boilerplate:  
-&lt;[https://html5boilerplate.com/](https://html5boilerplate.com/)>&gt;
-
-```markdown
-Copyright (c) HTML5 Boilerplate
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
-
-<sub>[Back to top](#top)</sub>
-
 ---
 
 <div style="font-size: 12px; font-weight: bold; text-align: center;">
 
-[Home](./) &nbsp; | &nbsp; [Terms of Use](./terms-of-use.html)  
-[Privacy Policy](./privacy.html) &nbsp; | &nbsp; Legal
+[Home](https://netwk.pro) &nbsp; | &nbsp; [Terms of Use](https://netwk.pro/terms-of-use.html)  
+[Privacy Policy](https://netwk.pro/privacy.html) &nbsp; | &nbsp; Legal
 
 </div>
 
@@ -287,7 +256,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <div style="font-size: 12px; text-align: center;">
 
 Copyright &copy; 2025  
-**[Network Pro Strategies](https://netwk.pro/)** (Network Pro&trade;)
+**[Network Pro Strategies](https://netwk.pro)** (Network Pro&trade;)
 
 Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;" slogan are [trademarks](#trademark) of Network Pro Strategies.
 

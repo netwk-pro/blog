@@ -78,7 +78,7 @@ Web: <https://bio.neteng.pro>
 
 ---
 
-**Formats Available:** [HTML](./legal.html) | Markdown
+**Formats Available:** [HTML](https://docs.netwk.pro/legal) | Markdown
 
 <a name="ownership"></a>
 
@@ -277,8 +277,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <div style="font-size: 12px; font-weight: bold; text-align: center;">
 
-[Home](./) &nbsp; | &nbsp; [Terms of Use](./terms-of-use.html)  
-[Privacy Policy](./privacy.html) &nbsp; | &nbsp; Legal
+[Home](https://netwk.pro/) &nbsp; | &nbsp; [Terms of Use](https://netwk.pro/terms-of-use.html)  
+[Privacy Policy](https://netwk.pro/privacy.html) &nbsp; | &nbsp; Legal
 
 </div>
 
