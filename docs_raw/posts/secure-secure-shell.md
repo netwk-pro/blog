@@ -16,6 +16,7 @@ tags:
 # Secure Secure Shell
 
 <!-- markdownlint-disable-file -->
+<!-- eslint-disable -->
 
 <div style="font-size: small; font-style: italic;">
 
