@@ -79,8 +79,8 @@ jobs:
           git config --global user.email "github@sl.neteng.cc"
           git config --global user.name "SunDevil311"
 
-      - name: Copy package.json to build directory
-        run: cp package.json build/
+      - name: Copy package.json and README.md to build directory
+        run: cp package.json README.MD build/
 
       - name: Publish package
         working-directory: ./build
