@@ -1,6 +1,6 @@
 {
   "name": "@networkpro/blog",
-  "version": "0.1.7",
+  "version": "1.0.0",
   "description": "The official blog of Network Pro Strategies (Network Pro).",
   "keywords": [
     "security",
@@ -14,7 +14,7 @@
     "blog",
     "netwk-pro"
   ],
-  "homepage": "https://github.com/netwk-pro/blog#readme",
+  "homepage": "https://blog.netwk.pro",
   "bugs": {
     "url": "https://github.com/netwk-pro/netwk-pro.github.io/issues"
   },
@@ -41,7 +41,7 @@
     "lint": "eslint --ext .mjs,.js,.json,.jsonc --config eslint.config.mjs .",
     "lint:fix": "eslint --ext .mjs,.js,.json,.jsonc --config eslint.config.mjs . --fix",
     "lint:md": "npx markdownlint-cli2 \"**/*.{md,markdown}\" \"#node_modules/**\" \"#build/**\"",
-    "lint:css": "stylelint '**/*.{css}' --ignore-path .stylelintignore",
+    "lint:css": "npx stylelint \"docs_raw/styles/*.css\" --ignore-path .stylelintignore",
     "lint:all": "npm run lint && npm run lint:md && npm run lint:css && npm run format",
     "checkout": "npm run test && npm run lint:all"
   },

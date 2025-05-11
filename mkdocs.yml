@@ -1,6 +1,6 @@
 site_name: Network Pro Strategies
 site_url: https://blog.netwk.pro
-repo_url: https://github.com/netwk-pro/blog
+repo_url: https://github.com/netwk-pro/netwk-pro.github.io
 repo_name: GitHub
 docs_dir: docs_raw
 site_dir: build/
@@ -108,5 +108,6 @@ nav:
       - index.md
   - Contributing:
       - contributing.md
-  - Tag Index: tags.md
+  - Tags:
+      - Tag Index: tags.md
   - Website: https://netwk.pro

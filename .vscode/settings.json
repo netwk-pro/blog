@@ -31,6 +31,8 @@
   "css.customData": [
     ".vscode/customData.json" // Path to your custom data file
   ],
+  // Locations of CSS files for validation
+  "css.styleSheets": ["**/*.css", "docs_raw/styles/*.css"],
   "markdown.validate.ignoredLinks": [
     "#sshd",
     "#top",

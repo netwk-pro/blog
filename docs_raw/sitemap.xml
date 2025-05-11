@@ -10,9 +10,9 @@ This file is part of Network Pro
 
   <url>
 
-    <loc>https://blog.netwk.pro/</loc>
+    <loc>https://blog.netwk.pro</loc>
 
-    <lastmod>2025-04-18</lastmod>
+    <lastmod>2025-05-10</lastmod>
 
     <changefreq>weekly</changefreq>
 
@@ -22,11 +22,11 @@ This file is part of Network Pro
 
   <url>
 
-    <loc>https://blog.netwk.pro/privacy-policy</loc>
+    <loc>https://blog.netwk.pro/2025/04/30/our-blog-is-live/</loc>
 
-    <lastmod>2025-04-18</lastmod>
+    <lastmod>2025-05-10</lastmod>
 
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
 
     <priority>0.8</priority>
 
@@ -34,37 +34,37 @@ This file is part of Network Pro
 
   <url>
 
-    <loc>https://blog.netwk.pro/license</loc>
+    <loc>https://blog.netwk.pro/2015/01/04/secure-secure-shell/</loc>
 
-    <lastmod>2025-04-18</lastmod>
+    <lastmod>2025-05-10</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.7</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://blog.netwk.pro/tags</loc>
+
+    <lastmod>2025-05-10</lastmod>
 
     <changefreq>weekly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
   <url>
 
-    <loc>https://blog.netwk.pro/terms-conditions</loc>
+    <loc>https://blog.netwk.pro/contributing</loc>
 
-    <lastmod>2025-04-18</lastmod>
-
-    <changefreq>monthly</changefreq>
-
-    <priority>0.7</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://blog.netwk.pro/terms-of-use</loc>
-
-    <lastmod>2025-04-18</lastmod>
+    <lastmod>2025-05-10</lastmod>
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.5</priority>
 
   </url>
 

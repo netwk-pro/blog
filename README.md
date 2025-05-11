@@ -52,8 +52,8 @@ Web: <https://bio.neteng.pro>
 
 </section>
 
-[![Build/Test, Publish to Registries](https://github.com/netwk-pro/netwk-pro.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/netwk-pro/netwk-pro.github.io/actions/workflows/build.yml) [![Deploy to GitHub Pages](https://github.com/netwk-pro/netwk-pro.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/netwk-pro/netwk-pro.github.io/actions/workflows/deploy.yml)  
-[![npm Version](https://img.shields.io/npm/v/%40networkpro%2Fweb?registry_uri=https%3A%2F%2Fregistry.npmjs.com&style=flat&logo=npm&logoSize=auto&labelColor=fffff&color=0c7ebe)](https://www.npmjs.com/package/@networkpro/web) [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://github.com/netwk-pro/netwk-pro.github.io/blob/master/CODE_OF_CONDUCT.md)
+[![Build Site and Deploy to GH Pages](https://github.com/netwk-pro/blog/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/netwk-pro/blog/actions/workflows/build-and-deploy.yml) [![Publish to Registries](https://github.com/netwk-pro/blog/actions/workflows/publish.yml/badge.svg)](https://github.com/netwk-pro/blog/actions/workflows/publish.yml)  
+[![NPM Version](https://img.shields.io/npm/v/%40networkpro%2Fblog?registry_uri=https%3A%2F%2Fregistry.npmjs.com&style=flat&logo=npm&color=%23CB3837)](https://www.npmjs.com/package/@networkpro/blog) [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://github.com/netwk-pro/netwk-pro.github.io/blob/master/CODE_OF_CONDUCT.md)
 
 ## Security That Respects You
 
