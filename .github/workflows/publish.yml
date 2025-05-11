@@ -80,7 +80,7 @@ jobs:
           git config --global user.name "SunDevil311"
 
       - name: Copy package.json and README.md to build directory
-        run: cp package.json README.MD build/
+        run: cp package.json README.md build/
 
       - name: Publish package
         working-directory: ./build
