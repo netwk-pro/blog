@@ -64,6 +64,10 @@ Let’s build something secure, sustainable, and respectful of your values.
 
 📩 [Contact us](https://contact.neteng.pro) today to get started.
 
+&nbsp;
+
+**Network Pro™** | _Cybersecurity that respects your values._
+
 ---
 
 <div style="font-size: 12px; text-align: center;">

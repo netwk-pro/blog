@@ -1,4 +1,4 @@
-site_name: Network Pro Strategies
+site_name: Network Pro™ Blog
 site_url: https://blog.netwk.pro
 repo_url: https://github.com/netwk-pro/netwk-pro.github.io
 repo_name: GitHub
@@ -95,6 +95,9 @@ plugins:
       blog_dir: .
       archive_date_format: MMMM yyyy
       post_excerpt: required
+      categories: true
+      categories_toc: true
+      authors: true
   - tags:
       tags_file: tags.md
   - rss:
@@ -104,8 +107,7 @@ plugins:
         as_update: date.updated
 
 nav:
-  - Blog Home:
-      - index.md
+  - Home: index.md
   - Contributing:
       - contributing.md
   - Tags:

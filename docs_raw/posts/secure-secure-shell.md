@@ -1,7 +1,7 @@
 ---
 date:
   created: 2015-01-04
-  updated: 2025-05-04
+  updated: 2025-05-11
 title: Secure Secure Shell
 summary: Secure shell (SSHD) hardening guide.
 authors:
@@ -514,8 +514,6 @@ There were three major changes:
 You can see the [full list of changes][changelog] on github.
 I promise not to use `git push -f`.
 
----
-
 [snowden-docs]: <https://www.spiegel.de/international/germany/inside-the-nsa-s-war-on-internet-security-a-1010361.html>)  
 [compat]: <http://ssh-comparison.quendi.de/comparison.html>  
 [dh]: <https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange>  
@@ -547,6 +545,12 @@ I promise not to use `git push -f`.
 [changelog]: <https://github.com/stribika/stribika.github.io/commits/master/_posts/2015-01-04-secure-secure-shell.md>  
 [bug779880]: <https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=779880>  
 [sloth]: <https://www.mitls.org/downloads/transcript-collisions.pdf>
+
+&nbsp;
+
+**Network Pro™** | _Cybersecurity that respects your values._
+
+---
 
 <div style="font-size: 12px; text-align: center;">
 
