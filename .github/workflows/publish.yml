@@ -97,6 +97,9 @@ jobs:
           git config --global user.email "github@sl.neteng.cc"
           git config --global user.name "SunDevil311"
 
+      - name: Copy package.json and README.md to build directory
+        run: cp package.json README.md build/
+
       - name: Publish package to npmjs
         working-directory: ./build
         run: npm publish --access public
@@ -129,6 +132,9 @@ jobs:
       - name: Update package name for GPR
         run: |
           sed -i 's/"name": ".*"/"name": "@netwk-pro\/blog"/' build/package.json
+
+      - name: Copy package.json and README.md to build directory
+        run: cp package.json README.md build/
 
       - name: Publish package to GPR
         working-directory: ./build
