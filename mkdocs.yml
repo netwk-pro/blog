@@ -9,8 +9,8 @@ theme:
   name: material
   language: en
   font: false
-  logo: img/logo.png
-  favicon: img/favicon.png
+  logo: /icon-512x512.png
+  favicon: /favicon.svg
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"

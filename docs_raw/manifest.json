@@ -1,0 +1,36 @@
+{
+  "name": "Network Pro Strategies",
+  "short_name": "Network Pro",
+  "description": "Access our cybersecurity and privacy blog anytime, anywhere. Fully optimized for speed, security, and mobile use, it's your gateway to expert insights, project highlights, and seamless connection—all in one place.",
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "minimal-ui"],
+  "background_color": "#191919",
+  "theme_color": "#ffc627",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/icon-512x512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-splash.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "orientation": "any",
+  "scope": "/",
+  "categories": ["blog", "security", "technology", "network", "privacy"]
+}

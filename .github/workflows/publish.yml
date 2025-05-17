@@ -23,45 +23,37 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  publish-npm:
+  build:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4.4.0
+        uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          registry-url: https://registry.npmjs.org/
           check-latest: true
           cache: npm
 
       - name: Cache Node.js modules
-        uses: actions/cache@v4.2.3
+        uses: actions/cache@v4
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-lts-${{ hashFiles('package-lock.json', 'package.json') }}
+          key: ${{ runner.os }}-node-lts-${{ hashFiles('package-lock.json', 'package.json', '.npmrc') }}
           restore-keys: |
             ${{ runner.os }}-node-lts-build-
             ${{ runner.os }}-node-lts-
             ${{ runner.os }}-
-
-      - name: Authenticate with npm
-        run: |
-          echo "@networkpro:registry=https://registry.npmjs.org/" > .npmrc
-          echo "//registry.npmjs.org/:_authToken=${NPM_NETPRO}" >> .npmrc
-        env:
-          NPM_NETPRO: ${{ secrets.NPM_NETPRO }}
 
       - name: Install Node.js dependencies
         run: npm ci
 
       # MkDocs Integration Begins
       - name: Set up Python
-        uses: actions/setup-python@v5.6.0
+        uses: actions/setup-python@v5
         with:
           python-version: "3.13"
 
@@ -74,16 +66,79 @@ jobs:
         run: mkdocs build
       # MkDocs Integration Ends
 
+      - name: Copy package.json and README.md to build directory
+        run: cp package.json README.md build/
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts
+          path: build/
+
+  publish-npm:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts
+          path: build/
+
+      - name: Set up Node.js for npmjs
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          check-latest: true
+          registry-url: https://registry.npmjs.org/
+          cache: npm
+
       - name: Set up Git user
         run: |
           git config --global user.email "github@sl.neteng.cc"
           git config --global user.name "SunDevil311"
 
-      - name: Copy package.json and README.md to build directory
-        run: cp package.json README.md build/
-
-      - name: Publish package
+      - name: Publish package to npmjs
         working-directory: ./build
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
+
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts
+          path: build/
+
+      - name: Set up Node.js for GPR
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          check-latest: true
+          registry-url: https://npm.pkg.github.com/
+          cache: npm
+
+      - name: Set up Git user
+        run: |
+          git config --global user.email "github@sl.neteng.cc"
+          git config --global user.name "SunDevil311"
+
+      - name: Update package name for GPR
+        run: |
+          sed -i 's/"name": ".*"/"name": "@netwk-pro\/blog"/' build/package.json
+
+      - name: Publish package to GPR
+        working-directory: ./build
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.SUNDEV }}

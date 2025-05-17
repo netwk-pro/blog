@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: "Auto-assign issue or PR"
-        uses: pozil/auto-assign-issue@v2.2.0
+        uses: pozil/auto-assign-issue@v2
         with:
           repo-token: ${{ secrets.SD311 }}
           assignees: SunDevil311

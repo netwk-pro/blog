@@ -1,8 +1,8 @@
 ---
 date:
   created: 2025-04-30
-  updated: 2025-05-05
-title: Our Blog is Live!
+  updated: 2025-05-16
+title: We're Live!
 summary: Launch of the official blog of Network Pro Strategies (Network Pro&trade;).
 authors:
   - team
@@ -11,7 +11,11 @@ tags:
   - blog
 ---
 
-# We're Live
+<!-- markdownlint-disable MD026 -->
+
+# We're Live!
+
+<!-- markdownlint-enable MD026 -->
 
 ## 🛡️ Welcome to the Network Pro&trade; Blog: Cybersecurity. Privacy. Open Knowledge
 

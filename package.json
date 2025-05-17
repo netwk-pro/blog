@@ -1,6 +1,6 @@
 {
   "name": "@networkpro/blog",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The official blog of Network Pro Strategies (Network Pro).",
   "keywords": [
     "security",
@@ -33,7 +33,8 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "main": "index.html",
+  "main": "docs_raw/index.md",
+  "styles": "docs_raw/styles/global.css",
   "scripts": {
     "clean": "rm -rf build/* node_modules package-lock.json && npm install",
     "format": "prettier --check .",
@@ -42,8 +43,7 @@
     "lint:fix": "eslint --ext .mjs,.js,.json,.jsonc --config eslint.config.mjs . --fix",
     "lint:md": "npx markdownlint-cli2 \"**/*.{md,markdown}\" \"#node_modules/**\" \"#build/**\"",
     "lint:css": "npx stylelint \"docs_raw/styles/*.css\" --ignore-path .stylelintignore",
-    "lint:all": "npm run lint && npm run lint:md && npm run lint:css && npm run format",
-    "checkout": "npm run test && npm run lint:all"
+    "lint:all": "npm run lint && npm run lint:md && npm run lint:css && npm run format"
   },
   "devDependencies": {
     "@eslint/js": "^9.26.0",

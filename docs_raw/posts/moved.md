@@ -1,6 +1,7 @@
 ---
 date:
   created: 2025-05-11
+  updated: 2025-05-16
 title: The Network Pro™ Blog Has Moved
 summary: Announcement of blog move from subdirectory of main site to a dedicated, blog subdomain.
 authors:
@@ -60,7 +61,7 @@ Need help securing your infrastructure or want a second set of eyes on a deploym
 
 &nbsp;
 
-**Network Pro™** | _Cybersecurity that respects your values._
+**Network Pro&trade;** | _Cybersecurity that respects your values._
 
 ---
 

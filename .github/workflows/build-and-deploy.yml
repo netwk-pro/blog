@@ -29,7 +29,7 @@ jobs:
     continue-on-error: true
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
 
       - name: Set up GitHub CLI
         run: sudo apt-get install gh
@@ -56,10 +56,10 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4.4.0
+        uses: actions/setup-node@v4
         with:
           node-version: lts/*
           check-latest: true
@@ -69,10 +69,10 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Cache Node.js modules
-        uses: actions/cache@v4.2.3
+        uses: actions/cache@v4
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-lts-${{ hashFiles('package-lock.json', 'package.json') }}
+          key: ${{ runner.os }}-node-lts-${{ hashFiles('package-lock.json', 'package.json', '.npmrc') }}
           restore-keys: |
             ${{ runner.os }}-node-lts-build-
             ${{ runner.os }}-node-lts-
@@ -83,7 +83,7 @@ jobs:
 
       # MkDocs Integration Begins
       - name: Set up Python
-        uses: actions/setup-python@v5.6.0
+        uses: actions/setup-python@v5
         with:
           python-version: "3.13"
 
@@ -100,7 +100,7 @@ jobs:
         run: cp package.json build/
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3.0.1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./build
 
@@ -114,4 +114,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4.0.5
+        uses: actions/deploy-pages@v4
