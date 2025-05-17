@@ -26,7 +26,6 @@ jobs:
   build:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-24.04
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -76,12 +75,9 @@ jobs:
           path: build/
 
   publish-npm:
+    needs: build
     runs-on: ubuntu-24.04
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
@@ -111,9 +107,6 @@ jobs:
     needs: build
     runs-on: ubuntu-24.04
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
@@ -141,4 +134,4 @@ jobs:
         working-directory: ./build
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.SUNDEV }}
+          NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
