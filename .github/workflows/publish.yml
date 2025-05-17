@@ -35,22 +35,12 @@ jobs:
         with:
           node-version: lts/*
           check-latest: true
-          cache: npm
-
-      - name: Cache Node.js modules
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-lts-${{ hashFiles('package-lock.json', 'package.json', '.npmrc') }}
-          restore-keys: |
-            ${{ runner.os }}-node-lts-build-
-            ${{ runner.os }}-node-lts-
-            ${{ runner.os }}-
+          cache: npm # This handles caching ~/.npm based on package.json
 
       - name: Install Node.js dependencies
         run: npm ci
 
-      # MkDocs Integration Begins
+      # MkDocs Integration
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -60,10 +50,8 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material mkdocs-material-extensions mkdocs-get-deps mkdocs-rss-plugin
 
-      # Strict mode temporarily disabled as workaround for mkdocs-material
       - name: Build MkDocs documentation
         run: mkdocs build
-      # MkDocs Integration Ends
 
       - name: Copy package.json and README.md to build directory
         run: cp package.json README.md build/
@@ -88,17 +76,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          check-latest: true
           registry-url: https://registry.npmjs.org/
-          cache: npm
 
       - name: Set up Git user
         run: |
           git config --global user.email "github@sl.neteng.cc"
           git config --global user.name "SunDevil311"
-
-      - name: Copy package.json and README.md to build directory
-        run: cp package.json README.md build/
 
       - name: Publish package to npmjs
         working-directory: ./build
@@ -120,9 +103,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          check-latest: true
           registry-url: https://npm.pkg.github.com/
-          cache: npm
 
       - name: Set up Git user
         run: |
@@ -132,9 +113,6 @@ jobs:
       - name: Update package name for GPR
         run: |
           sed -i 's/"name": ".*"/"name": "@netwk-pro\/blog"/' build/package.json
-
-      - name: Copy package.json and README.md to build directory
-        run: cp package.json README.md build/
 
       - name: Publish package to GPR
         working-directory: ./build
