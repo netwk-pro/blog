@@ -23,7 +23,7 @@ tags:
 
 This sleek and lightweight keyboard doesn’t just look good—it respects your data, <em>always</em>. No network permissions, no shady tracking, no unnecessary bloat. HeliBoard is here for those who type with purpose AND privacy in mind. 🛡️
 
-### 💡 Key Features</h3>
+### 💡 Key Features
 
 - Clean Material Design UI 🎨
 - Built-in themes with dark mode support 🌙

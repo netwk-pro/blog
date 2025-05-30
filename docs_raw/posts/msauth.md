@@ -24,13 +24,14 @@ tags:
 
 But instead of just exporting... consider **upgrading your security**.
 
-<!-- more -->
-
 💡 We recommend switching to **privacy-first open-source alternatives** like:  
 ✅ **[Ente Auth](https://ente.io/auth/)** – End-to-end encrypted, sleek UI, cross-device sync.  
 ✅ **[Aegis Authenticator](https://getaegis.app/)** – PIN-protected, backup-friendly, fully offline.
 
-**Why open-source?**  
+<!-- more -->
+
+### Why open-source?
+
 🔓 Transparent  
 📱 Feature-rich  
 🚫 No tracking  
