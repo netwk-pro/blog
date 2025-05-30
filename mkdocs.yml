@@ -41,7 +41,7 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - toc.follow
-    #- toc.integrate
+    - toc.integrate
     - navigation.top
     - search.suggest
 
@@ -76,11 +76,11 @@ extra:
       name: Network Pro on LinkedIn
       link: https://linkedin.com/company/netwk-pro/
     - icon: fontawesome/brands/mastodon
-      name: Network Pro on Mastoon
+      name: Network Pro on Mastodon
       link: https://noc.social/@neteng_pro/
     - icon: fontawesome/solid/at
       name: Contact Us
-      link: https://contact.neteng.pro/
+      link: https://netwk.pro/contact
 
 copyright: >
   Copyright &copy; 2025 Network Pro Strategies (Network Pro&trade;) –
@@ -108,8 +108,6 @@ plugins:
 
 nav:
   - Home: index.md
-  - Contributing:
-      - contributing.md
-  - Tags:
-      - Tag Index: tags.md
+  - Tags: tags.md
   - Website: https://netwk.pro
+  - Contributing: contributing.md

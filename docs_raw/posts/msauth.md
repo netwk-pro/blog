@@ -1,0 +1,50 @@
+---
+date:
+  created: 2025-05-29
+title: Microsoft Authenticator Users - Major Change Incoming
+summary: Microsoft Authenticator is phasing out its password autofill sync feature by July 2025.
+authors:
+  - team
+categories:
+  - Open-Source
+  - Security
+tags:
+  - security
+  - mfa
+  - microsoft
+  - ente-auth
+  - aegis-auth
+---
+
+# 🔐 Microsoft Authenticator Users: Major Change Incoming
+
+## Microsoft Authenticator is phasing out its password autofill sync feature by July 2025
+
+🚨 Heads up! If you rely on Microsoft Authenticator's password autofill sync to store or auto-fill your passwords, you'll **lose access unless you export them NOW**.
+
+But instead of just exporting... consider **upgrading your security**.
+
+<!-- more -->
+
+💡 We recommend switching to **privacy-first open-source alternatives** like:  
+✅ **[Ente Auth](https://ente.io/auth/)** – End-to-end encrypted, sleek UI, cross-device sync.  
+✅ **[Aegis Authenticator](https://getaegis.app/)** – PIN-protected, backup-friendly, fully offline.
+
+**Why open-source?**  
+🔓 Transparent  
+📱 Feature-rich  
+🚫 No tracking  
+🧠 Community-driven security
+
+🛡 Take back control of your digital safety today.
+
+📥 Backup & migrate your data now before the cutoff.
+
+Check the link below for full details:  
+🔗 [bleepingcomputer.com/news/security/microsoft-authenticator-now-warns-to-export-passwords-before-july-cutoff/](https://www.bleepingcomputer.com/news/security/microsoft-authenticator-now-warns-to-export-passwords-before-july-cutoff/)
+
+&nbsp;
+
+![Microsoft Authenticator](../img/msauth-promo.png)
+
+<!-- cspell:ignore ente -->
