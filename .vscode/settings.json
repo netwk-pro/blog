@@ -78,6 +78,8 @@
     "#standards",
     "#response",
     "#enforce",
-    "#attribute"
+    "#attribute",
+    "#bugs",
+    "#features"
   ]
 }

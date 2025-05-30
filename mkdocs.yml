@@ -115,4 +115,6 @@ nav:
   - Home: index.md
   - Tags: tags.md
   - Website: https://netwk.pro
-  - Contributing: contributing.md
+  - Contributing:
+      - Code of Conduct: CODE_OF_CONDUCT.md
+      - CONTRIBUTING.md
