@@ -9,7 +9,10 @@
     "FOSS",
     "Gboard",
     "Heli",
-    "heliboard"
+    "heliboard",
+    "mkdocs",
+    "NETPRO",
+    "npmjs"
   ],
   "ignorePaths": [
     ".gitignore",
