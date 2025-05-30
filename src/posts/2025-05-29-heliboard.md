@@ -39,11 +39,11 @@ Whether you're switching from Gboard or just want something more minimal and eth
 GitHub: [github.com/Helium314/HeliBoard](https://github.com/Helium314/HeliBoard)  
 F-Droid: [f-droid.org/packages/helium314.keyboard/](https://f-droid.org/packages/helium314.keyboard/)
 
-🛠️ Open-source. Lightweight. Transparent. HeliBoard isn’t just a keyboard
+🛠️ Open-source. Lightweight. Transparent. HeliBoard isn’t just a keyboard—it's a philosophy.
 
 **Weekly FOSS gems like this remind us: we have powerful alternatives, built by passionate devs, made for people who care. _Let's support that_.**
 
-Got a favorite FOSS project? Let us know at [social@neteng.pro](mailto:social@neteng.pro).
+Got a favorite FOSS project? Let us know at [social@neteng.pro](mailto:social@neteng.pro), and we might feature it next!
 
 &nbsp;
 
