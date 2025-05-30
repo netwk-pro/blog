@@ -325,46 +325,6 @@ footer .container {
   }
 }
 
-.imgtext {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.imgtext td {
-  padding: 10px 5px;
-  border-collapse: collapse;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
-  word-break: normal;
-}
-
-.imgtext th {
-  border-collapse: collapse;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  overflow: hidden;
-  padding: 10px 5px;
-  word-break: normal;
-}
-
-.imgtext .imgtext-cell {
-  text-align: left;
-  vertical-align: middle;
-}
-
-@media screen and (max-width: 767px) {
-  .imgtext {
-    width: auto !important;
-  }
-  .imgtext col {
-    width: auto !important;
-  }
-  .imgtext-wrap {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
 /* ===========================================================================
    Custom CSS
 =========================================================================== */

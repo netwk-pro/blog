@@ -1,13 +1,10 @@
-/* markdownlint-disable MD037, MD041 */
-
-/*! ==========================================================================
+/* ==========================================================================
+Copyright © 2025 Network Pro Strategies (Network Pro)
 SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Pro.
 =========================================================================== */
 
-/* markdownlint-enable MD037, MD041 */
-
-/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+/*! Modified from HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 
@@ -312,3 +309,5 @@ a:visited:hover {
     page-break-after: avoid;
   }
 }
+
+/* cspell:ignore camen textareas */

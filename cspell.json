@@ -12,7 +12,8 @@
     "heliboard",
     "mkdocs",
     "NETPRO",
-    "npmjs"
+    "npmjs",
+    "stylesheet"
   ],
   "ignorePaths": [
     ".gitignore",
