@@ -48,5 +48,3 @@ Got a favorite FOSS project? Let us know at [social@neteng.pro](mailto:social@ne
 &nbsp;
 
 ![HeliBoard](../img/heliboard-promo.png)
-
-<!-- cspell:ignore imgtext -->
