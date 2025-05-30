@@ -1,17 +1,22 @@
-<!-- =========================================================================
-Copyright © 2025 Network Pro Strategies (Network Pro™)
-SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
-This file is part of Network Pro.
-========================================================================== -->
+---
+date:
+  created: 2023-12-31
+  updated: 2025-05-30
+title: Contributing to Network Pro™
+summary: Instructions for getting involved and contributing to Network Pro Strategies.
+authors:
+  - team
+tags:
+  - network-pro
+  - contributing
+---
+
+<a name="top"></a>
 
 <sup>[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info):
 `CC-BY-4.0 OR GPL-3.0-or-later`</sup>
 
-<section id="top">
-
-# Contributing to Network Pro Strategies
-
-</section>
+# Contributing to Network Pro™
 
 ♥ [Network Pro Strategies](https://netwk.pro/) and want to get involved?
 Thanks! We're actively looking for folks interested in helping out and there
@@ -40,11 +45,9 @@ restrictions:
 
 <sub>[Back to top](#top)</sub>
 
-<section id="bugs">
+<a name="bugs"></a>
 
 ## Bug reports
-
-</section>
 
 A bug is a _demonstrable problem_ that is caused by the code in the repository.
 Good bug reports are extremely helpful - thank you!
@@ -86,11 +89,9 @@ Example:
 
 <sub>[Back to top](#top)</sub>
 
-<section id="features">
+<a name="features"></a>
 
 ## Feature requests
-
-</section>
 
 Feature requests are welcome. But take a moment to find out whether your idea
 fits with the scope and aims of the project. It's up to _you_ to make a strong
@@ -99,11 +100,9 @@ provide as much detail and context as possible.
 
 <sub>[Back to top](#top)</sub>
 
-<section id="pull-requests">
+<a name="pull-requests"></a>
 
 ## Pull requests
-
-</section>
 
 Good pull requests - patches, improvements, new features - are a fantastic
 help. They should remain focused in scope and avoid containing unrelated
@@ -120,88 +119,89 @@ accurate comments, etc.) and any other requirements (such as test coverage).
 Adhering to the following process is the best way to get your work
 included in the project:
 
-1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your
-   fork, and configure the remotes:
+<code><strong>1.</strong></code> [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your fork, and configure the remotes:
 
-   ```bash
-   # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/netwk-pro.github.io.git
-   # Navigate to the newly cloned directory
-   cd netwk-pro.github.io
-   # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/netwk-pro/netwk-pro.github.io.git
-   ```
+```bash
+# Clone your fork of the repo into the current directory
+git clone https://github.com/<your-username>/netwk-pro.github.io.git
 
-2. If you cloned a while ago, get the latest changes from upstream:
+# Navigate to the newly cloned directory
+cd netwk-pro.github.io
 
-   ```bash
-   git checkout master
-   git pull upstream master
-   ```
+# Assign the original repo to a remote called "upstream"
+git remote add upstream https://github.com/netwk-pro/netwk-pro.github.io.git
+```
 
-3. Create a new topic branch (off the master project development branch) to
-   contain your feature, change, or fix:
+<code><strong>2.</strong></code> If you cloned a while ago, get the latest changes from upstream:
 
-   ```bash
-   git checkout -b <topic-branch-name>
-   ```
+```bash
+git checkout master
+git pull upstream master
+```
 
-4. Install locked dependencies:
+<code><strong>3.</strong></code> Create a new topic branch (off the master project development branch) to
+contain your feature, change, or fix:
 
-   ```bash
-   npm ci
-   ```
+```bash
+git checkout -b <topic-branch-name>
+```
 
-   Ensure that your `node` and `npm` versions are compatible with the `engines`
-   specification in `package.json`.
+<code><strong>4.</strong></code> Install locked dependencies:
 
-5. Lint your code locally. As reflected in the `devDependencies`, the following
-   linting and formatting tools &mdash; or equivalent &mdash; should be used:
+```bash
+npm ci
+```
 
-   - [Prettier](https://prettier.io/)
-   - [ESLint](https://eslint.org/)
-   - [markdownlint](https://github.com/DavidAnson/markdownlint) and
-     [markdownlint2](https://github.com/DavidAnson/markdownlint-cli2)
-   - [Stylelint](https://stylelint.io/)
+Ensure that your `node` and `npm` versions are compatible with the `engines`
+specification in `package.json`.
 
-6. Commit your changes in logical chunks. Please adhere to these [git commit
-   message guidelines](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-   or your code is unlikely be merged into the main project. Use Git's
-   [interactive rebase](https://help.github.com/articles/about-git-rebase/)
-   feature to tidy up your commits before making them public.
+<code><strong>5.</strong></code> Lint your code locally. As reflected in the `devDependencies`, the following
+linting and formatting tools &mdash; or equivalent &mdash; should be used:
 
-7. Locally merge (or rebase) the upstream development branch into your topic branch:
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/)
+- [markdownlint](https://github.com/DavidAnson/markdownlint) and
+  [markdownlint2](https://github.com/DavidAnson/markdownlint-cli2)
+- [Stylelint](https://stylelint.io/)
 
-   ```bash
-   git pull [--rebase] upstream master
-   ```
+<code><strong>6.</strong></code> Commit your changes in logical chunks. Please adhere to these [git commit
+message guidelines](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+or your code is unlikely be merged into the main project. Use Git's
+[interactive rebase](https://help.github.com/articles/about-git-rebase/)
+feature to tidy up your commits before making them public.
 
-8. Update any applicable test cases and run tests:
+<code><strong>7.</strong></code> Locally merge (or rebase) the upstream development branch into your topic branch:
 
-   ```bash
-   npm run test
-   ```
+```bash
+git pull [--rebase] upstream master
+```
 
-   Tests must cover changes and pass to be accepted.
+<code><strong>8.</strong></code> Update any applicable test cases and run tests:
 
-9. Run build and commit changes to build:
+```bash
+npm run test
+```
 
-   ```bash
-   npm run build
-   git add build/
-   git commit
-   ```
+Tests must cover changes and pass to be accepted.
+
+<code><strong>9.</strong></code> Run build and commit changes to build:
+
+```bash
+npm run build
+git add build/
+git commit
+```
 
    <!-- markdownlint-disable MD029 -->
 
-10. Push your topic branch up to your fork:
+<code><strong>10.</strong></code> Push your topic branch up to your fork:
 
 ```bash
 git push origin <topic-branch-name>
 ```
 
-11. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-    with a clear title and description.
+<code><strong>11.</strong></code> [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
+with a clear title and description.
 
 <!-- markdownlint-enable MD029 -->
 
@@ -228,7 +228,7 @@ owners to license your work under the terms of [CC BY 4.0](https://netwk.pro/lic
 Copyright &copy; 2025  
 **[Network Pro Strategies](https://netwk.pro/)** (Network Pro&trade;)
 
-Network Pro&trade;, the shield logo, and the "Locking Down Netwspan&trade;" slogan are [trademarks](https://netwk.pro/license#trademark) of Network Pro Strategies.
+Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;" slogan are [trademarks](https://netwk.pro/license#trademark) of Network Pro Strategies.
 
 Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
