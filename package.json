@@ -1,18 +1,20 @@
 {
   "name": "@networkpro/blog",
-  "version": "1.0.11",
-  "description": "The official blog of Network Pro Strategies (Network Pro).",
+  "version": "1.0.12",
+  "description": "The official blog of Network Pro Strategies (Network Pro™).",
   "keywords": [
-    "security",
+    "advisory",
+    "android",
+    "blog",
+    "consulting",
+    "cybersecurity",
+    "foss",
+    "linux",
+    "open-source",
+    "netwk-pro",
     "networking",
     "privacy",
-    "cybersecurity",
-    "advisory",
-    "consulting",
-    "android",
-    "linux",
-    "blog",
-    "netwk-pro"
+    "security"
   ],
   "homepage": "https://blog.netwk.pro",
   "bugs": {
@@ -29,11 +31,6 @@
     "url": "https://bio.neteng.pro"
   },
   "type": "module",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "main": "docs_raw/index.md",
   "styles": "docs_raw/styles/global.css",
   "scripts": {
     "clean": "rm -rf build/* node_modules package-lock.json && npm install",
@@ -57,7 +54,6 @@
     "markdownlint": "^0.38.0",
     "markdownlint-cli2": "^0.18.1",
     "postcss": "^8.5.4",
-    "postcss-html": "^1.8.0",
     "prettier": "3.5.3",
     "stylelint": "^16.20.0",
     "stylelint-config-html": "^1.1.0",
