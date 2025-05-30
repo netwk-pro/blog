@@ -12,12 +12,12 @@ This file is part of Network Pro.
 }
 
 .poster-figure img {
-  max-width: 100%;
   border-radius: 8px;
+  max-width: 100%;
 }
 
 .poster-figure figcaption {
-  margin-top: 0.5rem;
-  font-style: italic;
   color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
 }
