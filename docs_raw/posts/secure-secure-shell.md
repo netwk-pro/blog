@@ -17,6 +17,7 @@ tags:
 
 <!-- markdownlint-disable-file -->
 <!-- eslint-disable -->
+<!-- cspell:disable -->
 
 <blockquote style="font-size: small; font-style: italic; font-weight: bold;">
 Originally published on 1/4/2015 by <a rel="noopener noreferrer" href="https://github.com/stribika">stribika</a> at:<br />

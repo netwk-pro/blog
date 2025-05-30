@@ -1,0 +1,34 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "acode",
+    "bleepingcomputer",
+    "bnav",
+    "fontawesome",
+    "FOSS",
+    "Gboard",
+    "Heli",
+    "heliboard"
+  ],
+  "ignorePaths": [
+    ".gitignore",
+    ".gitattributes",
+    "docs_raw/sitemap.xml",
+    "docs_raw/robots.txt",
+    "**/build/**",
+    "**/.cache/**",
+    "**/node_modules/**",
+    "**/docs/**"
+  ],
+  "ignoreWords": [],
+  "enableFiletypes": [
+    "javascript",
+    "typescript",
+    "json",
+    "markdown",
+    "html",
+    "svelte"
+  ],
+  "useGitignore": true
+}

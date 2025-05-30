@@ -1,6 +1,6 @@
 {
   "name": "@networkpro/blog",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "The official blog of Network Pro Strategies (Network Pro).",
   "keywords": [
     "security",
@@ -43,22 +43,23 @@
     "lint:fix": "eslint --ext .mjs,.js,.json,.jsonc --config eslint.config.mjs . --fix",
     "lint:md": "npx markdownlint-cli2 \"**/*.{md,markdown}\" \"#node_modules/**\" \"#build/**\"",
     "lint:css": "npx stylelint \"docs_raw/styles/*.css\" --ignore-path .stylelintignore",
-    "lint:all": "npm run lint && npm run lint:md && npm run lint:css && npm run format"
+    "lint:all": "npm run lint && npm run lint:md && npm run lint:css && npm run format",
+    "upgrade": "npx npm-check-updates -u"
   },
   "devDependencies": {
-    "@eslint/js": "^9.26.0",
+    "@eslint/js": "^9.27.0",
     "@eslint/json": "^0.12.0",
     "autoprefixer": "^10.4.21",
-    "browserslist": "^4.24.5",
-    "eslint": "^9.26.0",
+    "browserslist": "^4.25.0",
+    "eslint": "^9.27.0",
     "eslint-config-prettier": "^10.1.5",
-    "globals": "^16.1.0",
+    "globals": "^16.2.0",
     "markdownlint": "^0.38.0",
-    "markdownlint-cli2": "^0.17.2",
-    "postcss": "^8.5.3",
+    "markdownlint-cli2": "^0.18.1",
+    "postcss": "^8.5.4",
     "postcss-html": "^1.8.0",
     "prettier": "3.5.3",
-    "stylelint": "^16.19.1",
+    "stylelint": "^16.20.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^16.0.0",
     "stylelint-order": "^7.0.0"
