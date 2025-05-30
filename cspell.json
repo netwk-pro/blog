@@ -13,7 +13,8 @@
     "mkdocs",
     "NETPRO",
     "npmjs",
-    "stylesheet"
+    "stylesheet",
+    "vcard"
   ],
   "ignorePaths": [
     ".gitignore",
