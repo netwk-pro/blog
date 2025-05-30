@@ -1,0 +1,23 @@
+/*! ==========================================================================
+src/stylesheets/extra.css
+
+Copyright © 2025 Network Pro Strategies (Network Pro™)
+SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
+This file is part of Network Pro.
+=========================================================================== */
+
+.poster-figure {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.poster-figure img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.poster-figure figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #666;
+}

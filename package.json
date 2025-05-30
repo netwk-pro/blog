@@ -1,6 +1,6 @@
 {
   "name": "@networkpro/blog",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "The official blog of Network Pro Strategies (Network Pro™).",
   "keywords": [
     "advisory",
@@ -31,24 +31,27 @@
     "url": "https://bio.neteng.pro"
   },
   "type": "module",
-  "styles": "docs_raw/styles/global.css",
   "scripts": {
-    "clean": "rm -rf build/* node_modules package-lock.json && npm install",
+    "dev": "mkdocs serve",
+    "start": "npm run dev",
+    "build": "mkdocs build",
+    "delete": "rm -rf build node_modules package-lock.json",
+    "clean": "npm run delete && npm cache clean --force && npm install",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
-    "lint": "eslint --ext .mjs,.js,.json,.jsonc --config eslint.config.mjs .",
-    "lint:fix": "eslint --ext .mjs,.js,.json,.jsonc --config eslint.config.mjs . --fix",
+    "lint": "eslint . --ext .mjs,.js,.json,.jsonc",
+    "lint:fix": "eslint . --ext .mjs,.js,.json,.jsonc --fix",
     "lint:md": "npx markdownlint-cli2 \"**/*.{md,markdown}\" \"#node_modules/**\" \"#build/**\"",
-    "lint:css": "npx stylelint \"docs_raw/styles/*.css\" --ignore-path .stylelintignore",
+    "lint:css": "npx stylelint \"**/*.css\" --ignore-path .stylelintignore",
     "lint:all": "npm run lint && npm run lint:md && npm run lint:css && npm run format",
     "upgrade": "npx npm-check-updates -u"
   },
   "devDependencies": {
-    "@eslint/js": "^9.27.0",
+    "@eslint/js": "^9.28.0",
     "@eslint/json": "^0.12.0",
     "autoprefixer": "^10.4.21",
     "browserslist": "^4.25.0",
-    "eslint": "^9.27.0",
+    "eslint": "^9.28.0",
     "eslint-config-prettier": "^10.1.5",
     "globals": "^16.2.0",
     "markdownlint": "^0.38.0",

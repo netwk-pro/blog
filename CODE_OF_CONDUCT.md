@@ -1,27 +1,24 @@
----
-date:
-  created: 2023-12-31
-  updated: 2025-05-10
-title: Code of Conduct
-summary: The Contributor Covenant Code of Conduct for our repositories.
-authors:
-  - team
-tags:
-  - network-pro
-  - contributing
----
+<!-- =========================================================================
+CODE_OF_CONDUCT.md
 
-<sup>[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info/):
-`CC-BY-4.0 OR GPL-3.0-or-later`</sup>
+Copyright © 2025 Network Pro Strategies (Network Pro™)
+SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
+This file is part of Network Pro.
+========================================================================== -->
 
 <a name="top"></a>
+
+[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info):
+`CC-BY-4.0 OR GPL-3.0-or-later`
 
 # Contributor Covenant Code of Conduct
 
 **Network Pro Strategies**  
-**Effective Date:** May 10, 2025
+**Effective Date:** 3/21/2025
 
-## Table of Contents
+&nbsp;
+
+## Contents
 
 - [Our Pledge](#pledge)
 - [Our Standards](#standards)
@@ -32,7 +29,7 @@ tags:
 
 ---
 
-<a name="pledge"></a>
+<section id="pledge">
 
 ## Our Pledge
 
@@ -46,9 +43,9 @@ identity and orientation.
 We pledge to act and interact in ways that contribute to an open, welcoming,
 diverse, inclusive, and healthy community.
 
-<sub>[Back to top](#top)</sub>
+</section>
 
-<a name="standards"></a>
+<section id="standards">
 
 ## Our Standards
 
@@ -76,7 +73,9 @@ Examples of unacceptable behavior include:
 
 <sub>[Back to top](#top)</sub>
 
-<a name="response"></a>
+</section>
+
+<section id="response">
 
 ## Responsibilities
 
@@ -94,7 +93,9 @@ Network Pro Strategies reserves the right, at its sole discretion, to remove, ed
 
 <sub>[Back to top](#top)</sub>
 
-<a name="scope"></a>
+</section>
+
+<section id="scope">
 
 ## Scope
 
@@ -106,7 +107,9 @@ representative at an online or offline event.
 
 <sub>[Back to top](#top)</sub>
 
-<a name="enforce"></a>
+</section>
+
+<section id="enforce">
 
 ## Enforcement
 
@@ -118,7 +121,9 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 
 <sub>[Back to top](#top)</sub>
 
-<a name="attribute"></a>
+</section>
+
+<section id="attribute">
 
 ## Attribution
 
@@ -143,14 +148,16 @@ For answers to common questions about this code of conduct, see the FAQ at
 
 <sub>[Back to top](#top)</sub>
 
+</section>
+
 ---
 
-<span style="font-size: 12px; font-weight: bold; text-align: center;">
+<div style="font-size: 12px; font-weight: bold; text-align: center;">
 
-[Home](https://netwk.pro) &nbsp; | &nbsp; [Terms of Use](https://netwk.pro/terms-of-use.html)  
-[Privacy Policy](https://netwk.pro/privacy.html) &nbsp; | &nbsp; [Legal](https://netwk.pro/legal.html)
+[Home](https://netwk.pro) &nbsp; | &nbsp; [Terms of Use](https://netwk.pro/terms-of-use)  
+[Privacy Policy](https://netwk.pro/privacy) &nbsp; | &nbsp; [Legal](https://netwk.pro/license)
 
-</span>
+</div>
 
 &nbsp;
 
@@ -159,7 +166,7 @@ For answers to common questions about this code of conduct, see the FAQ at
 Copyright &copy; 2025  
 **[Network Pro Strategies](https://netwk.pro/)** (Network Pro&trade;)
 
-Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;" slogan are [trademarks](https://netwk.pro/legal#trademark) of Network Pro Strategies.
+Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;" slogan are [trademarks](https://netwk.pro/license#trademark) of Network Pro Strategies.
 
 Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
