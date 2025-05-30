@@ -121,7 +121,6 @@ jobs:
           sed -i 's/"name": ".*"/"name": "@netwk-pro\/blog"/' build/package.json
 
       - name: Publish package to GPR
-        working-directory: ./build
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
