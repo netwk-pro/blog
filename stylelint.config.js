@@ -13,15 +13,6 @@ export default {
     "stylelint-config-html", // Added from provided config for linting HTML
   ],
   plugins: ["stylelint-order"], // Add stylelint-order plugin
-  overrides: [
-    {
-      files: ["**/*.html"], // Use postcss-html for HTML files
-      customSyntax: "postcss-html",
-    },
-    {
-      files: ["**/*.css"], // Ensure CSS-specific configurations
-    },
-  ],
   rules: {
     "property-no-vendor-prefix": null, // Allow vendor prefixes
     "selector-no-vendor-prefix": null,
@@ -107,3 +98,5 @@ export default {
   reportNeedlessDisables: true, // Report unnecessary disables
   ignoreFiles: ["public/**"], // Ignore the build directory
 };
+
+// cspell:ignore descriptionless

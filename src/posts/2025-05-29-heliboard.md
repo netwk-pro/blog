@@ -47,4 +47,9 @@ Got a favorite FOSS project? Let us know at [social@neteng.pro](mailto:social@ne
 
 &nbsp;
 
-![HeliBoard](../img/heliboard-promo.png)
+<figure class="poster-figure">
+  <img src="/img/heliboard-promo.png" alt="FOSS Spotlight: HeliBoard">
+  <figcaption>FOSS Spotlight: HeliBoard – featured visual</figcaption>
+</figure>
+
+<!-- ![HeliBoard](../img/heliboard-promo.png) -->

@@ -2,13 +2,15 @@ site_name: Network Pro™ Blog
 site_url: https://blog.netwk.pro
 repo_url: https://github.com/netwk-pro/netwk-pro.github.io
 repo_name: GitHub
-docs_dir: docs_raw
+docs_dir: src
 site_dir: build/
 
 theme:
-  name: material
   language: en
-  font: false
+  name: material
+  font:
+    text: null
+    code: null
   logo: /icon-512x512.png
   favicon: /favicon.svg
   palette:
@@ -105,6 +107,9 @@ plugins:
       date_from_meta:
         as_creation: date.created
         as_update: date.updated
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
