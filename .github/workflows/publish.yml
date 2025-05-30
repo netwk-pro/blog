@@ -1,5 +1,6 @@
 # .github/workflows/publish.yml
 #
+# Copyright © 2025 Network Pro Strategies (Network Pro™)
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Pro
 
@@ -41,7 +42,7 @@ jobs:
       - name: Install Node.js dependencies
         run: npm ci
 
-      # MkDocs Integration Begins
+      # Ensure MkDocs builds successfully
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -51,10 +52,9 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material mkdocs-material-extensions mkdocs-get-deps mkdocs-rss-plugin
 
-      # Strict mode temporarily disabled as workaround for mkdocs-material
+      # Strict mode disabled as workaround for mkdocs-material
       - name: Build MkDocs documentation
         run: mkdocs build
-      # MkDocs Integration Ends
 
       # Remove build artifacts to avoid publishing them
       - name: Clean build directory
@@ -75,7 +75,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: repo-artifacts
-          path: ./
+          path: ./repo
 
       - name: Set up Node.js for npmjs
         uses: actions/setup-node@v4
@@ -91,6 +91,7 @@ jobs:
 
       - name: Publish package to npmjs
         run: npm publish --access public
+        working-directory: ./repo
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
 
@@ -102,7 +103,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: repo-artifacts
-          path: ./
+          path: ./repo
 
       - name: Set up Node.js for GPR
         uses: actions/setup-node@v4
@@ -119,8 +120,10 @@ jobs:
       - name: Update package name for GPR
         run: |
           sed -i 's/"name": ".*"/"name": "@netwk-pro\/blog"/' package.json
+        working-directory: ./repo
 
       - name: Publish package to GPR
         run: npm publish
+        working-directory: ./repo
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}

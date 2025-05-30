@@ -1,5 +1,6 @@
 # .github/workflows/build-and-deploy.yml
 #
+# Copyright © 2025 Network Pro Strategies (Network Pro™)
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Pro
 
@@ -82,7 +83,7 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material mkdocs-material-extensions mkdocs-get-deps mkdocs-rss-plugin
 
-      # Strict mode temporarily disabled as workaround for mkdocs-material
+      # Strict mode disabled as workaround for mkdocs-material
       - name: Build MkDocs documentation
         run: mkdocs build
       # MkDocs Integration Ends
