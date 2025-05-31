@@ -101,6 +101,54 @@
 
   <url>
 
+    <loc>https://blog.netwk.pro/category/android/</loc>
+
+    <lastmod>2025-05-30</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.6</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://blog.netwk.pro/category/open-source/</loc>
+
+    <lastmod>2025-05-30</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.6</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://blog.netwk.pro/category/privacy/</loc>
+
+    <lastmod>2025-05-30</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.6</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://blog.netwk.pro/category/security/</loc>
+
+    <lastmod>2025-05-30</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.6</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://blog.netwk.pro/archive/2025/</loc>
 
     <lastmod>2025-05-30</lastmod>
@@ -113,7 +161,7 @@
 
   <url>
 
-    <loc>https://blog.netwk.pro/tags</loc>
+    <loc>https://blog.netwk.pro/tags/</loc>
 
     <lastmod>2025-05-11</lastmod>
 
@@ -137,9 +185,21 @@
 
   <url>
 
-    <loc>https://blog.netwk.pro/contributing</loc>
+    <loc>https://blog.netwk.pro/contributing/</loc>
 
-    <lastmod>2025-05-11</lastmod>
+    <lastmod>2025-05-30</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.4</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://blog.netwk.pro/CODE_OF_CONDUCT/</loc>
+
+    <lastmod>2025-05-30</lastmod>
 
     <changefreq>monthly</changefreq>
 
