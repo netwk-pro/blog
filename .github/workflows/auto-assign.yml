@@ -15,19 +15,20 @@ on:
   pull_request:
     types: [opened, edited, synchronize, reopened]
 
+permissions:
+  issues: write
+  contents: read
+  pull-requests: write
+
 jobs:
   auto-assign:
     runs-on: ubuntu-24.04
-
-    permissions:
-      issues: write
-      pull-requests: write
 
     steps:
       - name: 'Auto-assign issue or PR'
         uses: pozil/auto-assign-issue@v2
         with:
-          repo-token: ${{ secrets.SD311 }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: SunDevil311
           numOfAssignee: 1
           allowSelfAssign: true
