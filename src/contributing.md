@@ -1,16 +1,23 @@
-<!-- =========================================================================
-Copyright © 2025 Network Pro Strategies (Network Pro™)
-SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
-This file is part of Network Pro.
-========================================================================== -->
+---
+date:
+  created: 2023-12-31
+  updated: 2025-06-07
+title: Contributing to Network Pro™
+summary:
+  Instructions for getting involved and contributing to Network Pro Strategies.
+authors:
+  - team
+tags:
+  - networkpro
+  - contributing
+---
 
-<section id="top">
+<a name="top"></a>
 
 # 🤝 Contributing to Network Pro Strategies
 
-</section>
-
-**Effective Date:** June 3, 2025
+**Network Pro Strategies**  
+**Effective Date:** June 7, 2025
 
 &nbsp;
 
@@ -40,7 +47,7 @@ for:
 
 ---
 
-<section id="bug-reports">
+<a name="bug-reports"></a>
 
 ## 🐞 Bug Reports
 
@@ -71,15 +78,11 @@ _Example_:
 
 <!-- markdownlint-enable MD042 -->
 
-</section>
-
-&nbsp;
-
 <sub>[Back to top](#top)</sub>
 
 ---
 
-<section id="feature-requests">
+<a name="feature-requests"></a>
 
 ## ✨ Feature Requests
 
@@ -94,15 +97,11 @@ Before posting:
 
 Strong proposals help us prioritize.
 
-</section>
-
-&nbsp;
-
 <sub>[Back to top](#top)</sub>
 
 ---
 
-<section id="pull-requests">
+<a name="pull-requests"></a>
 
 ## 🔁 Pull Requests
 
@@ -115,59 +114,55 @@ with maintainers first.
 
 ### 📋 Steps
 
-1. **Fork the repo & set remotes**:
+`1.` **Fork the repo & set remotes**:
 
-   ```bash
-   git clone https://github.com/<your-username>/netwk-pro.github.io.git
-   cd netwk-pro.github.io
-   git remote add upstream https://github.com/netwk-pro/netwk-pro.github.io.git
-   ```
+```bash
+git clone https://github.com/<your-username>/netwk-pro.github.io.git cd
+netwk-pro.github.io git remote add upstream
+https://github.com/netwk-pro/netwk-pro.github.io.git
+```
 
-2. **Stay Updated**
+`2.` **Stay Updated**
 
-   ```bash
-   git checkout main
-   git pull upstream main
-   ```
+```bash
+git checkout main
+git pull upstream main
+```
 
-3. **Create a topic branch:**
+`3.` **Create a topic branch:**
 
-   ```bash
-   git checkout -b my-feature
-   ```
+```bash
+git checkout -b my-feature
+```
 
-4. **Install & test locally:**
+`4.` **Install & test locally:**
 
-   ```bash
-   npm ci
-   npm run lint
-   npm run test
-   ```
+```bash
+npm ci
+npm run lint
+npm run test
+```
 
-5. **Make your changes**
+`5.` **Make your changes**
 
-   (and commit them in logical chunks with good commit messages).
+(and commit them in logical chunks with good commit messages).
 
-6. **Build:**
+`6.` **Build:**
 
-   ```bash
-   npm run build
-   git add build/
-   git commit -m "Build: update assets"
-   ```
+```bash
+npm run build
+git add build/
+git commit -m "Build: update assets"
+```
 
-7. **Push and open a PR:**
+`7.` **Push and open a PR:**
 
-   ```bash
-   git push origin my-feature
-   ```
+```bash
+git push origin my-feature
+```
 
 Open your PR with a clear title, description, and reference the related issue
 (if any).
-
-</section>
-
-&nbsp;
 
 <sub>[Back to top](#top)</sub>
 
@@ -188,11 +183,24 @@ By submitting a pull request, you agree to license your contributions under:
 - [CC BY 4.0](https://netwk.pro/license#cc-by)
 - [GNU GPL 3.0 or later](https://netwk.pro/license#gnu-gpl)
 
-&nbsp;
-
 <sub>[Back to top](#top)</sub>
 
----
+&nbsp;
 
 _Thanks again for your contribution and for being part of the Network Pro
 community!_
+
+---
+
+<span style="font-size: 12px; text-align: center;">
+
+Network Pro&trade;, the shield logo, and the "Locking Down Networks...&trade;"
+slogan are [trademarks](https://netwk.pro/license#trademark) of Network Pro
+Strategies.
+
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
+the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published
+by the Free Software Foundation, either version 3 of the License, or (at your
+option) any later version.
+
+</span>

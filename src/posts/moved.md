@@ -9,7 +9,7 @@ summary:
 authors:
   - team
 tags:
-  - network-pro
+  - networkpro
   - blog
 ---
 

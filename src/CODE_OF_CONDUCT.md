@@ -1,17 +1,25 @@
-<!-- =========================================================================
-Copyright © 2025 Network Pro Strategies (Network Pro™)
-SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
-This file is part of Network Pro.
-========================================================================== -->
+---
+date:
+  created: 2025-03-21
+  updated: 2025-06-07
+title: Code of Conduct
+summary:
+  The Contributor Covenant Code of Conduct for Network Pro's public
+  repositories.
+authors:
+  - team
+tags:
+  - networkpro
+  - contributing
+  - code-of-conduct
+---
 
-<section id="top">
+<a name="top"></a>
 
 # Contributor Covenant Code of Conduct
 
-</section>
-
 **Network Pro Strategies**  
-**Effective Date:** March 21, 2025
+**Effective Date:** June 7, 2025
 
 &nbsp;
 
@@ -26,7 +34,7 @@ This file is part of Network Pro.
 
 ---
 
-<section id="pledge">
+<a name="pledge"></a>
 
 ## Our Pledge
 
@@ -40,9 +48,7 @@ identity and orientation.
 We pledge to act and interact in ways that contribute to an open, welcoming,
 diverse, inclusive, and healthy community.
 
-</section>
-
-<section id="standards">
+<a name="standards"></a>
 
 ## Our Standards
 
@@ -70,9 +76,7 @@ Examples of unacceptable behavior include:
 
 <sub>[Back to top](#top)</sub>
 
-</section>
-
-<section id="response">
+<a name="response"></a>
 
 ## Responsibilities
 
@@ -92,9 +96,7 @@ business interests.
 
 <sub>[Back to top](#top)</sub>
 
-</section>
-
-<section id="scope">
+<a name="scope"></a>
 
 ## Scope
 
@@ -106,9 +108,7 @@ as an appointed representative at an online or offline event.
 
 <sub>[Back to top](#top)</sub>
 
-</section>
-
-<section id="enforce">
+<a name="enforce"></a>
 
 ## Enforcement
 
@@ -128,9 +128,7 @@ members of the project’s leadership.
 
 <sub>[Back to top](#top)</sub>
 
-</section>
-
-<section id="attribute">
+<a name="attribute"></a>
 
 ## Attribution
 
@@ -154,4 +152,17 @@ For answers to common questions about this code of conduct, see the FAQ at
 
 <sub>[Back to top](#top)</sub>
 
-</section>
+---
+
+<span style="font-size: 12px; text-align: center;">
+
+Network Pro&trade;, the shield logo, and the "Locking Down Networks...&trade;"
+slogan are [trademarks](https://netwk.pro/license#trademark) of Network Pro
+Strategies.
+
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
+the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published
+by the Free Software Foundation, either version 3 of the License, or (at your
+option) any later version.
+
+</span>
