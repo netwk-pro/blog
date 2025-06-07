@@ -29,10 +29,11 @@ You will also need to install the [mkdocs-rss-plugin].
 This the repository is a [template repository], so you can create as many forks
 of it as you like and your repository will contain only a single commit to start
 with, instead of the whole history of the template. Also, you can create a
-private repository from this template (while forks inherit the visibility settings
-from the original).
+private repository from this template (while forks inherit the visibility
+settings from the original).
 
-[template repository]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
+[template repository]:
+  https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
 
 Simply hit the `Use this template` button. You can set the specifics of your new
 repository from there.

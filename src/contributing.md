@@ -1,235 +1,198 @@
----
-date:
-  created: 2023-12-31
-  updated: 2025-05-30
-title: Contributing to Network Pro™
-summary: Instructions for getting involved and contributing to Network Pro Strategies.
-authors:
-  - team
-tags:
-  - network-pro
-  - contributing
----
+<!-- =========================================================================
+Copyright © 2025 Network Pro Strategies (Network Pro™)
+SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
+This file is part of Network Pro.
+========================================================================== -->
 
-<a name="top"></a>
+<section id="top">
 
-<sup>[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info):
-`CC-BY-4.0 OR GPL-3.0-or-later`</sup>
+# 🤝 Contributing to Network Pro Strategies
 
-# Contributing to Network Pro™
+</section>
 
-♥ [Network Pro Strategies](https://netwk.pro/) and want to get involved?
-Thanks! We're actively looking for folks interested in helping out and there
-are plenty of ways you can help!
-
-Please take a moment to review this document in order to make the contribution
-process easy and effective for everyone involved.
-
-Following these guidelines helps to communicate that you respect the time of
-the developers managing and developing this open source project. In return,
-they should reciprocate that respect in addressing your issue or assessing
-patches and features.
-
-## Using the issue tracker
-
-The [issue tracker](https://github.com/netwk-pro/netwk-pro.github.io/issues) is
-the preferred channel for [bug reports](#bugs), [features requests](#features)
-and [submitting pull requests](#pull-requests), but please respect the following
-restrictions:
-
-- Please **do not** use the issue tracker for personal support requests (use
-  [Stack Overflow Teams](https://stack.neteng.pro/), [Discussions](https://discuss.neteng.pro), or [Discord](https://discord.neteng.pro/)).
-
-- Please **do not** derail or troll issues. Keep the discussion on topic and
-  respect the opinions of others.
-
-<sub>[Back to top](#top)</sub>
-
-<a name="bugs"></a>
-
-## Bug reports
-
-A bug is a _demonstrable problem_ that is caused by the code in the repository.
-Good bug reports are extremely helpful - thank you!
-
-Guidelines for bug reports:
-
-1. **Use the GitHub issue search** &mdash; check if the issue has already been
-   reported.
-
-2. **Check if the issue has been fixed** &mdash; try to reproduce it using the
-   latest `master` or development branch in the repository.
-
-3. **Isolate the problem** &mdash; ideally create a [reduced test
-   case](https://css-tricks.com/reduced-test-cases/) and a live example.
-
-A good bug report shouldn't leave others needing to chase you down for more
-information. Please try to be as detailed as possible in your report. What is
-your environment? What steps will reproduce the issue? What browser(s) and OS
-experience the problem? What would you expect to be the outcome? All these
-details will help people to fix any potential bugs.
-
-Example:
-
-> Short and descriptive example bug report title
->
-> A summary of the issue and the browser/OS environment in which it occurs. If
-> suitable, include the steps required to reproduce the bug.
->
-> 1. This is the first step
-> 2. This is the second step
-> 3. Further steps, etc.
->
-> `<url>` - a link to the reduced test case
->
-> Any other information you want to share that is relevant to the issue being
-> reported. This might include the lines of code that you have identified as
-> causing the bug, and potential solutions (and your opinions on their
-> merits).
-
-<sub>[Back to top](#top)</sub>
-
-<a name="features"></a>
-
-## Feature requests
-
-Feature requests are welcome. But take a moment to find out whether your idea
-fits with the scope and aims of the project. It's up to _you_ to make a strong
-case to convince the project's developers of the merits of this feature. Please
-provide as much detail and context as possible.
-
-<sub>[Back to top](#top)</sub>
-
-<a name="pull-requests"></a>
-
-## Pull requests
-
-Good pull requests - patches, improvements, new features - are a fantastic
-help. They should remain focused in scope and avoid containing unrelated
-commits.
-
-**Please ask first** before embarking on any significant pull request (e.g.
-implementing features, refactoring code, porting to a different language),
-otherwise you risk spending a lot of time working on something that the
-project's developers might not want to merge into the project.
-
-Please adhere to the coding conventions used throughout a project (indentation,
-accurate comments, etc.) and any other requirements (such as test coverage).
-
-Adhering to the following process is the best way to get your work
-included in the project:
-
-<code><strong>1.</strong></code> [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your fork, and configure the remotes:
-
-```bash
-# Clone your fork of the repo into the current directory
-git clone https://github.com/<your-username>/netwk-pro.github.io.git
-
-# Navigate to the newly cloned directory
-cd netwk-pro.github.io
-
-# Assign the original repo to a remote called "upstream"
-git remote add upstream https://github.com/netwk-pro/netwk-pro.github.io.git
-```
-
-<code><strong>2.</strong></code> If you cloned a while ago, get the latest changes from upstream:
-
-```bash
-git checkout master
-git pull upstream master
-```
-
-<code><strong>3.</strong></code> Create a new topic branch (off the master project development branch) to
-contain your feature, change, or fix:
-
-```bash
-git checkout -b <topic-branch-name>
-```
-
-<code><strong>4.</strong></code> Install locked dependencies:
-
-```bash
-npm ci
-```
-
-Ensure that your `node` and `npm` versions are compatible with the `engines`
-specification in `package.json`.
-
-<code><strong>5.</strong></code> Lint your code locally. As reflected in the `devDependencies`, the following
-linting and formatting tools &mdash; or equivalent &mdash; should be used:
-
-- [Prettier](https://prettier.io/)
-- [ESLint](https://eslint.org/)
-- [markdownlint](https://github.com/DavidAnson/markdownlint) and
-  [markdownlint2](https://github.com/DavidAnson/markdownlint-cli2)
-- [Stylelint](https://stylelint.io/)
-
-<code><strong>6.</strong></code> Commit your changes in logical chunks. Please adhere to these [git commit
-message guidelines](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-or your code is unlikely be merged into the main project. Use Git's
-[interactive rebase](https://help.github.com/articles/about-git-rebase/)
-feature to tidy up your commits before making them public.
-
-<code><strong>7.</strong></code> Locally merge (or rebase) the upstream development branch into your topic branch:
-
-```bash
-git pull [--rebase] upstream master
-```
-
-<code><strong>8.</strong></code> Update any applicable test cases and run tests:
-
-```bash
-npm run test
-```
-
-Tests must cover changes and pass to be accepted.
-
-<code><strong>9.</strong></code> Run build and commit changes to build:
-
-```bash
-npm run build
-git add build/
-git commit
-```
-
-   <!-- markdownlint-disable MD029 -->
-
-<code><strong>10.</strong></code> Push your topic branch up to your fork:
-
-```bash
-git push origin <topic-branch-name>
-```
-
-<code><strong>11.</strong></code> [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-with a clear title and description.
-
-<!-- markdownlint-enable MD029 -->
+**Effective Date:** June 3, 2025
 
 &nbsp;
 
-**IMPORTANT**: By submitting a patch, you agree to allow the project
-owners to license your work under the terms of [CC BY 4.0](https://netwk.pro/license#cc-by) and the [GNU GPL](https://netwk.pro/license#gnu-gpl).
+Thanks for your interest in improving **Network Pro Strategies** (Network
+Pro™)! We're always looking for collaborators and contributors of all skill
+levels. This guide will help you get started quickly and effectively.
+
+Following these guidelines helps us all work together efficiently and
+respectfully. 🙌
+
+---
+
+## 🐛 Using the Issue Tracker
+
+Use the [issue tracker](https://github.com/netwk-pro/netwk-pro.github.io/issues)
+for:
+
+- Reporting [bugs](#bug-reports)
+- Submitting [feature requests](#feature-requests)
+- Proposing [pull requests](#pull-requests)
+
+🚫 Please do **not** use issues for general support — instead, head to:
+
+- [Stack Overflow Teams](https://stack.neteng.pro/)
+- [GitHub Discussions](https://discuss.neteng.pro)
+- [Discord](https://discord.neteng.pro)
+
+---
+
+<section id="bug-reports">
+
+## 🐞 Bug Reports
+
+A bug is a clear, reproducible issue in the code. High-quality reports help us
+fix problems faster.
+
+### ✅ A good bug report includes
+
+- A **descriptive title**
+- Steps to reproduce
+- Your environment (OS, browser, version)
+- Expected vs actual behavior
+- Links to a minimal reproducible case (if possible)
+
+_Example_:
+
+<!-- markdownlint-disable MD042 -->
+
+> **Title**: Checkbox toggle fails on Safari 17  
+> Steps:
+>
+> 1. Visit page X
+> 2. Click toggle
+> 3. Observe that...  
+>    Expected: ...  
+>    Actual: ...  
+>    [Live example](#)
+
+<!-- markdownlint-enable MD042 -->
+
+</section>
+
+&nbsp;
 
 <sub>[Back to top](#top)</sub>
 
 ---
 
-<span style="font-size: 12px; font-weight: bold; text-align: center;">
+<section id="feature-requests">
 
-[Home](https://netwk.pro) &nbsp; | &nbsp; [Terms of Use](https://netwk.pro/terms-of-use)  
-[Privacy Policy](https://netwk.pro/privacy) &nbsp; | &nbsp; [Legal](https://netwk.pro/license)
+## ✨ Feature Requests
 
-</span>
+Feature requests are welcome — just make sure it aligns with the project’s
+goals.
+
+Before posting:
+
+- Search for similar requests
+- Clearly describe the problem it solves
+- Explain the use case and who benefits
+
+Strong proposals help us prioritize.
+
+</section>
 
 &nbsp;
 
-<span style="font-size: 12px; text-align: center;">
+<sub>[Back to top](#top)</sub>
 
-Copyright &copy; 2025  
-**[Network Pro Strategies](https://netwk.pro/)** (Network Pro&trade;)
+---
 
-Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;" slogan are [trademarks](https://netwk.pro/license#trademark) of Network Pro Strategies.
+<section id="pull-requests">
 
-Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+## 🔁 Pull Requests
 
-</span>
+Well-scoped, well-documented pull requests are the lifeblood of open-source.
+
+### ⚠️ Ask First
+
+Before large PRs (new features, refactors, dependency upgrades), please check
+with maintainers first.
+
+### 📋 Steps
+
+1. **Fork the repo & set remotes**:
+
+   ```bash
+   git clone https://github.com/<your-username>/netwk-pro.github.io.git
+   cd netwk-pro.github.io
+   git remote add upstream https://github.com/netwk-pro/netwk-pro.github.io.git
+   ```
+
+2. **Stay Updated**
+
+   ```bash
+   git checkout main
+   git pull upstream main
+   ```
+
+3. **Create a topic branch:**
+
+   ```bash
+   git checkout -b my-feature
+   ```
+
+4. **Install & test locally:**
+
+   ```bash
+   npm ci
+   npm run lint
+   npm run test
+   ```
+
+5. **Make your changes**
+
+   (and commit them in logical chunks with good commit messages).
+
+6. **Build:**
+
+   ```bash
+   npm run build
+   git add build/
+   git commit -m "Build: update assets"
+   ```
+
+7. **Push and open a PR:**
+
+   ```bash
+   git push origin my-feature
+   ```
+
+Open your PR with a clear title, description, and reference the related issue
+(if any).
+
+</section>
+
+&nbsp;
+
+<sub>[Back to top](#top)</sub>
+
+---
+
+## ✅ Coding & Style Notes
+
+- Use the defined code style (Prettier, ESLint, Stylelint, markdownlint)
+- Avoid unrelated changes in the same PR
+- Keep PRs focused and test-covered when appropriate
+
+&nbsp;
+
+## 🔐 Legal Notice
+
+By submitting a pull request, you agree to license your contributions under:
+
+- [CC BY 4.0](https://netwk.pro/license#cc-by)
+- [GNU GPL 3.0 or later](https://netwk.pro/license#gnu-gpl)
+
+&nbsp;
+
+<sub>[Back to top](#top)</sub>
+
+---
+
+_Thanks again for your contribution and for being part of the Network Pro
+community!_
