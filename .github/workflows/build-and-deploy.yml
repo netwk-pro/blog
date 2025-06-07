@@ -42,7 +42,7 @@ jobs:
 
       - name: Check CodeQL Workflow
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.NWPRO_ACTION }}
         run: |
           gh run list --workflow "CodeQL" --json conclusion --jq '.[0].conclusion' > codeql_status.txt
           CODEQL_STATUS=$(cat codeql_status.txt)
