@@ -16,6 +16,9 @@ tags:
 
 <a name="top"></a>
 
+<sup>[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info):
+`CC-BY-4.0 OR GPL-3.0-or-later`</sup>
+
 # Contributor Covenant Code of Conduct
 
 **Network Pro Strategies**  
