@@ -2,11 +2,14 @@
 date:
   created: 2025-05-16
 title: Progressive Web App is Live
-summary: Recent Website Developments — We're proud to announce that the Network Pro&trade; website is now fully equipped with Progresive Web App (PWA) technology.
+summary:
+  Recent Website Developments — We're proud to announce that the Network
+  Pro&trade; website is now fully equipped with Progresive Web App (PWA)
+  technology.
 authors:
   - team
 tags:
-  - network-pro
+  - networkpro
   - website
   - sveltekit
   - pwa
@@ -14,11 +17,19 @@ tags:
 
 # 🚀 A Faster, Smarter Experience: Network Pro’s Website Is Now a Progressive Web App (PWA)
 
-At **Network Pro Strategies**, we’re always looking for ways to deliver a faster, smoother, and more efficient experience for our clients and partners. That’s why we’re proud to announce that the **Network Pro&trade; website is now fully equipped with Progressive Web App (PWA) technology** — bringing modern performance, speed, and user convenience to the forefront of your experience.
+At **Network Pro Strategies**, we’re always looking for ways to deliver a
+faster, smoother, and more efficient experience for our clients and partners.
+That’s why we’re proud to announce that the **Network Pro&trade; website is now
+fully equipped with Progressive Web App (PWA) technology** — bringing modern
+performance, speed, and user convenience to the forefront of your experience.
 
 ## 💡 What’s a PWA, and Why Does It Matter?
 
-Without getting too technical, a **[Progressive Web App](https://en.wikipedia.org/wiki/Progressive_web_app)** is a powerful blend of a website and a mobile app. It loads quickly, performs smoothly, and feels like an app — all within your browser, without needing to download anything.
+Without getting too technical, a
+**[Progressive Web App](https://en.wikipedia.org/wiki/Progressive_web_app)** is
+a powerful blend of a website and a mobile app. It loads quickly, performs
+smoothly, and feels like an app — all within your browser, without needing to
+download anything.
 
 <!-- more -->
 
@@ -26,33 +37,47 @@ Without getting too technical, a **[Progressive Web App](https://en.wikipedia.or
 
 ### ⚡ Faster Load Times
 
-Thanks to intelligent caching, your frequently visited pages load noticeably quicker. Whether you're checking updates, contacting support, or reading the latest Network Pro&trade; insights, **you’ll experience less wait and more action.**
+Thanks to intelligent caching, your frequently visited pages load noticeably
+quicker. Whether you're checking updates, contacting support, or reading the
+latest Network Pro&trade; insights, **you’ll experience less wait and more
+action.**
 
 ### 📱 App-Like Experience
 
-Our new interface brings a **cleaner, more responsive design** that adapts to any screen — desktop, tablet, or smartphone — making it feel just like a native app.
+Our new interface brings a **cleaner, more responsive design** that adapts to
+any screen — desktop, tablet, or smartphone — making it feel just like a native
+app.
 
 ### 🔐 Built with Security in Mind
 
-The PWA runs exclusively over **secure HTTPS connections**, ensuring that your interactions are protected every step of the way.
+The PWA runs exclusively over **secure HTTPS connections**, ensuring that your
+interactions are protected every step of the way.
 
 ### 📲 Installable Convenience
 
-Add Network Pro&trade; to your home screen for **one-tap access**, just like an app. It’s fast, light, and always there when you need it.
+Add Network Pro&trade; to your home screen for **one-tap access**, just like an
+app. It’s fast, light, and always there when you need it.
 
 ## 🛠️ What’s Coming Soon
 
-We’re already working on bringing **offline functionality** into the experience. Soon, you’ll be able to browse key content — like service information, blog posts, and resources — even when you’re temporarily disconnected from the internet.
+We’re already working on bringing **offline functionality** into the experience.
+Soon, you’ll be able to browse key content — like service information, blog
+posts, and resources — even when you’re temporarily disconnected from the
+internet.
 
 Stay tuned — we’ll let you know the moment this feature goes live!
 
 ## 🔗 Try It Out Today
 
-Currently, you can navigate to our [development website](https://dev.netwk.pro) — built with [SvelteKit](https://svelte.dev/docs/kit/introduction) — to experience the new PWA-powered experience. We’d love your feedback as we continue to enhance your digital journey with us.
+Currently, you can navigate to our [development website](https://dev.netwk.pro)
+— built with [SvelteKit](https://svelte.dev/docs/kit/introduction) — to
+experience the new PWA-powered experience. We’d love your feedback as we
+continue to enhance your digital journey with us.
 
 &nbsp;
 
-_At **Network Pro&trade;**, we don’t just talk innovation — we build it into everything we do._
+_At **Network Pro&trade;**, we don’t just talk innovation — we build it into
+everything we do._
 
 ---
 

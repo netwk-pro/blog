@@ -8,7 +8,7 @@ name: Publish to Registries
 
 on:
   workflow_run:
-    workflows: ["Build Site and Deploy to GH Pages"]
+    workflows: ['Build Site and Deploy to GH Pages']
     types:
       - completed
 
@@ -20,7 +20,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "publish"
+  group: 'publish'
   cancel-in-progress: true
 
 jobs:
@@ -46,7 +46,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.13"
+          python-version: '3.13'
 
       - name: Install MkDocs and plugins
         run: |

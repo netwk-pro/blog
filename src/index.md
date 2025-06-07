@@ -8,7 +8,7 @@ authors:
   - team
 tags:
   - index
-  - network-pro
+  - networkpro
   - blog
 ---
 

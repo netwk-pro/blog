@@ -7,6 +7,7 @@ title: Tag Index
 
 # Tags
 
-This page lists all of the tags used in the blog. Click on a tag to see the related articles and posts.
+This page lists all of the tags used in the blog. Click on a tag to see the
+related articles and posts.
 
 <!-- material/tags -->
