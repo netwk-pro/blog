@@ -44,6 +44,8 @@
     "lint:md": "npx markdownlint-cli2 \"**/*.{md,markdown}\" \"#node_modules/**\" \"#build/**\"",
     "lint:css": "npx stylelint \"**/*.css\" --ignore-path .stylelintignore",
     "lint:all": "npm run lint && npm run lint:md && npm run lint:css && npm run format",
+    "checkout": "npm run lint:all",
+    "verify": "npm run checkout",
     "upgrade": "npx npm-check-updates -u"
   },
   "devDependencies": {
