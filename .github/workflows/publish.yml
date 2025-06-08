@@ -52,7 +52,7 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material mkdocs-material-extensions mkdocs-get-deps mkdocs-rss-plugin
 
-      # Strict mode disabled as workaround for mkdocs-material
+      # Strict mode disabled for mkdocs-material
       - name: Build MkDocs documentation
         run: mkdocs build
 
@@ -126,4 +126,4 @@ jobs:
         run: npm publish
         working-directory: ./repo
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
+          NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
