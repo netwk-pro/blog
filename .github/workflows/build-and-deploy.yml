@@ -35,11 +35,6 @@ jobs:
       - name: Set up GitHub CLI
         run: sudo apt-get install gh
 
-      - name: Authenticate GitHub CLI
-        env:
-          GH_TOKEN: ${{ secrets.NWPRO_ACTION }}
-        run: echo "${GH_TOKEN}" | gh auth login --with-token
-
       - name: Check CodeQL Workflow
         env:
           GH_TOKEN: ${{ secrets.NWPRO_ACTION }}
