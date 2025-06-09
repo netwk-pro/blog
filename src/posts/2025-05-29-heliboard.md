@@ -1,6 +1,7 @@
 ---
 date:
   created: 2025-05-29
+  updated: 2025-06-08
 title: FOSS Spotlight - HeliBoard
 summary:
   Say hello to HeliBoard – your privacy-first, open-source keyboard built just
@@ -52,8 +53,8 @@ philosophy.
 **Weekly FOSS gems like this remind us: we have powerful alternatives, built by
 passionate devs, made for people who care. _Let's support that_.**
 
-Got a favorite FOSS project? Let us know at
-[social@neteng.pro](mailto:social@neteng.pro), and we might feature it next!
+Got a favorite FOSS project? Let us know at `social (at) neteng.pro`, and we
+might feature it next!
 
 &nbsp;
 
