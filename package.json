@@ -1,6 +1,6 @@
 {
   "name": "@networkpro/blog",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "The official blog of Network Pro Strategies (Network Pro™).",
   "keywords": [
     "advisory",
@@ -58,7 +58,7 @@
     "globals": "^16.2.0",
     "markdownlint": "^0.38.0",
     "markdownlint-cli2": "^0.18.1",
-    "postcss": "^8.5.4",
+    "postcss": "^8.5.5",
     "prettier": "3.5.3",
     "stylelint": "^16.20.0",
     "stylelint-config-html": "^1.1.0",
