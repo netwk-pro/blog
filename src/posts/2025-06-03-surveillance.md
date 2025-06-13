@@ -1,6 +1,7 @@
 ---
 date:
   created: 2025-06-03
+  updated: 2025-06-12
 title: 'Digital Identity: A Trojan Horse for Surveillance?'
 summary:
   What if the tools meant to protect your identity are the very ones exposing
@@ -48,7 +49,7 @@ Read the full article at the below link:
 <figure class="poster-figure">
   <picture>
   <source srcset="/img/digital-id-promo.webp" type="image/webp" />
-  <img src="/img/digital-id-promo.png" alt="Digital Identity: A Trojan Horse for Surveillance?" style="width: 50%; height: 50%">
+  <img src="/img/digital-id-promo.png" alt="Digital Identity: A Trojan Horse for Surveillance?" style="width: 60%; height: 60%">
   <figcaption>
   Digital Identity: A Trojan Horse for Surveillance? – featured visual
   </figcaption>

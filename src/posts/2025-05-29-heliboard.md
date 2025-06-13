@@ -1,7 +1,7 @@
 ---
 date:
   created: 2025-05-29
-  updated: 2025-06-08
+  updated: 2025-06-12
 title: FOSS Spotlight - HeliBoard
 summary:
   Say hello to HeliBoard – your privacy-first, open-source keyboard built just
@@ -59,7 +59,7 @@ might feature it next!
 &nbsp;
 
 <figure class="poster-figure">
-  <img src="/img/heliboard-promo.png" alt="FOSS Spotlight: HeliBoard">
+  <img src="/img/heliboard-promo.png" alt="FOSS Spotlight: HeliBoard" style="width: 512px; height: 768px;">
   <figcaption>FOSS Spotlight: HeliBoard – featured visual</figcaption>
 </figure>
 
