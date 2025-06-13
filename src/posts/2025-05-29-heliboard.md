@@ -59,7 +59,7 @@ might feature it next!
 &nbsp;
 
 <figure class="poster-figure">
-  <img src="/img/heliboard-promo.png" alt="FOSS Spotlight: HeliBoard" style="width: 512px; height: 768px;">
+  <img src="/img/heliboard-promo.png" alt="FOSS Spotlight: HeliBoard" style="width: 100%; height: 100%;">
   <figcaption>FOSS Spotlight: HeliBoard – featured visual</figcaption>
 </figure>
 
