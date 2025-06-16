@@ -68,6 +68,6 @@ GitHub: [github.com/cryptomator/cryptomator](https://github.com/cryptomator/cryp
 
 <figure class="poster-figure">
   <source srcset="/img/cryptomator-promo.webp" type="image/webp" />
-  <img src="/img/cryptomator-promo.png" alt="FOSS Spotlight: HeliBoard" style="width: 60%; height: 60%;">
+  <img src="/img/cryptomator-promo.png" alt="FOSS Spotlight: Cryptomator" style="width: 60%; height: 60%;">
   <figcaption>FOSS Spotlight: Cryptomator – featured visual</figcaption>
 </figure>
