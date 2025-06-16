@@ -33,6 +33,7 @@ formatting may vary.
   Markdown validation via `"markdown.validate.enabled": false,`
 - Replaced inline `check-codeql` job in `build-and-deploy.yml` with call to new
   reusable workflow
+- Updated links in `sitemap.xml` to reflect current posts and site structure
 
 ### Removed
 
