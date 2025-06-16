@@ -25,11 +25,14 @@ formatting may vary.
 - Added new post: _FOSS Spotlight: Cryptomator_ (`2025-06-16-cryptomator.md`)
 - Included associated promotional images: `cryptomator-promo.png` and
   `cryptomator-promo.webp`
+- Added `check-codeql.yml` reusable workflow for static analysis
 
 ### Changed
 
 - Updated VS Code workspace settings (`.vscode/settings.json`) to disable
   Markdown validation via `"markdown.validate.enabled": false,`
+- Replaced inline `check-codeql` job in `build-and-deploy.yml` with call to new
+  reusable workflow
 
 ### Removed
 

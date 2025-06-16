@@ -13,6 +13,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -24,32 +25,12 @@ concurrency:
 
 jobs:
   check-codeql:
-    name: Check CodeQL Analysis
-    runs-on: ubuntu-24.04
-    # Continue workflow even if this job fails due to inability to find and/or check CodeQL workflow
-    continue-on-error: true
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up GitHub CLI
-        run: sudo apt-get install gh
-
-      - name: Check CodeQL Workflow
-        env:
-          GH_TOKEN: ${{ secrets.NWPRO_ACTION }}
-        run: |
-          gh run list --workflow "CodeQL" --json conclusion --jq '.[0].conclusion' > codeql_status.txt
-          CODEQL_STATUS=$(cat codeql_status.txt)
-          if [[ "$CODEQL_STATUS" != "success" ]]; then
-            echo "CodeQL Analysis did not succeed. Exiting..."
-            exit 1
-          fi
-          rm codeql_status.txt
+    uses: ./.github/workflows/check-codeql.yml
 
   build:
     needs: check-codeql
     runs-on: ubuntu-24.04
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -64,7 +45,7 @@ jobs:
           cache: npm
           cache-dependency-path: package-lock.json
 
-      - name: Setup Pages
+      - name: Set up Pages
         uses: actions/configure-pages@v5
 
       - name: Install Node.js dependencies
