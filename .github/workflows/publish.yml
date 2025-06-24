@@ -92,7 +92,6 @@ jobs:
           node-version: 24
           registry-url: https://registry.npmjs.org/
           cache: npm
-          cache-dependency-path: package-lock.json
 
       - name: Set up Git user
         run: |
@@ -127,7 +126,6 @@ jobs:
           node-version: 24
           registry-url: https://npm.pkg.github.com/
           cache: npm
-          cache-dependency-path: package-lock.json
 
       - name: Set up Git user
         run: |
