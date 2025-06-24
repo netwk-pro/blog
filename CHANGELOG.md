@@ -14,15 +14,21 @@ formatting may vary.
 
 ## [Unreleased]
 
+---
+
+## [1.3.0]
+
 ### Added
 
-- Added a new publish workflow (`.github/workflows/publish-test.yml`) to
-  validate the `git archive` packaging method using dry-run publishing.
+- Introduced a test publish workflow (`.github/workflows/publish-test.yml`) to
+  validate the `git archive` packaging method via dry-run publishing.
 
 ### Changed
 
-- Bumped version to `v1.2.9`.
-- Corrected formatting for `.github/COMMIT_GUIDE.md` to match Prettier standards
+- Bumped version to `v1.3.0`.
+- Reformatted `.github/COMMIT_GUIDE.md` to align with Prettier conventions.
+- Refactored `.github/workflows/publish.yml` to use `git archive` for publishing
+  to registries.
 
 ---
 
@@ -72,6 +78,7 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.2.8...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/netwk-pro/blog/releases/tag/v1.3.0
 [1.2.8]: https://github.com/netwk-pro/blog/releases/tag/v1.2.8
 [1.2.7]: https://github.com/netwk-pro/blog/releases/tag/v1.2.7

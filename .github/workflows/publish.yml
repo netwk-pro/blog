@@ -12,11 +12,9 @@ on:
     types:
       - completed
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
+  actions: read
   contents: read
-  pages: write
-  id-token: write
 
 # Allow one concurrent deployment
 concurrency:
@@ -27,6 +25,7 @@ jobs:
   build:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-24.04
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -36,8 +35,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: lts/*
-          check-latest: true
+          node-version: 24
           cache: npm
           cache-dependency-path: package-lock.json
 
@@ -57,33 +55,44 @@ jobs:
       - name: Build MkDocs documentation
         run: mkdocs build
 
-      # Remove build artifacts to avoid publishing them
+      # Remove build artifacts
       - name: Clean build directory
         run: rm -rf build/
 
-      # Upload clean source code
-      - name: Upload repository artifacts
+      # Create Git archive of version-controlled files
+      - name: Create clean source archive
+        run: git archive --format=tar.gz --output=clean-source.tar.gz HEAD
+
+      - name: Upload source archive
         uses: actions/upload-artifact@v4
         with:
-          name: repo-artifacts
-          path: ./
+          name: clean-source
+          path: clean-source.tar.gz
 
   publish-npm:
     needs: build
     runs-on: ubuntu-24.04
+
     steps:
-      - name: Download repository artifacts
+      - name: Download clean source archive
         uses: actions/download-artifact@v4
         with:
-          name: repo-artifacts
-          path: ./repo
+          name: clean-source
+          path: ./
+
+      - name: Extract source archive
+        run: tar -xzf clean-source.tar.gz
+
+      - name: Remove extracted source archive
+        run: rm clean-source.tar.gz
 
       - name: Set up Node.js for npmjs
         uses: actions/setup-node@v4
         with:
-          node-version: lts/*
-          check-latest: true
+          node-version: 24
           registry-url: https://registry.npmjs.org/
+          cache: npm
+          cache-dependency-path: package-lock.json
 
       - name: Set up Git user
         run: |
@@ -92,26 +101,33 @@ jobs:
 
       - name: Publish package to npmjs
         run: npm publish --access public
-        working-directory: ./repo
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
 
   publish-gpr:
     needs: build
     runs-on: ubuntu-24.04
+
     steps:
-      - name: Download repository artifacts
+      - name: Download clean source archive
         uses: actions/download-artifact@v4
         with:
-          name: repo-artifacts
-          path: ./repo
+          name: clean-source
+          path: ./
+
+      - name: Extract source archive
+        run: tar -xzf clean-source.tar.gz
+
+      - name: Remove extracted source archive
+        run: rm clean-source.tar.gz
 
       - name: Set up Node.js for GPR
         uses: actions/setup-node@v4
         with:
-          node-version: lts/*
-          check-latest: true
+          node-version: 24
           registry-url: https://npm.pkg.github.com/
+          cache: npm
+          cache-dependency-path: package-lock.json
 
       - name: Set up Git user
         run: |
@@ -121,10 +137,8 @@ jobs:
       - name: Update package name for GPR
         run: |
           sed -i 's/"name": ".*"/"name": "@netwk-pro\/blog"/' package.json
-        working-directory: ./repo
 
       - name: Publish package to GPR
         run: npm publish
-        working-directory: ./repo
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
