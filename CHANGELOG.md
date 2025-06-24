@@ -23,6 +23,8 @@ formatting may vary.
 - New blog post: `2025-06-23-encryption-eff.md` added to `/src/posts`.
 - Included associated promotional images: `encryption-eff.png` and
   `encryption-eff.webp`
+- Introduced `.github/workflows/COMMIT_GUIDE.md` for reference when creating
+  commit messages
 
 ### Changed
 
