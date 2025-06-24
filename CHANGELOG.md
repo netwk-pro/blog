@@ -16,6 +16,17 @@ formatting may vary.
 
 ---
 
+## [1.3.1]
+
+### Changes
+
+- Removed `cache-dependency-path` from publish workflows to avoid
+  lockfile-related cache issues.
+- Verified presence of `package-lock.json` in the extracted archive and
+  maintained default npm caching behavior.
+
+---
+
 ## [1.3.0]
 
 ### Added
