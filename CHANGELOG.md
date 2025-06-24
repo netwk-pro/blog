@@ -24,6 +24,7 @@ formatting may vary.
   lockfile-related cache issues.
 - Verified presence of `package-lock.json` in the extracted archive and
   maintained default npm caching behavior.
+- Bumped version to `v1.3.1`.
 
 ---
 
