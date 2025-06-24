@@ -16,6 +16,17 @@ formatting may vary.
 
 ---
 
+## [1.3.4] - 2025-06-23
+
+### Fixed
+
+- Removed legacy `.npmrc` file that was overriding registry authentication and
+  causing `401 Unauthorized` errors during publishing.
+- Restored default registry handling through `setup-node` for reliable
+  token-based authentication to `npmjs.org`.
+
+---
+
 ## [1.3.3] - 2025-06-23
 
 ### Added
