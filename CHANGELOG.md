@@ -16,6 +16,22 @@ formatting may vary.
 
 ---
 
+## [1.3.5] - 2025-06-24
+
+### Changed
+
+- Bumped version to `v1.3.5`.
+
+### Fixed
+
+- Resolved remaining GitHub Packages authentication issues by explicitly scoping
+  `npm whoami` and `npm publish` to the correct registry
+  (`https://npm.pkg.github.com/`).
+- Ensured consistent registry usage regardless of `.npmrc` or `package.json`
+  configuration.
+
+---
+
 ## [1.3.4] - 2025-06-23
 
 ### Changed
@@ -144,7 +160,9 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.3...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.5...HEAD
+[1.3.5]: https://github.com/netwk-pro/blog/releases/tag/v1.3.5
+[1.3.4]: https://github.com/netwk-pro/blog/releases/tag/v1.3.4
 [1.3.3]: https://github.com/netwk-pro/blog/releases/tag/v1.3.3
 [1.3.2]: https://github.com/netwk-pro/blog/releases/tag/v1.3.2
 [1.3.1]: https://github.com/netwk-pro/blog/releases/tag/v1.3.1
