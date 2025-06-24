@@ -16,6 +16,26 @@ formatting may vary.
 
 ---
 
+## [1.3.3] - 2025-06-23
+
+### Added
+
+- Diagnostic logging to verify active registry, token configuration, and
+  `.npmrc` state prior to publishing.
+
+### Changed
+
+- Bumped version to `v1.3.3`.
+
+### Fixed
+
+- Resolved persistent authentication failure during publish by reintroducing
+  `npm ci` and upgrading npm in registry workflows.
+- Adjusted step ordering to ensure environment and Git config are fully
+  initialized before registry checks.
+
+---
+
 ## [1.3.2] - 2025-06-23
 
 ### Added
@@ -109,7 +129,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.2...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.3...HEAD
+[1.3.3]: https://github.com/netwk-pro/blog/releases/tag/v1.3.3
 [1.3.2]: https://github.com/netwk-pro/blog/releases/tag/v1.3.2
 [1.3.1]: https://github.com/netwk-pro/blog/releases/tag/v1.3.1
 [1.3.0]: https://github.com/netwk-pro/blog/releases/tag/v1.3.0

@@ -21,6 +21,8 @@ concurrency:
   group: 'publish'
   cancel-in-progress: true
 
+# cspell:ignore userconfig
+
 jobs:
   build:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
@@ -61,8 +63,8 @@ jobs:
         run: mkdocs build
 
       # Remove build artifacts
-      - name: Clean build directory
-        run: rm -rf build/
+      #- name: Clean build directory
+      #  run: rm -rf build/
 
       # Create Git archive of version-controlled files
       - name: Create clean source archive
@@ -97,6 +99,7 @@ jobs:
           node-version: 24
           registry-url: https://registry.npmjs.org/
           cache: npm
+          cache-dependency-path: package-lock.json
 
       - name: Upgrade npm
         run: |
@@ -106,15 +109,31 @@ jobs:
       - name: Install Node.js dependencies
         run: npm ci
 
-      - name: Verify npm authentication
-        run: npm whoami
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
-
       - name: Set up Git user
         run: |
           git config --global user.email "github@sl.neteng.cc"
           git config --global user.name "SunDevil311"
+
+      - name: Print npm config and registry info
+        run: |
+          echo "🔍 NPM registry (from config):"
+          npm config get registry
+
+          echo "🔍 NPM user config location:"
+          echo "$NPM_CONFIG_USERCONFIG"
+
+          echo "🔍 .npmrc contents:"
+          cat "$NPM_CONFIG_USERCONFIG" || echo "❌ No .npmrc found"
+
+          echo "🔐 Token prefix:"
+          echo "${NODE_AUTH_TOKEN:0:4}********"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
+
+      - name: Verify npm authentication
+        run: npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
 
       - name: Publish package to npmjs
         run: npm publish --access public
@@ -144,6 +163,7 @@ jobs:
           node-version: 24
           registry-url: https://npm.pkg.github.com/
           cache: npm
+          cache-dependency-path: package-lock.json
 
       - name: Upgrade npm
         run: |
@@ -153,11 +173,6 @@ jobs:
       - name: Install Node.js dependencies
         run: npm ci
 
-      - name: Verify npm authentication
-        run: npm whoami
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
-
       - name: Set up Git user
         run: |
           git config --global user.email "github@sl.neteng.cc"
@@ -166,6 +181,27 @@ jobs:
       - name: Update package name for GPR
         run: |
           sed -i 's/"name": ".*"/"name": "@netwk-pro\/blog"/' package.json
+
+      - name: Print npm config and registry info
+        run: |
+          echo "🔍 NPM registry (from config):"
+          npm config get registry
+
+          echo "🔍 NPM user config location:"
+          echo "$NPM_CONFIG_USERCONFIG"
+
+          echo "🔍 .npmrc contents:"
+          cat "$NPM_CONFIG_USERCONFIG" || echo "❌ No .npmrc found"
+
+          echo "🔐 Token prefix:"
+          echo "${NODE_AUTH_TOKEN:0:4}********"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
+
+      - name: Verify npm authentication
+        run: npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
 
       - name: Publish package to GPR
         run: npm publish
