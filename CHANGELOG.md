@@ -160,7 +160,9 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.3...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.5...HEAD
+[1.3.5]: https://github.com/netwk-pro/blog/releases/tag/v1.3.5
+[1.3.4]: https://github.com/netwk-pro/blog/releases/tag/v1.3.4
 [1.3.3]: https://github.com/netwk-pro/blog/releases/tag/v1.3.3
 [1.3.2]: https://github.com/netwk-pro/blog/releases/tag/v1.3.2
 [1.3.1]: https://github.com/netwk-pro/blog/releases/tag/v1.3.1
