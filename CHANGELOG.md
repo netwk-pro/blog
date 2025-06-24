@@ -16,6 +16,22 @@ formatting may vary.
 
 ---
 
+## [1.2.8] - 2025-06-23
+
+### Added
+
+- New blog post: `2025-06-23-encryption-eff.md` added to `/src/posts`.
+- Included associated promotional images: `encryption-eff.png` and
+  `encryption-eff.webp`
+
+### Changed
+
+- Bumped version to `v1.2.8`.
+- Upgraded `prettier` from `3.5.3` to `3.6.0`.
+- Upgraded `stylelint` from `^16.20.0` to `^16.21.0`.
+
+---
+
 ## [1.2.7] - 2025-06-16
 
 ### Added
@@ -44,5 +60,6 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.2.7...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.2.8...HEAD
+[1.2.8]: https://github.com/netwk-pro/blog/releases/tag/v1.2.8
 [1.2.7]: https://github.com/netwk-pro/blog/releases/tag/v1.2.7
