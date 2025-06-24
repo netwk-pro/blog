@@ -1,6 +1,8 @@
 # Commit Message Guide
 
-To maintain clarity and consistency, use one of the following commit types when writing messages. Keep them short and focused — the `CHANGELOG.md` remains the source of truth for full details.
+To maintain clarity and consistency, use one of the following commit types when
+writing messages. Keep them short and focused — the `CHANGELOG.md` remains the
+source of truth for full details.
 
 ## Commit Types
 
@@ -26,6 +28,7 @@ To maintain clarity and consistency, use one of the following commit types when 
 
 ---
 
-Stick to one type per commit when possible. For mixed changes, pick the most meaningful one.
+Stick to one type per commit when possible. For mixed changes, pick the most
+meaningful one.
 
 Consistency helps, but don’t overthink it — use what makes sense.

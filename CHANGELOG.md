@@ -22,6 +22,7 @@ formatting may vary.
 ### Changed
 
 - Bumped version to `v1.2.9`.
+- Corrected formatting for `.github/COMMIT_GUIDE.md` to match Prettier standards
 
 ---
 
