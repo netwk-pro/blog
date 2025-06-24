@@ -18,6 +18,10 @@ formatting may vary.
 
 ## [1.3.4] - 2025-06-23
 
+### Changed
+
+- Bumped version to `v1.3.4`.
+
 ### Fixed
 
 - Removed legacy `.npmrc` file that was overriding registry authentication and
