@@ -39,6 +39,11 @@ jobs:
           cache: npm
           cache-dependency-path: package-lock.json
 
+      - name: Upgrade npm
+        run: |
+          corepack enable
+          npm install -g npm@11.4.1
+
       - name: Install Node.js dependencies
         run: npm ci
 
@@ -93,6 +98,19 @@ jobs:
           registry-url: https://registry.npmjs.org/
           cache: npm
 
+      - name: Upgrade npm
+        run: |
+          corepack enable
+          npm install -g npm@11.4.1
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Verify npm authentication
+        run: npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
+
       - name: Set up Git user
         run: |
           git config --global user.email "github@sl.neteng.cc"
@@ -126,6 +144,19 @@ jobs:
           node-version: 24
           registry-url: https://npm.pkg.github.com/
           cache: npm
+
+      - name: Upgrade npm
+        run: |
+          corepack enable
+          npm install -g npm@11.4.1
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Verify npm authentication
+        run: npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
 
       - name: Set up Git user
         run: |

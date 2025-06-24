@@ -16,6 +16,25 @@ formatting may vary.
 
 ---
 
+## [1.3.2] - 2025-06-23
+
+### Added
+
+- Authentication check (`npm whoami`) before publish to confirm registry access.
+
+### Changed
+
+- Bumped version to `v1.3.2`.
+
+### Fixed
+
+- Resolved publishing failure caused by missing lockfile and outdated npm
+  version in registry workflows.
+- Reintroduced `npm ci` and upgraded npm to ensure compatibility with scoped
+  package publishing.
+
+---
+
 ## [1.3.1]
 
 ### Changes
@@ -90,7 +109,9 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.2...HEAD
+[1.3.2]: https://github.com/netwk-pro/blog/releases/tag/v1.3.2
+[1.3.1]: https://github.com/netwk-pro/blog/releases/tag/v1.3.1
 [1.3.0]: https://github.com/netwk-pro/blog/releases/tag/v1.3.0
 [1.2.8]: https://github.com/netwk-pro/blog/releases/tag/v1.2.8
 [1.2.7]: https://github.com/netwk-pro/blog/releases/tag/v1.2.7
