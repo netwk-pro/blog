@@ -14,6 +14,15 @@ formatting may vary.
 
 ## [Unreleased]
 
+### Added
+
+- Added a new publish workflow (`.github/workflows/publish-test.yml`) to
+  validate the `git archive` packaging method using dry-run publishing.
+
+### Changed
+
+- Bumped version to `v1.2.9`.
+
 ---
 
 ## [1.2.8] - 2025-06-23
