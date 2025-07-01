@@ -20,8 +20,6 @@ formatting may vary.
 
 ### Added
 
-- New blog post focusing on the recent Supreme Court ruling on the Texas age
-  verification law
 - New blog post: `2025-07-01-eff-scotus.md` added to `/src/posts`.
 - Included associated promotional images: `eff-scotus-promo.png` and
   `eff-scotus-promo.webp`.
