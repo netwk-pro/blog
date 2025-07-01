@@ -16,6 +16,25 @@ formatting may vary.
 
 ---
 
+## [1.3.6] - 2025-07-01
+
+### Added
+
+- New blog post: `2025-07-01-eff-scotus.md` added to `/src/posts`.
+- Included associated promotional images: `eff-scotus-promo.png` and
+  `eff-scotus-promo.webp`.
+
+### Changed
+
+- Bumped version to `1.3.6`.
+- Upgraded dependencies:
+  - `@eslint/js` `^9.29.0` to `^9.30.0`
+  - `browserslist` `^4.25.0` to `^4.25.1`
+  - `eslint` `^9.29.0` to `^9.30.0`
+  - `prettier` `3.6.0` to `3.6.2`
+
+---
+
 ## [1.3.5] - 2025-06-24
 
 ### Changed
@@ -160,7 +179,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.5...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.6...HEAD
+[1.3.6]: https://github.com/netwk-pro/blog/releases/tag/v1.3.6
 [1.3.5]: https://github.com/netwk-pro/blog/releases/tag/v1.3.5
 [1.3.4]: https://github.com/netwk-pro/blog/releases/tag/v1.3.4
 [1.3.3]: https://github.com/netwk-pro/blog/releases/tag/v1.3.3
