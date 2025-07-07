@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Last Updated: June 8, 2025 -->
+<!-- Last Updated: July 7, 2025 -->
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
@@ -17,13 +17,61 @@
 
   <url>
 
+    <loc>https://blog.netwk.pro/2025/07/07/hpe-completes-acquisition-of-juniper-networks/</loc>
+
+    <lastmod>2025-07-07</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://blog.netwk.pro/2025/07/01/supreme-court-upholds-age-verification-law/</loc>
+
+    <lastmod>2025-07-01</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://blog.netwk.pro/2025/06/23/encryption-is-not-a-loophole/</loc>
+
+    <lastmod>2025-06-23</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.7</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://blog.netwk.pro/2025/06/16/foss-spotlight-cryptomator/</loc>
+
+    <lastmod>2025-06-16</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.7</priority>
+
+  </url>
+
+  <url>
+
     <loc>https://blog.netwk.pro/2025/06/12/whats-a-backdoor-in-encryption/</loc>
 
     <lastmod>2025-06-12</lastmod>
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.8</priority>
+    <priority>0.7</priority>
 
   </url>
 
@@ -35,7 +83,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.8</priority>
+    <priority>0.7</priority>
 
   </url>
 
@@ -47,7 +95,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.8</priority>
+    <priority>0.7</priority>
 
   </url>
 
@@ -59,7 +107,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.8</priority>
+    <priority>0.7</priority>
 
   </url>
 
@@ -71,7 +119,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -83,7 +131,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -95,7 +143,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -107,7 +155,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -119,7 +167,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -131,7 +179,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -143,7 +191,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.6</priority>
+    <priority>0.5</priority>
 
   </url>
 
@@ -155,7 +203,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.6</priority>
+    <priority>0.5</priority>
 
   </url>
 
@@ -167,7 +215,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.6</priority>
+    <priority>0.5</priority>
 
   </url>
 
@@ -179,7 +227,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.6</priority>
+    <priority>0.5</priority>
 
   </url>
 
@@ -191,7 +239,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.6</priority>
+    <priority>0.5</priority>
 
   </url>
 

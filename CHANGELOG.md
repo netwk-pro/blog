@@ -16,6 +16,26 @@ formatting may vary.
 
 ---
 
+## [1.3.7] - 2025-07-07
+
+### Added
+
+- New blog post: `2025-07-07-juniper-hpe.md` added to `/src/posts`.
+- Included associated promotional images: `juniper-hpe-promo.png` and
+  `juniper-hpe-promo.webp`.
+
+### Changed
+
+- Bumped version to `1.3.7`
+- Sitemap updated to include links to recent posts.
+- Upgraded dependencies:
+  - `@eslint/js` `^9.30.0` to `^9.30.1`
+  - `eslint` `^9.30.0` to `^9.30.1`
+  - `globals` `^16.2.0` to `^16.3.0`
+  - `stylelint` `^16.21.0` to `^16.21.1`
+
+---
+
 ## [1.3.6] - 2025-07-01
 
 ### Added
@@ -179,7 +199,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.6...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.7...HEAD
+[1.3.7]: https://github.com/netwk-pro/blog/releases/tag/v1.3.7
 [1.3.6]: https://github.com/netwk-pro/blog/releases/tag/v1.3.6
 [1.3.5]: https://github.com/netwk-pro/blog/releases/tag/v1.3.5
 [1.3.4]: https://github.com/netwk-pro/blog/releases/tag/v1.3.4
