@@ -16,6 +16,21 @@ formatting may vary.
 
 ---
 
+## [1.3.8] - 2025-07-10
+
+### Added
+
+- New blog post: `2025-07-10-outlook-surveillance.md` added to `/src/posts`.
+- Included associated promotional images: `outlook-surveillance.png` and
+  `outlook-surveillance.webp`.
+
+### Changed
+
+- Bumped version to `1.3.8`.
+- Sitemap updated to include new link.
+
+---
+
 ## [1.3.7] - 2025-07-07
 
 ### Added
@@ -26,7 +41,7 @@ formatting may vary.
 
 ### Changed
 
-- Bumped version to `1.3.7`
+- Bumped version to `1.3.7`.
 - Sitemap updated to include links to recent posts.
 - Upgraded dependencies:
   - `@eslint/js` `^9.30.0` to `^9.30.1`
@@ -199,7 +214,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.7...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.8...HEAD
+[1.3.8]: https://github.com/netwk-pro/blog/releases/tag/v1.3.7
 [1.3.7]: https://github.com/netwk-pro/blog/releases/tag/v1.3.7
 [1.3.6]: https://github.com/netwk-pro/blog/releases/tag/v1.3.6
 [1.3.5]: https://github.com/netwk-pro/blog/releases/tag/v1.3.5
