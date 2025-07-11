@@ -44,6 +44,9 @@ This is not just a privacy issue—it’s a **digital trust crisis**.
 [Mozilla Thunderbird](https://www.thunderbird.net).** Protect your digital life
 before it’s quietly sold off in the background.
 
+Read the full article:  
+🔗 [https://proton.me/blog/outlook-is-microsofts-new-data-collection-service](https://proton.me/blog/outlook-is-microsofts-new-data-collection-service)
+
 ---
 
 <figure class="poster-figure">
