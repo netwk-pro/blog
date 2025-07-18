@@ -16,6 +16,26 @@ formatting may vary.
 
 ---
 
+## [1.3.9] - 2025-07-17
+
+### Added
+
+- New blog posts: `2025-07-17-ai-profiling.md` and `2025-07-17-otp-helper.md`
+  added to `/src/posts`.
+- Included associated promotional images: `ai-profiling-promo.png`,
+  `ai-profiling-promo.webp`, `otp-helper-promo.png`, and `otp-helper.webp`.
+
+### Changed
+
+- Bumped version to `v1.3.9`.
+- Sitemap updated to include new posts.
+- Upgraded dependencies:
+  - `@eslint/js` `^9.30.1` to `^9.31.0`
+  - `@eslint/json` `^0.12.0` to `^0.13.0`
+  - `eslint` `^9.30.1` to `9.31.0`
+
+---
+
 ## [1.3.8] - 2025-07-10
 
 ### Added
@@ -214,8 +234,9 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.8...HEAD
-[1.3.8]: https://github.com/netwk-pro/blog/releases/tag/v1.3.7
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.9...HEAD
+[1.3.9]: https://github.com/netwk-pro/blog/releases/tag/v1.3.9
+[1.3.8]: https://github.com/netwk-pro/blog/releases/tag/v1.3.8
 [1.3.7]: https://github.com/netwk-pro/blog/releases/tag/v1.3.7
 [1.3.6]: https://github.com/netwk-pro/blog/releases/tag/v1.3.6
 [1.3.5]: https://github.com/netwk-pro/blog/releases/tag/v1.3.5
