@@ -14,6 +14,8 @@ formatting may vary.
 
 ## [Unreleased]
 
+---
+
 ## [1.3.9] - 2025-07-17
 
 ### Added
