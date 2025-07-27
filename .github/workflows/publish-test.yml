@@ -39,6 +39,11 @@ jobs:
           cache: npm
           cache-dependency-path: package-lock.json
 
+      - name: Upgrade npm
+        run: |
+          corepack enable
+          npm install -g npm@11.4.2
+
       - name: Install Node.js dependencies
         run: npm ci
 
@@ -99,6 +104,14 @@ jobs:
             echo "Warning: package-lock.json not found";
           fi
 
+      - name: Upgrade npm
+        run: |
+          corepack enable
+          npm install -g npm@11.4.2
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
       - name: Set up Git user
         run: |
           git config --global user.email "github@sl.neteng.cc"
@@ -138,6 +151,14 @@ jobs:
           if [ ! -f package-lock.json ]; then
             echo "Warning: package-lock.json not found";
           fi
+
+      - name: Upgrade npm
+        run: |
+          corepack enable
+          npm install -g npm@11.4.2
+
+      - name: Install Node.js dependencies
+        run: npm ci
 
       - name: Set up Git user
         run: |
