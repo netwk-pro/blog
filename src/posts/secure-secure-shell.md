@@ -1,16 +1,17 @@
 ---
 date:
   created: 2015-01-04
-  updated: 2025-05-11
+  updated: 2025-07-27
 title: Secure Secure Shell
 summary: Secure shell (SSHD) hardening guide.
 authors:
   - team
 categories:
   - Security
+  - Implementation
 tags:
-  - security
-  - post
+  - cybersecurity
+  - guides
 ---
 
 # Secure Secure Shell

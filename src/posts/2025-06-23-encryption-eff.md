@@ -1,6 +1,7 @@
 ---
 date:
   created: 2025-06-23
+  updated: 2025-07-27
 title: 'Encryption is not a loophole'
 summary:
   Encryption is not a loophole. It's a lifeline. Act now to protect encryption!
@@ -12,7 +13,6 @@ categories:
   - Policy
 tags:
   - privacy
-  - security
   - cybersecurity
   - encryption
   - eff

@@ -1,8 +1,8 @@
 ---
 date:
   created: 2025-05-29
-  updated: 2025-06-12
-title: FOSS Spotlight - HeliBoard
+  updated: 2025-07-27
+title: 'FOSS Spotlight: HeliBoard'
 summary:
   Say hello to HeliBoard – your privacy-first, open-source keyboard built just
   for Android!

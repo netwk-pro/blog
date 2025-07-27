@@ -1,3 +1,11 @@
+<!-- =====================================================================
+.github/COMMIT_GUIDE.md
+
+Copyright © 2025 Network Pro Strategies (Network Pro™)
+SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
+This file is part of Network Pro.
+====================================================================== -->
+
 # Commit Message Guide
 
 To maintain clarity and consistency, use one of the following commit types when

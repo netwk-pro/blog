@@ -44,7 +44,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.4.1
+          npm install -g npm@11.4.2
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -63,8 +63,8 @@ jobs:
         run: mkdocs build
 
       # Remove build artifacts
-      #- name: Clean build directory
-      #  run: rm -rf build/
+      - name: Clean build directory
+        run: rm -rf build/
 
       # Create Git archive of version-controlled files
       - name: Create clean source archive
@@ -104,7 +104,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.4.1
+          npm install -g npm@11.4.2
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -124,9 +124,6 @@ jobs:
 
           echo "🔍 .npmrc contents:"
           cat "$NPM_CONFIG_USERCONFIG" || echo "❌ No .npmrc found"
-
-          echo "🔐 Token prefix:"
-          echo "${NODE_AUTH_TOKEN:0:4}********"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
 
@@ -168,7 +165,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.4.1
+          npm install -g npm@11.4.2
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -192,9 +189,6 @@ jobs:
 
           echo "🔍 .npmrc contents:"
           cat "$NPM_CONFIG_USERCONFIG" || echo "❌ No .npmrc found"
-
-          echo "🔐 Token prefix:"
-          echo "${NODE_AUTH_TOKEN:0:4}********"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
 

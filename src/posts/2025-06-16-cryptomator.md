@@ -1,6 +1,7 @@
 ---
 date:
   created: 2025-06-16
+  updated: 2025-07-27
 title: 'FOSS Spotlight: Cryptomator'
 summary: 'FOSS Spotlight: Cryptomator - Vault Up Your Cloud Privacy'
 authors:
@@ -16,7 +17,7 @@ tags:
   - foss-spotlight
   - open-source
   - privacy
-  - security
+  - cybersecurity
   - android
   - windows
   - linux

@@ -16,6 +16,31 @@ formatting may vary.
 
 ---
 
+## [1.4.0] - 2025-07-27
+
+### Changed
+
+- Bumped version to `v1.4.0`.
+- Cleaned up tags in the following files, located in `src/posts`:
+  - `2025-05-29-heliboard.md`
+  - `2025-05-29-msauth.md`
+  - `2025-06-08-squircle.md`
+  - `2025-06-12-backdoor.md`
+  - `2025-06-16-cryptomator.md`
+  - `2025-06-23-encryption-eff.md`
+  - `2025-07-17-otp-helper.md`
+- Updated sitemap.xml to reflect accurate "Last Modified" dates and correct
+  URLs.
+- Renamed `src/posts/2025-07-24-uk-apple-li.md` to
+  `src/posts/2025-07-27-uk-apple.md`.
+- Updated `.github/workflows/build-and-deploy.yml` to utilize `Node.js` `v24`
+  and `npm` `v11.4.2`.
+- Updated `.github/workflows/publish.yml` and
+  `.github/workflows/publish-test.yml` to utilize `npm` `v11.4.2`.
+- Added standardized header to `.github/COMMIT_GUIDE.md`.
+
+---
+
 ## [1.3.11] - 2025-07-27
 
 ### Fixed
@@ -262,7 +287,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.11...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/netwk-pro/blog/releases/tag/v1.4.0
 [1.3.11]: https://github.com/netwk-pro/blog/releases/tag/v1.3.11
 [1.3.10]: https://github.com/netwk-pro/blog/releases/tag/v1.3.10
 [1.3.9]: https://github.com/netwk-pro/blog/releases/tag/v1.3.9

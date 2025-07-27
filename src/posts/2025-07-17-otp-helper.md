@@ -1,6 +1,7 @@
 ---
 date:
   created: 2025-07-17
+  updated: 2025-07-27
 title: 'FOSS Spotlight: Copy SMS Code - OTP Helper'
 summary:
   Copy SMS Code – OTP Helper is a minimalist Android app that takes care of
@@ -16,7 +17,7 @@ tags:
   - foss-spotlight
   - open-source
   - privacy
-  - security
+  - cybersecurity
   - android
   - otp-helper
   - sms
