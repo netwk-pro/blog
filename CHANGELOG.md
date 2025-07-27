@@ -16,6 +16,27 @@ formatting may vary.
 
 ---
 
+## [1.3.10] - 2025-07-27
+
+### Added
+
+- New blog post: `2025-07-27-uk-apple.md` added to `/src/posts`.
+- Included associated promotional images: `uk-apple-promo.png` and
+  `uk-apple-promo.webp`.
+
+### Changed
+
+- Bumped version to `v1.3.10`.
+- Sitemap updated to include new posts.
+- Upgraded dependencies:
+  - `@eslint/js` `^9.31.0` → `^9.32.0`
+  - `@eslint/json` `^0.13.0` → `^0.13.1`
+  - `eslint` `^9.31.0` → `^9.32.0`
+  - `eslint-config-prettier` `^10.1.5` → `^10.1.8`
+  - `stylelint` `^16.21.1` → `^16.22.0`
+
+---
+
 ## [1.3.9] - 2025-07-17
 
 ### Added
@@ -234,7 +255,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.9...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.10...HEAD
+[1.3.10]: https://github.com/netwk-pro/blog/releases/tag/v1.3.10
 [1.3.9]: https://github.com/netwk-pro/blog/releases/tag/v1.3.9
 [1.3.8]: https://github.com/netwk-pro/blog/releases/tag/v1.3.8
 [1.3.7]: https://github.com/netwk-pro/blog/releases/tag/v1.3.7
