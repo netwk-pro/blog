@@ -16,6 +16,14 @@ formatting may vary.
 
 ---
 
+## [1.3.11] - 2025-07-27
+
+### Fixed
+
+- Bumped version to `v1.3.11`
+
+---
+
 ## [1.3.10] - 2025-07-27
 
 ### Added
@@ -26,7 +34,6 @@ formatting may vary.
 
 ### Changed
 
-- Bumped version to `v1.3.10`.
 - Sitemap updated to include new posts.
 - Upgraded dependencies:
   - `@eslint/js` `^9.31.0` → `^9.32.0`
@@ -255,7 +262,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.10...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.11...HEAD
+[1.3.11]: https://github.com/netwk-pro/blog/releases/tag/v1.3.11
 [1.3.10]: https://github.com/netwk-pro/blog/releases/tag/v1.3.10
 [1.3.9]: https://github.com/netwk-pro/blog/releases/tag/v1.3.9
 [1.3.8]: https://github.com/netwk-pro/blog/releases/tag/v1.3.8
