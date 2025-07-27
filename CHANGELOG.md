@@ -16,6 +16,25 @@ formatting may vary.
 
 ---
 
+## [1.3.12] - 2025-07-27
+
+### Changed
+
+- Bumped version to `v1.3.12`
+- Cleaned up tags in the following files, located in `src/posts`:
+  - `2025-05-29-heliboard.md`
+  - `2025-05-29-msauth.md`
+  - `2025-06-08-squircle.md`
+  - `2025-06-12-backdoor.md`
+  - `2025-06-16-cryptomator.md`
+  - `2025-06-23-encryption-eff.md`
+  - `2025-07-17-otp-helper.md`
+- Updated sitemap.xml to reflect accurate "Last Modified" dates and correct URLs
+- Renamed `src/posts/2025-07-24-uk-apple-li.md` to
+  `src/posts/2025-07-27-uk-apple.md`
+
+---
+
 ## [1.3.11] - 2025-07-27
 
 ### Fixed
@@ -262,7 +281,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.11...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.3.12...HEAD
+[1.3.12]: https://github.com/netwk-pro/blog/releases/tag/v1.3.12
 [1.3.11]: https://github.com/netwk-pro/blog/releases/tag/v1.3.11
 [1.3.10]: https://github.com/netwk-pro/blog/releases/tag/v1.3.10
 [1.3.9]: https://github.com/netwk-pro/blog/releases/tag/v1.3.9
