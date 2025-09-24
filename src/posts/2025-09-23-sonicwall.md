@@ -43,7 +43,7 @@ updated, passwords secure, and logs monitored!
 
 <figure class="poster-figure">
   <source srcset="/img/sonicwall-promo.webp" type="image/webp" />
-  <img src="/img/sonicwall-promo.png" alt="Encryption is not a loophole. It's a lifeline." style="width: 60%; height: 60%;">
+  <img src="/img/sonicwall-promo.png" alt="SonicWall Security Breach: What You Need to Know" style="width: 60%; height: 60%;">
   <figcaption>SonicWall Security Breach – featured visual</figcaption>
 </figure>
 
