@@ -30,12 +30,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 24
           cache: npm
@@ -44,14 +44,14 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.4.2
+          npm install -g npm@11.6.0
 
       - name: Install Node.js dependencies
         run: npm ci
 
       # Ensure MkDocs builds successfully
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13'
 
@@ -82,7 +82,7 @@ jobs:
 
     steps:
       - name: Download clean source archive
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: clean-source
           path: ./
@@ -94,7 +94,7 @@ jobs:
         run: rm clean-source.tar.gz
 
       - name: Set up Node.js for npmjs
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org/
@@ -104,7 +104,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.4.2
+          npm install -g npm@11.6.0
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -114,23 +114,23 @@ jobs:
           git config --global user.email "github@sl.neteng.cc"
           git config --global user.name "SunDevil311"
 
-      - name: Print npm config and registry info
-        run: |
-          echo "🔍 NPM registry (from config):"
-          npm config get registry
+      #- name: Print npm config and registry info
+      #  run: |
+      #    echo "🔍 NPM registry (from config):"
+      #    npm config get registry
 
-          echo "🔍 NPM user config location:"
-          echo "$NPM_CONFIG_USERCONFIG"
+      #    echo "🔍 NPM user config location:"
+      #    echo "$NPM_CONFIG_USERCONFIG"
 
-          echo "🔍 .npmrc contents:"
-          cat "$NPM_CONFIG_USERCONFIG" || echo "❌ No .npmrc found"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
+      #    echo "🔍 .npmrc contents:"
+      #    cat "$NPM_CONFIG_USERCONFIG" || echo "❌ No .npmrc found"
+      #  env:
+      #    NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
 
-      - name: Verify npm authentication
-        run: npm whoami
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
+      #- name: Verify npm authentication
+      #  run: npm whoami
+      #  env:
+      #    NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
 
       - name: Publish package to npmjs
         run: npm publish --access public
@@ -143,7 +143,7 @@ jobs:
 
     steps:
       - name: Download clean source archive
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: clean-source
           path: ./
@@ -155,7 +155,7 @@ jobs:
         run: rm clean-source.tar.gz
 
       - name: Set up Node.js for GPR
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 24
           registry-url: https://npm.pkg.github.com/
@@ -165,7 +165,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.4.2
+          npm install -g npm@11.6.0
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -177,25 +177,25 @@ jobs:
 
       - name: Update package name for GPR
         run: |
-          sed -i 's/"name": ".*"/"name": "@netwk-pro\/blog"/' package.json
+          sed -i 's/"name": "[^"]*"/"name": "@netwk-pro\/blog"/' package.json
 
-      - name: Print npm config and registry info
-        run: |
-          echo "🔍 NPM registry (from config):"
-          npm config get registry
+      #- name: Print npm config and registry info
+      #  run: |
+      #    echo "🔍 NPM registry (from config):"
+      #    npm config get registry
 
-          echo "🔍 NPM user config location:"
-          echo "$NPM_CONFIG_USERCONFIG"
+      #    echo "🔍 NPM user config location:"
+      #    echo "$NPM_CONFIG_USERCONFIG"
 
-          echo "🔍 .npmrc contents:"
-          cat "$NPM_CONFIG_USERCONFIG" || echo "❌ No .npmrc found"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
+      #    echo "🔍 .npmrc contents:"
+      #    cat "$NPM_CONFIG_USERCONFIG" || echo "❌ No .npmrc found"
+      #  env:
+      #    NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
 
-      - name: Verify npm authentication
-        run: npm whoami --registry=https://npm.pkg.github.com/
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
+      #- name: Verify npm authentication
+      #  run: npm whoami --registry=https://npm.pkg.github.com/
+      #  env:
+      #    NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
 
       - name: Publish package to GPR
         run: npm publish --registry=https://npm.pkg.github.com/
