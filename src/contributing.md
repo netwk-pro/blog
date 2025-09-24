@@ -121,7 +121,7 @@ with maintainers first.
 
 ```bash
 git clone https://github.com/<your-username>/blog.git
-cd netwk-pro.github.io
+cd blog
 git remote add upstream https://github.com/netwk-pro/blog.git
 ```
 
