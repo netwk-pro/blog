@@ -42,7 +42,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.4.2
+          npm install -g npm@11.6.0
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -107,7 +107,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.4.2
+          npm install -g npm@11.6.0
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -155,7 +155,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.4.2
+          npm install -g npm@11.6.0
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -167,7 +167,7 @@ jobs:
 
       - name: Update package name for GPR
         run: |
-          sed -i 's/"name": ".*"/"name": "@netwk-pro\/blog"/' package.json
+          sed -i 's/"name": "[^"]*"/"name": "@netwk-pro\/blog"/' package.json
 
       - name: Publish package to GPR
         run: npm publish --dry-run

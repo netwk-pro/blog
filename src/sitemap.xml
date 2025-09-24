@@ -7,11 +7,23 @@
 
     <loc>https://blog.netwk.pro</loc>
 
-    <lastmod>2025-07-27</lastmod>
+    <lastmod>2025-09-23</lastmod>
 
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
 
     <priority>1.0</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://blog.netwk.pro/2025/09/23/cyber-alert-update---sonicwall-security-breach-what-you-need-to-know/</loc>
+
+    <lastmod>2025-09-23</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.8</priority>
 
   </url>
 
@@ -23,7 +35,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.8</priority>
+    <priority>0.7</priority>
 
   </url>
 
@@ -37,7 +49,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.8</priority>
+    <priority>0.7</priority>
 
   </url>
 
@@ -49,7 +61,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.8</priority>
+    <priority>0.7</priority>
 
   </url>
 
@@ -61,7 +73,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.8</priority>
+    <priority>0.7</priority>
 
   </url>
 
@@ -73,7 +85,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.8</priority>
+    <priority>0.7</priority>
 
   </url>
 
@@ -85,7 +97,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.8</priority>
+    <priority>0.7</priority>
 
   </url>
 
@@ -285,7 +297,7 @@
 
     <loc>https://blog.netwk.pro/category/security/</loc>
 
-    <lastmod>2025-05-30</lastmod>
+    <lastmod>2025-09-23</lastmod>
 
     <changefreq>monthly</changefreq>
 
@@ -297,9 +309,9 @@
 
     <loc>https://blog.netwk.pro/archive/2025/</loc>
 
-    <lastmod>2025-05-30</lastmod>
+    <lastmod>2025-09-23</lastmod>
 
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
 
     <priority>0.5</priority>
 
@@ -309,9 +321,9 @@
 
     <loc>https://blog.netwk.pro/tags/</loc>
 
-    <lastmod>2025-05-11</lastmod>
+    <lastmod>2025-09-23</lastmod>
 
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
 
     <priority>0.5</priority>
 
@@ -333,7 +345,7 @@
 
     <loc>https://blog.netwk.pro/contributing/</loc>
 
-    <lastmod>2025-05-30</lastmod>
+    <lastmod>2025-09-23</lastmod>
 
     <changefreq>monthly</changefreq>
 

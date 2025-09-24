@@ -16,6 +16,47 @@ formatting may vary.
 
 ---
 
+## [1.5.0] - 2025-09-23
+
+### Added
+
+- New blog post: `2025-09-23-sonicwall.md` added to `/src/posts`.
+- Included associated promotional images: `sonicwall-promo.png` and
+  `sonicwall-promo.webp`.
+- Added `discord.svg` to `/src/fontawesome/brands`.
+
+### Changed
+
+- Bumped version to `v1.5.0`.
+- Updated overall site layout to improve readability and navigation.
+- Adjusted styles and templates to support new design structure.
+- Updated Material for MkDocs palette to default to dark mode, with optional
+  toggle to light mode.
+- Removed Cookie Consent banner configuration, as this blog sub-site does not
+  use cookies.
+- Updated footer to explicitly state that the blog does not use cookies, with
+  link to the Privacy Policy.
+- CI workflow updated to use a safer `sed` pattern (`"[^"]*"`) when patching the
+  package name in `package.json`.
+- GitHub Actions workflows (`build-and-deploy.yml`, `publish-test.yml`, and
+  `publish.yml`) updated to use `npm v11.6.0`.
+- CI workflow updated to use `actions/checkout v5`, `actions/setup-node v5`,
+  `actions/setup-python v6`, and `actions/download-artifact v5`.
+- Updated `sitemap.xml` to reflect accurate "Last Modified" dates and correct
+  URLs.
+- Corrected fork and clone instructions in `contributing.md`.
+- Upgraded dependencies:
+  - `@eslint/js` `^9.32.0` → `^9.36.0`
+  - `@eslint/json` `^0.13.1` → `^0.13.2`
+  - `browserslist` `^4.25.1` → `^4.26.2`
+  - `eslint` `^9.32.0` → `^9.36.0`
+  - `globals` `^16.3.0` → `^16.4.0`
+  - `stylelint` `^16.22.0` → `^16.24.0`
+  - `stylelint-config-recommended` `^16.0.0` → `^17.0.0`
+  - `mkdocs-material` `9.6.14` → `9.6.20`
+
+---
+
 ## [1.4.0] - 2025-07-27
 
 ### Changed
@@ -29,7 +70,7 @@ formatting may vary.
   - `2025-06-16-cryptomator.md`
   - `2025-06-23-encryption-eff.md`
   - `2025-07-17-otp-helper.md`
-- Updated sitemap.xml to reflect accurate "Last Modified" dates and correct
+- Updated `sitemap.xml` to reflect accurate "Last Modified" dates and correct
   URLs.
 - Renamed `src/posts/2025-07-24-uk-apple-li.md` to
   `src/posts/2025-07-27-uk-apple.md`.
@@ -287,7 +328,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/netwk-pro/blog/releases/tag/v1.5.0
 [1.4.0]: https://github.com/netwk-pro/blog/releases/tag/v1.4.0
 [1.3.11]: https://github.com/netwk-pro/blog/releases/tag/v1.3.11
 [1.3.10]: https://github.com/netwk-pro/blog/releases/tag/v1.3.10

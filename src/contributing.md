@@ -1,7 +1,7 @@
 ---
 date:
-  created: 2023-12-31
-  updated: 2025-06-07
+  created: 2025-06-07
+  updated: 2025-09-23
 title: Contributing to Network Pro™
 summary:
   Instructions for getting involved and contributing to Network Pro Strategies.
@@ -20,7 +20,7 @@ tags:
 # 🤝 Contributing to Network Pro Strategies
 
 **Network Pro Strategies**  
-**Effective Date:** June 7, 2025
+**Effective Date:** September 23, 2025
 
 &nbsp;
 
@@ -120,16 +120,16 @@ with maintainers first.
 `1.` **Fork the repo & set remotes**:
 
 ```bash
-git clone https://github.com/<your-username>/netwk-pro.github.io.git cd
-netwk-pro.github.io git remote add upstream
-https://github.com/netwk-pro/netwk-pro.github.io.git
+git clone https://github.com/<your-username>/blog.git
+cd netwk-pro.github.io
+git remote add upstream https://github.com/netwk-pro/blog.git
 ```
 
 `2.` **Stay Updated**
 
 ```bash
-git checkout main
-git pull upstream main
+git checkout master
+git pull upstream master
 ```
 
 `3.` **Create a topic branch:**
@@ -142,8 +142,7 @@ git checkout -b my-feature
 
 ```bash
 npm ci
-npm run lint
-npm run test
+npm run checkout
 ```
 
 `5.` **Make your changes**

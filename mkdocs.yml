@@ -14,24 +14,15 @@ theme:
   logo: /icon-512x512.png
   favicon: /favicon.svg
   palette:
-    # Palette toggle for automatic mode
-    - media: '(prefers-color-scheme)'
-      primary: amber
-      accent: yellow
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-    # Palette toggle for dark mode
-    - media: '(prefers-color-scheme: dark)'
-      scheme: slate
+    # Default to dark mode
+    - scheme: slate
       primary: amber
       accent: yellow
       toggle:
         icon: material/brightness-4
-        name: Switch to system preference
-    # Palette toggle for light mode
-    - media: '(prefers-color-scheme: light)'
-      scheme: default
+        name: Switch to light mode
+    # Optional light mode
+    - scheme: default
       primary: amber
       accent: yellow
       toggle:
@@ -49,44 +40,31 @@ theme:
 
 extra:
   base_url: /
-  consent:
-    title: Cookie Consent
-    description: >-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-    cookies:
-      analytics:
-        name: Google Analytics
-        checked: false
-      github:
-        name: GitHub
-        checked: true
-    actions:
-      - reject
-      - accept
-      - manage
+  #generator: false
   social:
     - icon: fontawesome/brands/instagram
       name: Network Pro on Instagram
-      link: https://instagram.com/netwk_pro/
+      link: https://instagram.com/netwk_pro
     - icon: fontawesome/brands/facebook
       name: Network Pro on Facebook
-      link: https://facebook.com/neteng.pro/
+      link: https://facebook.com/neteng.pro
     - icon: fontawesome/brands/linkedin
       name: Network Pro on LinkedIn
-      link: https://linkedin.com/company/netwk-pro/
+      link: https://linkedin.com/company/netwk-pro
     - icon: fontawesome/brands/mastodon
       name: Network Pro on Mastodon
-      link: https://noc.social/@neteng_pro/
+      link: https://noc.social/@neteng_pro
+    - icon: fontawesome/brands/discord
+      name: Network Pro on Discord
+      link: https://discord.neteng.pro
     - icon: fontawesome/solid/at
       name: Contact Us
       link: https://netwk.pro/contact
 
 copyright: >
-  Copyright &copy; 2025 Network Pro Strategies (Network Pro&trade;) – <a
-  href="#__consent">Change cookie settings</a>
+  Copyright &copy; 2025 Network Pro Strategies (Network Pro&trade;) – This blog
+  does not use cookies. See our <a href="https://netwk.pro/privacy">Privacy
+  Policy</a> for details.
 
 plugins:
   - search
