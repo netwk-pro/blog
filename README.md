@@ -42,7 +42,7 @@ geographies with a focus on:
 
 - **Network Hardening & Perimeter Defense**
 - **Firewall Architecture & Policy Optimization**
-- **Cloud Security & Zero Trust Implementation**
+- **Zero Trust Implementation**
 - **Secure Infrastructure Design & Implementation**
 - **Risk Reduction & Security Posture Assessment**
 
@@ -69,10 +69,10 @@ and strengthen your business today.
 You can find our PGP keys and a vCard containing our contact information for
 your convenience below.
 
-|                                                                                                                                                         <img decoding="async" loading="lazy" src="https://netwk.pro/pgp/pgp-support.png" width="150px" height="150px" alt="PGP Key - support@neteng.pro"> | **[support@neteng.pro](https://keys.openpgp.org/search?q=support%40neteng.pro)**<br />**PGP Key (ed25519)**<br />&nbsp;<br /><a href="https://netwk.pro/pgp/support@neteng.pro.asc" type="application/pgp-keys">**asc**</a><br />&nbsp;<br />6590B992E2E3EFF12738<br />7BCE2AF093E9DEC61BA0 |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **[contact@s.neteng.pro](https://keys.openpgp.org/search?q=contact%40s.neteng.pro)**<br />**PGP Key (ed25519)**<br />&nbsp;<br /><a href="https://netwk.pro/pgp/contact@s.neteng.pro.asc" type="application/pgp-keys">**asc**</a><br />&nbsp;<br />**DF118BAA6C2D9DCDEBDC**<br />**2DDCF99373499495F957** | <img decoding="async" loading="lazy" src="https://netwk.pro/pgp/pgp-contact.png" width="150px" height="150px" alt="PGP Key - contact@s.neteng.pro">                                                                                                                                         |
-|                                                                                                                                                                                      <img decoding="async" loading="lazy" src="https://netwk.pro/pgp/vcard.png" width="150px" height="150px" alt="vCard"> | **vCard**<br />&nbsp;<br /><a href="https://netwk.pro/bin/contact.vcf" type="text/vcard" download>**vcf**</a>                                                                                                                                                                               |
+|                                                                               <img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/netwk-pro/netwk-pro.github.io/refs/heads/master/src/lib/img/qr/pgp-support.png" width="150px" height="150px" alt="PGP Key - support@netwk.pro"> | **[support@neteng.pro](https://keys.openpgp.org/search?q=support%40netwk.pro)**<br />**PGP Key (ed25519)**<br />&nbsp;<br /><a href="https://netwk.pro/pgp/support@netwk.pro.asc" type="application/pgp-keys" download>**asc**</a><br />&nbsp;<br />6590B992E2E3EFF12738<br />7BCE2AF093E9DEC61BA0 |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[contact@s.neteng.pro](https://keys.openpgp.org/search?q=contact%40s.neteng.pro)**<br />**PGP Key (ed25519)**<br />&nbsp;<br /><a href="https://netwk.pro/pgp/contact@s.neteng.pro.asc" type="application/pgp-keys">**asc**</a><br />&nbsp;<br />**DF118BAA6C2D9DCDEBDC**<br />**2DDCF99373499495F957** | <img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/netwk-pro/netwk-pro.github.io/refs/heads/master/src/lib/img/qr/pgp-contact.png" width="150px" height="150px" alt="PGP Key - contact@s.neteng.pro">                                                                     |
+|                                                                                                           <img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/netwk-pro/netwk-pro.github.io/refs/heads/master/src/lib/img/qr/vcard.png" width="150px" height="150px" alt="vCard"> | **vCard**<br />&nbsp;<br /><a href="https://netwk.pro/bin/contact.vcf" type="text/vcard" download>**vcf**</a>                                                                                                                                                                                      |
 
 <sub>[Back to top](#top)</sub>
 
@@ -94,7 +94,7 @@ your convenience below.
 Copyright &copy; 2025  
 **[Network Pro Strategies](https://netwk.pro/)** (Network Pro&trade;)
 
-Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;"
+Network Pro&trade;, the shield logo, and the "Locking Down Networks...&trade;"
 slogan are [trademarks](https://netwk.pro/license#trademark) of Network Pro
 Strategies.
 
