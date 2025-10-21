@@ -16,6 +16,25 @@ formatting may vary.
 
 ---
 
+## [1.5.1] - 2022-10-21
+
+### Changed
+
+- Bumped project version to `v1.5.1`.
+- Minor correction made to `README.md` footer.
+- Updated dependencies:
+  - `@eslint/js` `^9.36.0` → `^9.38.0`
+  - `browserslist` `^4.26.2` → `^4.26.3`
+  - `eslint` `^9.36.0` → `^9.38.0`
+  - `markdownlint` `^0.38.0` → `^0.39.0`
+  - `stylelint` `^16.24.0` → `^16.25.0`
+
+### Fixed
+
+- Corrected links to images in `README.md`.
+
+---
+
 ## [1.5.0] - 2025-09-23
 
 ### Added
@@ -328,7 +347,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.0...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.1...HEAD
+[1.5.1]: https://github.com/netwk-pro/blog/releases/tag/v1.5.1
 [1.5.0]: https://github.com/netwk-pro/blog/releases/tag/v1.5.0
 [1.4.0]: https://github.com/netwk-pro/blog/releases/tag/v1.4.0
 [1.3.11]: https://github.com/netwk-pro/blog/releases/tag/v1.3.11
