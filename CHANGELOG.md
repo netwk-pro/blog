@@ -16,6 +16,18 @@ formatting may vary.
 
 ---
 
+## [1.5.2] - 2022-10-21
+
+### Changed
+
+- Bumped project version to `v1.5.2`.
+
+### Fixed
+
+- Corrected email address in `README.md`.
+
+---
+
 ## [1.5.1] - 2022-10-21
 
 ### Changed
@@ -347,7 +359,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.1...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.2...HEAD
+[1.5.2]: https://github.com/netwk-pro/blog/releases/tag/v1.5.2
 [1.5.1]: https://github.com/netwk-pro/blog/releases/tag/v1.5.1
 [1.5.0]: https://github.com/netwk-pro/blog/releases/tag/v1.5.0
 [1.4.0]: https://github.com/netwk-pro/blog/releases/tag/v1.4.0
