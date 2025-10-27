@@ -16,7 +16,30 @@ formatting may vary.
 
 ---
 
-## [1.5.2] - 2022-10-21
+## [1.5.3] - 2025-10-26
+
+### Changed
+
+- Bumped project version to `v1.5.3`.
+- Corrected publish dates in CHANGELOG.md, as they were incorrectly showing the
+  year as 2022.
+- Updated **Node.js** dependencies:
+  - `browserslist` `^4.26.3` → `^4.27.0`
+- Updated **Python** dependencies:
+  - `mkdocs-material` `9.6.20` → `9.6.22`
+  - `mkdocs-rss-plugin` `1.17.3` → `1.17.4`
+- Updated GitHub workflows to utilize **Node.js** `v22`, **npm** `11.6.2`, and
+  the latest action versions. Modified `publish-test.yml` and `publish.yml` to
+  utilize `GITHUB_TOKEN` authentication for publishing.
+  - `backup-branch.yml`
+  - `build-and-deploy.yml`
+  - `dependency-review.yml`
+  - `publish-test.yml`
+  - `publish.yml`
+
+---
+
+## [1.5.2] - 2025-10-21
 
 ### Changed
 
@@ -28,7 +51,7 @@ formatting may vary.
 
 ---
 
-## [1.5.1] - 2022-10-21
+## [1.5.1] - 2025-10-21
 
 ### Changed
 
@@ -359,7 +382,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.2...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.3...HEAD
+[1.5.3]: https://github.com/netwk-pro/blog/releases/tag/v1.5.3
 [1.5.2]: https://github.com/netwk-pro/blog/releases/tag/v1.5.2
 [1.5.1]: https://github.com/netwk-pro/blog/releases/tag/v1.5.1
 [1.5.0]: https://github.com/netwk-pro/blog/releases/tag/v1.5.0

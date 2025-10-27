@@ -12,6 +12,7 @@ on:
 permissions:
   actions: read
   contents: read
+  packages: write
 
 # Allow one concurrent deployment
 concurrency:
@@ -28,28 +29,28 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: 22
           cache: npm
           cache-dependency-path: package-lock.json
 
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.6.0
+          npm install -g npm@11.6.2
 
       - name: Install Node.js dependencies
         run: npm ci
 
       # Ensure MkDocs builds successfully
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13'
 
@@ -69,7 +70,7 @@ jobs:
         run: git archive --format=tar.gz --output=clean-source.tar.gz HEAD
 
       - name: Upload source archive
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: clean-source
           path: clean-source.tar.gz
@@ -80,7 +81,7 @@ jobs:
 
     steps:
       - name: Download clean source archive
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: clean-source
           path: ./
@@ -92,9 +93,9 @@ jobs:
         run: rm clean-source.tar.gz
 
       - name: Set up Node.js for npmjs
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: 22
           registry-url: https://registry.npmjs.org/
           cache: npm
 
@@ -107,7 +108,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.6.0
+          npm install -g npm@11.6.2
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -128,7 +129,7 @@ jobs:
 
     steps:
       - name: Download clean source archive
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: clean-source
           path: ./
@@ -140,9 +141,9 @@ jobs:
         run: rm clean-source.tar.gz
 
       - name: Set up Node.js for GPR
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: 22
           registry-url: https://npm.pkg.github.com/
           cache: npm
 
@@ -155,7 +156,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.6.0
+          npm install -g npm@11.6.2
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -172,4 +173,4 @@ jobs:
       - name: Publish package to GPR
         run: npm publish --dry-run
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
