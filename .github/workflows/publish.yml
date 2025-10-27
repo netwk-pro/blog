@@ -15,6 +15,7 @@ on:
 permissions:
   actions: read
   contents: read
+  packages: write
 
 # Allow one concurrent deployment
 concurrency:
@@ -35,16 +36,16 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Node.js
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: 22
           cache: npm
           cache-dependency-path: package-lock.json
 
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.6.0
+          npm install -g npm@11.6.2
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -71,7 +72,7 @@ jobs:
         run: git archive --format=tar.gz --output=clean-source.tar.gz HEAD
 
       - name: Upload source archive
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: clean-source
           path: clean-source.tar.gz
@@ -94,9 +95,9 @@ jobs:
         run: rm clean-source.tar.gz
 
       - name: Set up Node.js for npmjs
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: 22
           registry-url: https://registry.npmjs.org/
           cache: npm
           cache-dependency-path: package-lock.json
@@ -104,7 +105,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.6.0
+          npm install -g npm@11.6.2
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -155,9 +156,9 @@ jobs:
         run: rm clean-source.tar.gz
 
       - name: Set up Node.js for GPR
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: 22
           registry-url: https://npm.pkg.github.com/
           cache: npm
           cache-dependency-path: package-lock.json
@@ -165,7 +166,7 @@ jobs:
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.6.0
+          npm install -g npm@11.6.2
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -200,4 +201,4 @@ jobs:
       - name: Publish package to GPR
         run: npm publish --registry=https://npm.pkg.github.com/
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NWPRO_GPR }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
