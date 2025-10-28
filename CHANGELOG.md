@@ -20,7 +20,7 @@ formatting may vary.
 
 ### Added
 
-- Added `.python-version` with `3.14.0` for easier control of **Python**
+- Added `.python-version` with `3.13.0` for easier control of **Python**
   version.
 
 ### Changed
