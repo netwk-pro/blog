@@ -16,6 +16,24 @@ formatting may vary.
 
 ---
 
+## [1.5.4] - 2025-10-28
+
+### Added
+
+- Added `.python-version` with `3.14.0` for easier control of **Python**
+  version.
+
+### Changed
+
+- Bumped project version to `v1.5.4`.
+- Added `browserslistrc` to `cspell.json`.
+- Modified GitHub workflows in `.github/workflows` to utilize `.python-version`:
+  - `build-and-deploy.yml`
+  - `publish-test.yml`
+  - `publish.yml`
+
+---
+
 ## [1.5.3] - 2025-10-26
 
 ### Changed
@@ -382,7 +400,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.3...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.4...HEAD
+[1.5.4]: https://github.com/netwk-pro/blog/releases/tag/v1.5.4
 [1.5.3]: https://github.com/netwk-pro/blog/releases/tag/v1.5.3
 [1.5.2]: https://github.com/netwk-pro/blog/releases/tag/v1.5.2
 [1.5.1]: https://github.com/netwk-pro/blog/releases/tag/v1.5.1
