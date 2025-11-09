@@ -1,7 +1,7 @@
 ---
 date:
   created: 2015-01-04
-  updated: 2025-07-27
+  updated: 2025-11-09
 title: Secure Secure Shell
 summary: Secure shell (SSHD) hardening guide.
 authors:
@@ -12,6 +12,7 @@ categories:
 tags:
   - cybersecurity
   - guides
+  - security
 ---
 
 # Secure Secure Shell
@@ -370,18 +371,18 @@ Here are the available MAC choices:
 1. hmac-md5-96
 1. hmac-sha1
 1. hmac-sha1-96
-1. hmac-sha2-256
-1. hmac-sha2-512
+1. **hmac-sha2-256**
+1. **hmac-sha2-512**
 1. umac-64
-1. umac-128
-1. <hmac-md5-etm@openssh.com>
-1. <hmac-md5-96-etm@openssh.com>
-1. <hmac-sha1-etm@openssh.com>
-1. <hmac-sha1-96-etm@openssh.com>
-1. **<hmac-sha2-256-etm@openssh.com>**
-1. **<hmac-sha2-512-etm@openssh.com>**
-1. <umac-64-etm@openssh.com>
-1. <umac-128-etm@openssh.com>
+1. **umac-128**
+1. hmac-md5-etm@openssh.com
+1. hmac-md5-96-etm@openssh.com
+1. hmac-sha1-etm@openssh.com
+1. hmac-sha1-96-etm@openssh.com
+1. **hmac-sha2-256-etm@openssh.com**
+1. **hmac-sha2-512-etm@openssh.com**
+1. umac-64-etm@openssh.com
+1. **umac-128-etm@openssh.com**
 
 The selection considerations:
 

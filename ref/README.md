@@ -51,7 +51,7 @@ docs/
     blog/               # The directory that all blog content goes into (first blog instance)
         posts/          # the place to put your posts
         author/         # Author profiles
-        .authors.yml    # Author information to be added to posts (shared betwe
+        .authors.yml    # Author information to be added to posts
 ext/                    # Directory that contains code for the custom slugs
 hooks/                  # Directory for a hook that adds social media share buttons
 ```

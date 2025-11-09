@@ -16,6 +16,43 @@ formatting may vary.
 
 ---
 
+## [1.5.5] - 2025-11-09
+
+### Added
+
+- Added `src/posts/2025-11-09-privacy-and-security.md`, along with image assets:
+  - `src/img/privacy-security-promo.png`
+  - `src/img/privacy-security-promo.webp`
+- Added `src/posts/2025-11-09-sideloading.md`, along with image assets:
+  - `src/img/sideloading-promo.png`
+  - `src/img/sideloading-promo.webp`
+- Introduced `npm-run-all` devDependency for more efficient linting.
+
+### Changed
+
+- Refactored `src/contributing.md` to accurately reflect the proper method of
+  contributing.
+- Revised emphasis in the **Message authentication codes** section of
+  `/src/posts/secure-secure-shell.md`.
+- Updated CI workflows to utilize **Node.js v24** (LTS):
+  - `build-and-deploy.yml`
+  - `publish-test.yml`
+  - `publish.yml`
+- Revised scripts in `package.json` for more efficient use by utilizing
+  `npm-run-all`.
+- Updated `.python-version` to reflect **Python v3.14**.
+- Bumped project version to `v1.5.5`.
+- Updated **Node.js** dependencies:
+  - `@eslint/js` `^9.38.0` → `^9.39.1`
+  - `@eslint/json` `^0.13.2` → `^0.14.0`
+  - `eslint` `^9.38.0` → `^9.39.1`
+  - `globals` `^16.4.0` → `^16.5.0`
+- Updated **Python** dependencies:
+  - `mkdocs-material` `9.6.22` → `9.6.23`
+  - `mkdocs-rss-plugin` `1.17.4` → `1.17.5`
+
+---
+
 ## [1.5.4] - 2025-10-28
 
 ### Added
@@ -399,7 +436,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.4...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.5...HEAD
+[1.5.5]: https://github.com/netwk-pro/blog/releases/tag/v1.5.5
 [1.5.4]: https://github.com/netwk-pro/blog/releases/tag/v1.5.4
 [1.5.3]: https://github.com/netwk-pro/blog/releases/tag/v1.5.3
 [1.5.2]: https://github.com/netwk-pro/blog/releases/tag/v1.5.2

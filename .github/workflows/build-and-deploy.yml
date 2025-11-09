@@ -40,7 +40,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
           cache-dependency-path: package-lock.json
 
@@ -60,6 +60,7 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version-file: .python-version
+          cache: 'pip'
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
