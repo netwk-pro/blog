@@ -1,6 +1,6 @@
 site_name: Network Pro™ Blog
 site_url: https://blog.netwk.pro
-repo_url: https://github.com/netwk-pro/netwk-pro.github.io
+repo_url: https://github.com/netwk-pro/blog
 repo_name: GitHub
 docs_dir: src
 site_dir: build/
@@ -23,8 +23,8 @@ theme:
         name: Switch to light mode
     # Optional light mode
     - scheme: default
-      primary: amber
-      accent: yellow
+      primary: orange
+      accent: deep orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
