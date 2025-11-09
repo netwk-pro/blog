@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Last Updated: July 27, 2025 -->
+<!-- Last Updated: 2025-11-09 -->
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
@@ -7,11 +7,35 @@
 
     <loc>https://blog.netwk.pro</loc>
 
-    <lastmod>2025-09-23</lastmod>
+    <lastmod>2025-11-09</lastmod>
 
     <changefreq>monthly</changefreq>
 
     <priority>1.0</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://blog.netwk.pro/2025/11/09/introducing-our-new-privacy--security-apps--services-portal/</loc>
+
+    <lastmod>2025-11-09</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.8</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://blog.netwk.pro/2025/11/09/the-end-of-true-sideloading/</loc>
+
+    <lastmod>2025-11-09</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.8</priority>
 
   </url>
 
@@ -109,7 +133,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -121,7 +145,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -133,7 +157,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -145,7 +169,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -157,7 +181,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -169,7 +193,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.7</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -181,7 +205,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.6</priority>
+    <priority>0.5</priority>
 
   </url>
 
@@ -193,7 +217,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.6</priority>
+    <priority>0.5</priority>
 
   </url>
 
@@ -205,7 +229,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.6</priority>
+    <priority>0.5</priority>
 
   </url>
 
@@ -217,7 +241,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.6</priority>
+    <priority>0.5</priority>
 
   </url>
 
@@ -229,7 +253,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.6</priority>
+    <priority>0.5</priority>
 
   </url>
 
@@ -241,7 +265,7 @@
 
     <changefreq>monthly</changefreq>
 
-    <priority>0.6</priority>
+    <priority>0.5</priority>
 
   </url>
 
@@ -261,7 +285,7 @@
 
     <loc>https://blog.netwk.pro/category/android/</loc>
 
-    <lastmod>2025-05-30</lastmod>
+    <lastmod>2025-11-09</lastmod>
 
     <changefreq>monthly</changefreq>
 
@@ -273,7 +297,7 @@
 
     <loc>https://blog.netwk.pro/category/open-source/</loc>
 
-    <lastmod>2025-05-30</lastmod>
+    <lastmod>2025-11-09</lastmod>
 
     <changefreq>monthly</changefreq>
 
@@ -285,7 +309,7 @@
 
     <loc>https://blog.netwk.pro/category/privacy/</loc>
 
-    <lastmod>2025-05-30</lastmod>
+    <lastmod>2025-11-09</lastmod>
 
     <changefreq>monthly</changefreq>
 
@@ -297,7 +321,7 @@
 
     <loc>https://blog.netwk.pro/category/security/</loc>
 
-    <lastmod>2025-09-23</lastmod>
+    <lastmod>2025-11-09</lastmod>
 
     <changefreq>monthly</changefreq>
 
@@ -309,7 +333,7 @@
 
     <loc>https://blog.netwk.pro/archive/2025/</loc>
 
-    <lastmod>2025-09-23</lastmod>
+    <lastmod>2025-11-09</lastmod>
 
     <changefreq>monthly</changefreq>
 
@@ -321,7 +345,7 @@
 
     <loc>https://blog.netwk.pro/tags/</loc>
 
-    <lastmod>2025-09-23</lastmod>
+    <lastmod>2025-11-09</lastmod>
 
     <changefreq>monthly</changefreq>
 
@@ -333,7 +357,7 @@
 
     <loc>https://blog.netwk.pro/2015/01/04/secure-secure-shell/</loc>
 
-    <lastmod>2025-05-11</lastmod>
+    <lastmod>2025-11-09</lastmod>
 
     <changefreq>yearly</changefreq>
 
@@ -345,7 +369,7 @@
 
     <loc>https://blog.netwk.pro/contributing/</loc>
 
-    <lastmod>2025-09-23</lastmod>
+    <lastmod>2025-11-09</lastmod>
 
     <changefreq>monthly</changefreq>
 

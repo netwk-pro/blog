@@ -16,6 +16,18 @@ formatting may vary.
 
 ---
 
+## [1.5.6] - 2025-11-09
+
+### Changed
+
+- Updated MkDocs for Material **light mode** to use `orange` as the primary
+  color and `deep orange` as the accent color for improved readability.
+- Updated `src/sitemap.xml` to reflect the newest posts and refresh last
+  modified dates.
+- Bumped project version to `v1.5.6`.
+
+---
+
 ## [1.5.5] - 2025-11-09
 
 ### Added
