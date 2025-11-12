@@ -30,6 +30,8 @@ jobs:
   build:
     needs: check-codeql
     runs-on: ubuntu-24.04
+    env:
+      ENV_MODE: ci
 
     steps:
       - name: Checkout repository
@@ -59,7 +61,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version-file: .python-version
+          python-version-file: '.python-version'
           cache: 'pip'
 
       - name: Install Python dependencies
@@ -83,6 +85,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-24.04
+    env:
+      ENV_MODE: ci
 
     steps:
       - name: Deploy to GitHub Pages

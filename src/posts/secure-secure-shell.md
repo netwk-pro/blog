@@ -1,7 +1,7 @@
 ---
 date:
   created: 2015-01-04
-  updated: 2025-11-09
+  updated: 2025-11-12
 title: Secure Secure Shell
 summary: Secure shell (SSHD) hardening guide.
 authors:
@@ -140,7 +140,7 @@ that but for interoperability (with Eclipse, WinSCP), **8** can be included.
 
 Recommended `/etc/ssh/sshd_config` snippet:
 
-<pre><code id="server-kex">KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256</code></pre>
+<pre><code id="server-kex">KexAlgorithms curve25519-sha256@libssh.org</code></pre>
 
 Recommended `/etc/ssh/ssh_config` snippet:
 
@@ -149,7 +149,7 @@ Recommended `/etc/ssh/ssh_config` snippet:
 #    KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1
 
 Host *
-    KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256</code></pre>
+    KexAlgorithms curve25519-sha256@libssh.org</code></pre>
 
 > **_NOTE:_** GitHub should no longer need a separate setting, as they've
 > transitioned away from SSH keys. They should not require an exception
@@ -292,21 +292,21 @@ and authentication is complete.
 Here we have quite a few algorithms (10-14 were removed in [OpenSSH
 7.6][76release]):
 
-1. 3des-cbc
-1. aes128-cbc
-1. aes192-cbc
-1. aes256-cbc
-1. aes128-ctr
-1. aes192-ctr
-1. aes256-ctr
-1. **_<aes128-gcm@openssh.com>_**
-1. **_<aes256-gcm@openssh.com>_**
-1. arcfour
-1. arcfour128
-1. arcfour256
-1. blowfish-cbc
-1. cast128-cbc
-1. **<chacha20-poly1305@openssh.com>**
+1. `3des-cbc`
+1. `aes128-cbc`
+1. `aes192-cbc`
+1. `aes256-cbc`
+1. `aes128-ctr`
+1. `aes192-ctr`
+1. `aes256-ctr`
+1. **_`aes128-gcm@openssh.com`_**
+1. **_`aes256-gcm@openssh.com`_**
+1. `arcfour`
+1. `arcfour128`
+1. `arcfour256`
+1. `blowfish-cbc`
+1. `cast128-cbc`
+1. **`chacha20-poly1305@openssh.com`**
 
 We have to consider the following:
 
@@ -367,22 +367,22 @@ was. SSH by default, uses this method.
 
 Here are the available MAC choices:
 
-1. hmac-md5
-1. hmac-md5-96
-1. hmac-sha1
-1. hmac-sha1-96
-1. **hmac-sha2-256**
-1. **hmac-sha2-512**
-1. umac-64
-1. **umac-128**
-1. hmac-md5-etm@openssh.com
-1. hmac-md5-96-etm@openssh.com
-1. hmac-sha1-etm@openssh.com
-1. hmac-sha1-96-etm@openssh.com
-1. **hmac-sha2-256-etm@openssh.com**
-1. **hmac-sha2-512-etm@openssh.com**
-1. umac-64-etm@openssh.com
-1. **umac-128-etm@openssh.com**
+1. `hmac-md5`
+1. `hmac-md5-96`
+1. `hmac-sha1`
+1. `hmac-sha1-96`
+1. **`hmac-sha2-256`**
+1. **`hmac-sha2-512`**
+1. `umac-64`
+1. **`umac-128`**
+1. `hmac-md5-etm@openssh.com`
+1. `hmac-md5-96-etm@openssh.com`
+1. `hmac-sha1-etm@openssh.com`
+1. `hmac-sha1-96-etm@openssh.com`
+1. **`hmac-sha2-256-etm@openssh.com`**
+1. **`hmac-sha2-512-etm@openssh.com`**
+1. `umac-64-etm@openssh.com`
+1. **`umac-128-etm@openssh.com`**
 
 The selection considerations:
 
@@ -503,7 +503,7 @@ sshd instance on a different port and testing that.
 
 Can you make these changes? If the answer is yes, then...
 
-![NSA Happy Dance](https://raw.githubusercontent.com/netwk-pro/netwk-pro.github.io/refs/heads/master/assets/nsa-happy-dance.png 'Happy Dance!!')
+![NSA Happy Dance](https://cdn.jsdelivr.net/gh/netwk-pro/blog@refs/heads/master/assets/nsa-happy-dance.png 'Happy Dance!!')
 
 If the answer is no, it's probably due to compatibility problems. You can try to
 convince the other side to upgrade their security and turn it into a yes. I have
@@ -582,17 +582,3 @@ use `git push -f`.
 [bug779880]:
 <https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=779880>  
 [sloth]: <https://www.mitls.org/downloads/transcript-collisions.pdf>
-
-&nbsp;
-
-**Network Pro™** | _Cybersecurity that respects your values._
-
----
-
-<div style="font-size: 12px; text-align: center;">
-
-<p>Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;" slogan are <a href="https://netwk.pro/license#trademark" target="_self">trademarks</a> of Network Pro Strategies.</p>
-
-<p>Licensed under <a href="https://netwk.pro/license#cc-by" target="_self"><strong>CC BY 4.0</strong></a> and the <a href="https://netwk.pro/license#gnu-gpl" target="_self"><strong>GNU GPL</strong></a>, as published by the <a rel="noopener noreferrer" href="https://fsf.org" target="_blank">Free Software Foundation</a>, either version 3 of the License, or (at your option) any later version.</p>
-
-</div>

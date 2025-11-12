@@ -16,6 +16,42 @@ formatting may vary.
 
 ---
 
+## [1.5.7] - 2025-11-12
+
+### Added
+
+- Added **RSS** links to `mkdocs.yml`:
+  - Introduced a new **RSS** link in the top banner.
+  - Added an **RSS** image and link to the footer, next to the existing social
+    icons.
+- Introduced `simple-git-hooks` devDependency for **automated linting** prior to
+  commit and push.
+- Added `.ncurc.cjs` for more granular control of `npm-check-updates`.
+
+### Changed
+
+- Updated MkDocs colors in light mode for better contrast.
+- Images in `README.md` now utilize **jsDelivr** for quicker loading from CDN.
+- Corrected **Contributor Covenant** link in `README.md`.
+- Updated support email address in `LICENSE.md`.
+- Modified all GitHub CI workflows to utilize `ENV: ci` per job for cleaner
+  separation of environments.
+- Revised scripts in `package.json` for increased functionality, added
+  configuration for `simple-git-hooks`.
+- Bumped project version to `v1.5.7`.
+- Updated dependencies:
+  - `autoprefixer` `^10.4.21` → `^10.4.22`
+  - `browserslist` `^4.27.0` → `^4.28.0`
+  - `mkdocs-material` `9.6.23` → `9.7.0`
+
+### Notes
+
+- Though the site has always been compatible with RSS readers, this fact was not
+  well documented.
+  - The new RSS link and image should now convey this functionality.
+
+---
+
 ## [1.5.6] - 2025-11-09
 
 ### Changed
@@ -448,7 +484,9 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.5...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.7...HEAD
+[1.5.7]: https://github.com/netwk-pro/blog/releases/tag/v1.5.7
+[1.5.6]: https://github.com/netwk-pro/blog/releases/tag/v1.5.6
 [1.5.5]: https://github.com/netwk-pro/blog/releases/tag/v1.5.5
 [1.5.4]: https://github.com/netwk-pro/blog/releases/tag/v1.5.4
 [1.5.3]: https://github.com/netwk-pro/blog/releases/tag/v1.5.3

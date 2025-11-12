@@ -28,6 +28,8 @@ jobs:
   build:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-24.04
+    env:
+      ENV_MODE: ci
 
     steps:
       - name: Checkout repository
@@ -54,7 +56,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version-file: .python-version
+          python-version-file: '.python-version'
           cache: 'pip'
 
       - name: Install Python dependencies
@@ -81,6 +83,8 @@ jobs:
   publish-npm:
     needs: build
     runs-on: ubuntu-24.04
+    env:
+      ENV_MODE: ci
 
     steps:
       - name: Download clean source archive
@@ -124,6 +128,8 @@ jobs:
   publish-gpr:
     needs: build
     runs-on: ubuntu-24.04
+    env:
+      ENV_MODE: ci
 
     steps:
       - name: Download clean source archive

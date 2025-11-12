@@ -23,8 +23,8 @@ theme:
         name: Switch to light mode
     # Optional light mode
     - scheme: default
-      primary: orange
-      accent: deep orange
+      primary: deep orange
+      accent: orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -43,20 +43,23 @@ extra:
   #generator: false
   social:
     - icon: fontawesome/brands/instagram
-      name: Network Pro on Instagram
+      name: Network Pro™ on Instagram
       link: https://instagram.com/netwk_pro
     - icon: fontawesome/brands/facebook
-      name: Network Pro on Facebook
+      name: Network Pro™ on Facebook
       link: https://facebook.com/neteng.pro
     - icon: fontawesome/brands/linkedin
-      name: Network Pro on LinkedIn
+      name: Network Pro™ on LinkedIn
       link: https://linkedin.com/company/netwk-pro
     - icon: fontawesome/brands/mastodon
-      name: Network Pro on Mastodon
+      name: Network Pro™ on Mastodon
       link: https://noc.social/@neteng_pro
     - icon: fontawesome/brands/discord
-      name: Network Pro on Discord
+      name: Network Pro™ on Discord
       link: https://discord.neteng.pro
+    - icon: fontawesome/solid/rss
+      name: Network Pro™ on RSS
+      link: https://blog.netwk.pro/feed_rss_created.xml
     - icon: fontawesome/solid/at
       name: Contact Us
       link: https://netwk.pro/contact
@@ -96,3 +99,4 @@ nav:
   - Contributing:
       - Code of Conduct: CODE_OF_CONDUCT.md
       - Contribute to Network Pro™: contributing.md
+  - RSS: https://blog.netwk.pro/feed_rss_created.xml
