@@ -16,6 +16,18 @@ formatting may vary.
 
 ---
 
+## [1.5.8] - 2025-11-16
+
+### Changed
+
+- Updated `.markdownlint.mjs` to ignore rule `MD060`, which is unnecessarily
+  strict and doesn't affect render output.
+- Bumped project version to `v1.5.8`.
+- Updated dependencies:
+  - `markdownlint-cli2` `^0.18.1` → `^0.19.0`
+
+---
+
 ## [1.5.7] - 2025-11-12
 
 ### Added
@@ -484,7 +496,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.7...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.8...HEAD
+[1.5.8]: https://github.com/netwk-pro/blog/releases/tag/v1.5.8
 [1.5.7]: https://github.com/netwk-pro/blog/releases/tag/v1.5.7
 [1.5.6]: https://github.com/netwk-pro/blog/releases/tag/v1.5.6
 [1.5.5]: https://github.com/netwk-pro/blog/releases/tag/v1.5.5
