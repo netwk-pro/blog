@@ -7,10 +7,9 @@
 name: Publish to Registries
 
 on:
-  workflow_run:
-    workflows: ['Build Site and Deploy to GH Pages']
-    types:
-      - completed
+  release:
+    types: [created]
+  workflow_dispatch:
 
 permissions:
   actions: read
@@ -25,8 +24,11 @@ concurrency:
 # cspell:ignore userconfig
 
 jobs:
+  check-codeql:
+    uses: ./.github/workflows/check-codeql.yml
+
   build:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    needs: check-codeql
     runs-on: ubuntu-24.04
     env:
       ENV_MODE: ci

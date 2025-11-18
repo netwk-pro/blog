@@ -16,6 +16,26 @@ formatting may vary.
 
 ---
 
+## [1.5.9] - 2025-11-18
+
+### Added
+
+- `netlify.toml` file to configure Netlify build variables and enforce CSP and
+  headers.
+
+### Changed
+
+- Refactored `.github/workflows/publish.yml` to check CodeQL results and then
+  proceed with publishing to npmjs and GPR.
+- Bumped project version to `v1.5.9`.
+
+### Removed
+
+- Removed GitHub CI workflow at `.github/workflows/build-and-deploy.yml`, as
+  builds will now be processed automatically by Netlify.
+
+---
+
 ## [1.5.8] - 2025-11-16
 
 ### Changed
@@ -496,7 +516,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.8...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.9...HEAD
+[1.5.9]: https://github.com/netwk-pro/blog/releases/tag/v1.5.9
 [1.5.8]: https://github.com/netwk-pro/blog/releases/tag/v1.5.8
 [1.5.7]: https://github.com/netwk-pro/blog/releases/tag/v1.5.7
 [1.5.6]: https://github.com/netwk-pro/blog/releases/tag/v1.5.6
