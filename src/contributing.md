@@ -37,9 +37,9 @@ tags:
 
 &nbsp;
 
-Thanks for your interest in improving **Network Pro Strategies** (Network
-Pro™)! We're always looking for collaborators and contributors of all skill
-levels. This guide will help you get started quickly and effectively.
+Thanks for your interest in improving **Network Pro Strategies** (Network Pro™)!
+We're always looking for collaborators and contributors of all skill levels.
+This guide will help you get started quickly and effectively.
 
 Following these guidelines helps us all work together efficiently and
 respectfully. 🙌

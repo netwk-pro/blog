@@ -75,8 +75,8 @@ gatekeeping.
 
 ### ✅ Our Vision: Security That Respects You
 
-At **Network Pro™**, we believe security should be **transparent, adaptable,
-and aligned with your goals**. While we advocate for privacy-first solutions and
+At **Network Pro™**, we believe security should be **transparent, adaptable, and
+aligned with your goals**. While we advocate for privacy-first solutions and
 actively support open technologies, we apply them with discretion—not dogma. Our
 priority is delivering **reliable, resilient results**, whether through open
 source tools or vetted proprietary platforms.
