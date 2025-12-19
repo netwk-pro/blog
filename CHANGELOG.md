@@ -6,13 +6,58 @@
 
 All notable changes to this project will be documented in this file.
 
-This project attempts to follow
-[Keep a Changelog](https://keepachangelog.com/en/1.1.0/), though versioning and
-formatting may vary.
+This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+Version numbers use a **SemVer-inspired** `MAJOR.MINOR.PATCH` format, with
+version increments reflecting both user-visible and operational impact.
 
 ---
 
 ## [Unreleased]
+
+---
+
+## [1.6.0] - 2025-12-19
+
+### Added
+
+- Added `vercel.json` to define Vercel build configuration and security headers.
+- Added Vercel as a supported deployment target for this site.
+- Added `VERSIONING.md` for clarity regarding how we implement versioning.
+
+### Changed
+
+- Migrated static site deployment from Netlify to Vercel.
+- Converted Netlify build configuration (`netlify.toml`) to Vercel-equivalent
+  settings.
+- Updated MkDocs build invocation to use `python -m mkdocs` for improved
+  compatibility in CI environments.
+- Explicitly configured the build output directory as `build/`.
+- Preserved existing Content Security Policy (CSP), reporting endpoints, and
+  security headers under Vercel.
+- Updated GitHub workflows to utilize the latest versions of
+  `actions/checkout@v6`, `actions/upload-artifact@v6`, and
+  `actions/download-artifact@v7`, as well as **npm** `v11.7.0`:
+  - `.github/workflows/backup-branch.yml`
+  - `.github/workflows/dependency-review.yml`
+  - `.github/workflows/publish-test.yml`
+  - `.github/workflows/publish.yml`
+- Bumped project version to `v1.6.0`.
+- Updated frontend tooling dependencies:
+  - `@eslint/js` `^9.39.1` → `^9.39.2`
+  - `autoprefixer` `^10.4.22` → `^10.4.23`
+  - `browserslist` `^4.28.0` → `^4.28.1`
+  - `eslint` `^9.39.1` → `^9.39.2`
+  - `prettier` `3.6.2` → `3.7.4`
+  - `stylelint` `^16.25.0` → `^16.26.1`
+  - `markdownlint` `^0.39.0` → `^0.40.0`
+  - `markdownlint-cli2` `^0.19.0` → `^0.20.0`
+
+### Removed
+
+- Removed `netlify.toml`, as Netlify is no longer the active deployment
+  platform.
+- Removed reliance on Netlify-specific header configuration in favor of Vercel
+  headers.
 
 ---
 
@@ -516,7 +561,8 @@ formatting may vary.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.5.9...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/netwk-pro/blog/releases/tag/v1.6.0
 [1.5.9]: https://github.com/netwk-pro/blog/releases/tag/v1.5.9
 [1.5.8]: https://github.com/netwk-pro/blog/releases/tag/v1.5.8
 [1.5.7]: https://github.com/netwk-pro/blog/releases/tag/v1.5.7
