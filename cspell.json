@@ -45,7 +45,8 @@
     "urlset",
     "vcard",
     "vite",
-    "Voss"
+    "Voss",
+    "vpns"
   ],
   "ignorePaths": [
     ".gitignore",
