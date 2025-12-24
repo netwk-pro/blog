@@ -16,6 +16,26 @@ version increments reflecting both user-visible and operational impact.
 
 ---
 
+## [1.6.1] - 2025-12-24
+
+### Added
+
+- Added `src/posts/2025-12-24-uk-nudity.md`, along with image assets:
+  - `src/img/uk-nudity-promo.png`
+  - `src/img/uk-nudity-promo.webp`
+- Added `src/posts/2025-12-24-mp-vpn.md`, along with image assets:
+  - `src/img/mp-vpn-promo.png`
+  - `src/img/mp-vpn-promo.webp`
+
+### Changed
+
+- Modified `npm run dev` script to use the `--livereload` flag.
+- Bumped project version to `v1.6.1`.
+- Updated Python dependencies:
+  - `mkdocs-rss-plugin` `1.17.5` → `1.17.7`
+
+---
+
 ## [1.6.0] - 2025-12-19
 
 ### Added
@@ -561,7 +581,8 @@ version increments reflecting both user-visible and operational impact.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.6.0...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.6.1...HEAD
+[1.6.1]: https://github.com/netwk-pro/blog/releases/tag/v1.6.1
 [1.6.0]: https://github.com/netwk-pro/blog/releases/tag/v1.6.0
 [1.5.9]: https://github.com/netwk-pro/blog/releases/tag/v1.5.9
 [1.5.8]: https://github.com/netwk-pro/blog/releases/tag/v1.5.8
