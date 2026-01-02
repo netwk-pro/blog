@@ -16,6 +16,28 @@ version increments reflecting both user-visible and operational impact.
 
 ---
 
+## [1.6.2] - 2026-01-01
+
+### Added
+
+- Added `runtime.txt` to specify the project's Python runtime version.
+
+### Changed
+
+- Added schema to `vercel.json`.
+- Updated `README.md` to better reflect the company’s current mission, focus,
+  and messaging.
+- Bumped project version to `v1.6.2`.
+- Updated frontend tooling dependencies:
+  - `stylelint-order` `^7.0.0` → `^7.0.1`
+  - `globals` `^16.5.0` → `^17.0.0`
+
+### Removed
+
+- Removed `CNAME` file left over from GitHub Pages.
+
+---
+
 ## [1.6.1] - 2025-12-24
 
 ### Added
@@ -581,7 +603,8 @@ version increments reflecting both user-visible and operational impact.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.6.1...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.6.2...HEAD
+[1.6.2]: https://github.com/netwk-pro/blog/releases/tag/v1.6.2
 [1.6.1]: https://github.com/netwk-pro/blog/releases/tag/v1.6.1
 [1.6.0]: https://github.com/netwk-pro/blog/releases/tag/v1.6.0
 [1.5.9]: https://github.com/netwk-pro/blog/releases/tag/v1.5.9

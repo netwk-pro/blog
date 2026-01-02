@@ -1,6 +1,12 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
   "buildCommand": "pip install -r requirements.txt && python -m mkdocs build --clean --site-dir build",
   "outputDirectory": "build",
+
+  "cleanUrls": true,
+  "trailingSlash": true,
+
   "headers": [
     {
       "source": "/(.*)",
