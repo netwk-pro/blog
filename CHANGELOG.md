@@ -18,6 +18,8 @@ version increments reflecting both user-visible and operational impact.
 
 ## [1.6.3] - 2026-03-04
 
+### Changed
+
 - Bumped project version to `v1.6.3`.
 - Updated frontend tooling dependencies:
   - `autoprefixer` `^10.4.23` → `^10.4.27`
