@@ -16,6 +16,24 @@ version increments reflecting both user-visible and operational impact.
 
 ---
 
+## [1.6.3] - 2026-03-04
+
+- Bumped project version to `v1.6.3`.
+- Updated frontend tooling dependencies:
+  - `autoprefixer` `^10.4.23` → `^10.4.27`
+  - `globals` `^17.1.0` → `^17.4.0`
+  - `stylelint` `^17.0.0` → `^17.4.0`
+  - `@eslint/js` `^9.39.2` → `^10.0.1`
+  - `@eslint/json` `^0.14.0` → `^1.0.1`
+  - `eslint` `^9.39.2` → `^10.0.2`
+  - `markdownlint-cli2` `^0.20.0` → `^0.21.0`
+  - `postcss` `^8.5.6` → `^8.5.8`
+- Updated Python dependencies:
+  - `mkdocs-material` `9.7.0` → `9.7.3`
+  - `mkdocs-rss-plugin` `1.17.7` → `1.17.9`
+
+---
+
 ## [1.6.2] - 2026-01-01
 
 ### Added
