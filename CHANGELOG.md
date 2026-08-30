@@ -16,6 +16,28 @@ version increments reflecting both user-visible and operational impact.
 
 ---
 
+## [1.6.5] - 2026-08-30
+
+### Changed
+
+- Bumped project version to `v1.6.5`.
+- Updated copyright notices across GitHub Actions workflows for 2026.
+- Updated GitHub Actions dependencies:
+  - `actions/checkout` `v6` → `v7`
+  - `actions/dependency-review-action` `v4` → `v5`
+  - `actions/download-artifact` `v7` → `v8`
+  - `actions/setup-node` `v6` → `v7`
+  - `actions/setup-python` `v6` → `v7`
+  - `actions/upload-artifact` `v6` → `v7`
+  - `pozil/auto-assign-issue` `v2` → `v4`
+- Updated publication workflows from **npm** `11.7.0` to `12.0.2` and removed
+  the Corepack initialization step.
+- Configured npmjs publishing to use GitHub OIDC trusted publishing with
+  job-scoped permissions instead of the `NPM_NETPRO` authentication token.
+- Removed npm authentication from the dry-run publication workflow.
+
+---
+
 ## [1.6.4] - 2026-08-30
 
 ### Changed
@@ -652,7 +674,8 @@ version increments reflecting both user-visible and operational impact.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.6.4...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.6.5...HEAD
+[1.6.5]: https://github.com/netwk-pro/blog/releases/tag/v1.6.5
 [1.6.4]: https://github.com/netwk-pro/blog/releases/tag/v1.6.4
 [1.6.3]: https://github.com/netwk-pro/blog/releases/tag/v1.6.3
 [1.6.2]: https://github.com/netwk-pro/blog/releases/tag/v1.6.2
