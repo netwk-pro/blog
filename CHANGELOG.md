@@ -14,8 +14,13 @@ version increments reflecting both user-visible and operational impact.
 
 ## [Unreleased]
 
+---
+
+## [1.6.5] - 2026-08-30
+
 ### Changed
 
+- Bumped project version to `v1.6.5`.
 - Updated copyright notices across GitHub Actions workflows for 2026.
 - Updated GitHub Actions dependencies:
   - `actions/checkout` `v6` → `v7`
@@ -669,7 +674,8 @@ version increments reflecting both user-visible and operational impact.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.6.4...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.6.5...HEAD
+[1.6.5]: https://github.com/netwk-pro/blog/releases/tag/v1.6.5
 [1.6.4]: https://github.com/netwk-pro/blog/releases/tag/v1.6.4
 [1.6.3]: https://github.com/netwk-pro/blog/releases/tag/v1.6.3
 [1.6.2]: https://github.com/netwk-pro/blog/releases/tag/v1.6.2
