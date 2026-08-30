@@ -16,6 +16,35 @@ version increments reflecting both user-visible and operational impact.
 
 ---
 
+## [1.6.4] - 2026-08-30
+
+### Changed
+
+- Bumped project version to `v1.6.4`.
+- Adjusted `.ncurc.cjs` formatting and removed its explicit color option.
+- Normalized license reference link indentation in `LICENSE.md`.
+- Added package metadata for dependency overrides and explicitly permitted
+  scripts for `simple-git-hooks@2.14.0`.
+- Updated frontend tooling dependencies:
+  - `@eslint/json` `^1.0.1` → `^2.0.1`
+  - `autoprefixer` `^10.4.27` → `^10.5.4`
+  - `browserslist` `^4.28.1` → `^4.28.8`
+  - `eslint` `^10.0.2` → `^10.9.1`
+  - `globals` `^17.4.0` → `^17.11.0`
+  - `markdownlint` `^0.40.0` → `^0.41.1`
+  - `markdownlint-cli2` `^0.21.0` → `^0.23.2`
+  - `postcss` `^8.5.8` → `^8.5.26`
+  - `prettier` `3.8.1` → `3.9.6`
+  - `simple-git-hooks` `^2.13.1` → `^2.14.0`
+  - `stylelint` `^17.4.0` → `^17.14.1`
+  - `stylelint-config-html` `^1.1.0` → `^2.0.0`
+  - `stylelint-order` `^7.0.1` → `^8.1.1`
+- Updated Python dependencies:
+  - `mkdocs-material` `9.7.3` → `9.7.7`
+  - `mkdocs-rss-plugin` `1.17.9` → `1.19.0`
+
+---
+
 ## [1.6.3] - 2026-03-04
 
 ### Changed
@@ -623,7 +652,9 @@ version increments reflecting both user-visible and operational impact.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.6.2...HEAD
+[Unreleased]: https://github.com/netwk-pro/blog/compare/v1.6.4...HEAD
+[1.6.4]: https://github.com/netwk-pro/blog/releases/tag/v1.6.4
+[1.6.3]: https://github.com/netwk-pro/blog/releases/tag/v1.6.3
 [1.6.2]: https://github.com/netwk-pro/blog/releases/tag/v1.6.2
 [1.6.1]: https://github.com/netwk-pro/blog/releases/tag/v1.6.1
 [1.6.0]: https://github.com/netwk-pro/blog/releases/tag/v1.6.0

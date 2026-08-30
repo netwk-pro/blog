@@ -34,7 +34,7 @@ module.exports = {
   reject: [],
 
   // Always upgrade devDependencies as well
-  dep: 'prod,dev',
+  dep: 'prod, dev',
 
   // Show a summary table
   format: ['group', 'table'],
@@ -44,7 +44,4 @@ module.exports = {
 
   // Display upgraded dependencies as JSON (optional for automation)
   jsonUpgraded: false,
-
-  // Enable readable colors when supported
-  color: true, // harmless, but CLI-only
 };
