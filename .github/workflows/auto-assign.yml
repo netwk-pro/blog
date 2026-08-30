@@ -1,6 +1,6 @@
 # .github/workflows/auto-assign.yml
 #
-# Copyright © 2025 Network Pro Strategies (Network Pro™)
+# Copyright © 2025-2026 Network Pro Strategies (Network Pro™)
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Pro
 #
@@ -28,7 +28,7 @@ jobs:
 
     steps:
       - name: 'Auto-assign issue or PR'
-        uses: pozil/auto-assign-issue@v2
+        uses: pozil/auto-assign-issue@v4
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: SunDevil311

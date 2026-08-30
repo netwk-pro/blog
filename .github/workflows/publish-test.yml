@@ -1,6 +1,6 @@
 # .github/workflows/publish-test.yml
 #
-# Copyright © 2025 Network Pro Strategies (Network Pro™)
+# Copyright © 2025-2026 Network Pro Strategies (Network Pro™)
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Pro
 
@@ -31,28 +31,26 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Set up Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
           cache-dependency-path: package-lock.json
 
       - name: Upgrade npm
-        run: |
-          corepack enable
-          npm install -g npm@11.7.0
+        run: npm install -g npm@12.0.2
 
       - name: Install Node.js dependencies
         run: npm ci
 
       # Ensure MkDocs builds successfully
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version-file: '.python-version'
           cache: 'pip'
@@ -73,7 +71,7 @@ jobs:
         run: git archive --format=tar.gz --output=clean-source.tar.gz HEAD
 
       - name: Upload source archive
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: clean-source
           path: clean-source.tar.gz
@@ -86,7 +84,7 @@ jobs:
 
     steps:
       - name: Download clean source archive
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: clean-source
           path: ./
@@ -98,7 +96,7 @@ jobs:
         run: rm clean-source.tar.gz
 
       - name: Set up Node.js for npmjs
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org/
@@ -111,9 +109,7 @@ jobs:
           fi
 
       - name: Upgrade npm
-        run: |
-          corepack enable
-          npm install -g npm@11.7.0
+        run: npm install -g npm@12.0.2
 
       - name: Install Node.js dependencies
         run: npm ci
@@ -125,8 +121,6 @@ jobs:
 
       - name: Publish package to npmjs
         run: npm publish --dry-run
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_NETPRO }}
 
   publish-gpr:
     needs: build
@@ -136,7 +130,7 @@ jobs:
 
     steps:
       - name: Download clean source archive
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: clean-source
           path: ./
@@ -148,7 +142,7 @@ jobs:
         run: rm clean-source.tar.gz
 
       - name: Set up Node.js for GPR
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           registry-url: https://npm.pkg.github.com/
@@ -161,9 +155,7 @@ jobs:
           fi
 
       - name: Upgrade npm
-        run: |
-          corepack enable
-          npm install -g npm@11.7.0
+        run: npm install -g npm@12.0.2
 
       - name: Install Node.js dependencies
         run: npm ci
